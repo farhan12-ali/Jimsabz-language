@@ -1,0 +1,62 @@
+{
+  "studio": "0.19.0",
+  "host": "linux-x64",
+  "recorded": "2026-11-23T16:36:52.315Z",
+  "checks": [
+    {
+      "name": "Bundled PE64 runtime integrity",
+      "status": "Passed",
+      "detail": "SHA-256 and Windows x64 machine header matched."
+    },
+    {
+      "name": "Console output export",
+      "status": "Passed",
+      "detail": "4259779 bytes, download checksum verified."
+    },
+    {
+      "name": "Console output on Windows",
+      "status": "Not Run",
+      "detail": "Requires a Windows x64 host."
+    },
+    {
+      "name": "Interactive input, imports and functions export",
+      "status": "Passed",
+      "detail": "4260640 bytes, download checksum verified."
+    },
+    {
+      "name": "Interactive input, imports and functions on Windows",
+      "status": "Not Run",
+      "detail": "Requires a Windows x64 host."
+    },
+    {
+      "name": "Arrays and exception handling export",
+      "status": "Passed",
+      "detail": "4262433 bytes, download checksum verified."
+    },
+    {
+      "name": "Arrays and exception handling on Windows",
+      "status": "Not Run",
+      "detail": "Requires a Windows x64 host."
+    },
+    {
+      "name": "Persistent file I/O export",
+      "status": "Passed",
+      "detail": "4260018 bytes, download checksum verified."
+    },
+    {
+      "name": "Persistent file I/O on Windows",
+      "status": "Not Run",
+      "detail": "Requires a Windows x64 host."
+    },
+    {
+      "name": "Installer compilation and installation",
+      "status": "Not Run",
+      "detail": "Run the Inno Setup build and installer on a Windows release machine."
+    },
+    {
+      "name": "Publisher signing",
+      "status": "Not Run",
+      "detail": "Requires a publisher-owned signing certificate."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+PASS plain output
+PASS operator-looking strings remain strings
+PASS left operand is evaluated before side effects
+PASS arguments are evaluated left to right
+PASS compound target value is read before right side
+PASS interactive string
+PASS sum of two inputs
+PASS report input and output compatibility
+PASS recover invalid input
+PASS decimal input
+PASS boolean input
+PASS operator precedence
+PASS integer division
+PASS decimal promotion
+PASS dual comparisons
+PASS logical precedence
+PASS short circuit
+PASS explicit casts
+PASS typed arrays and methods
+PASS nested arrays
+PASS empty typed arrays
+PASS array bound exception
+PASS objects and field mutation
+PASS object method mutation
+PASS recursive functions
+PASS for break continue
+PASS foreach loop
+PASS while and block scope
+PASS switch and break
+PASS default switch
+PASS nested exception handling
+PASS try scope unwind with break
+PASS integer overflow trapped
+PASS Unicode identifiers and aliases
+PASS comments and escapes
+PASS strict narrowing rejected
+PASS undeclared name rejected
+PASS constant mutation rejected
+PASS constant array mutation rejected
+PASS constant method mutation rejected
+PASS constant aliases cannot mutate backing array
+PASS missing library rejected in semantic stage
+PASS unclosed block rejected
+PASS unterminated string rejected
+PASS illegal symbol rejected
+PASS semicolon outside for rejected
+PASS loop control outside loop rejected
+PASS missing return rejected
+PASS wrong constructor arity rejected
+PASS math library functions
+PASS math library guard
+PASS file round trip
+PASS file traversal caught
+PASS persistent state round trip
+PASS missing sprite rejected
+PASS beginner output shorthand
+PASS module compilation uses workspace files
+PASS circular import failure is semantic
+PASS blank 2D has no actors or handlers
+PASS blank 3D has no actors or handlers
+PASS agent builder percentage
+PASS agent builder login
+PASS agent builder objects
+PASS agent builder statistics
+PASS agent builder output
+PASS agent builder input
+PASS agent builder sum
+PASS agent builder condition
+PASS agent builder marks
+PASS agent builder loop
+PASS agent builder function
+PASS agent builder array
+PASS agent builder player2d
+PASS agent builder scene3d
+PASS agent builder racing2d
+PASS held input moves an actor
+PASS timer executes authored game code
+PASS collision updates authored state
+PASS instruction budget halts an endless loop
+PASS Jimsa greeting is conversational and creates no source
+PASS beginner request writes quoted Jimsabz output
+PASS Roman Urdu number input request is executable
+PASS salutation inside a program request still generates source
+PASS requested racing phrasing classified
+PASS agent refuses other languages
+PASS unsupported games are not substituted
+PASS agent checks generated code
+PASS ZIP preserves nested files
+PASS native executes browser bytecode: output
+PASS native executes browser bytecode: sum
+PASS native executes browser bytecode: function
+PASS native executes browser bytecode: racing2d
+PASS native executes browser bytecode: scene3d
+PASS Windows executable embeds current JBC2
+94/94 browser compiler, VM, agent and export checks passed.

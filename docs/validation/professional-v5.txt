@@ -1,0 +1,25 @@
+PASS all 1,001 Roman Sindhi words round-trip and compile to numbers
+PASS number converter functions round-trip 0–1000
+PASS aliases, existing variable names and full integer range coexist
+PASS unknown word literal fails at lexical phase
+PASS word conversion rejects wrong types and out-of-range values
+PASS 1 subject marksheet reads exactly that many values
+PASS 7 subject marksheet reads exactly that many values
+PASS 12 subject marksheet reads exactly that many values
+PASS 1000 subject marksheet reads exactly that many values
+PASS 1001 subject marksheet reads exactly that many values
+PASS runtime count validates count and marks, then calculates average
+PASS decimal maxima, named subjects, custom prompts and per-subject percentages
+PASS inclusive and quoted custom grade rules are honored
+PASS 1,000 grading conditions use data rather than nested branches
+PASS subject counts parse digits, Roman Sindhi, English and follow-up overrides
+PASS general statistics uses requested and runtime input counts
+PASS requested 1–1000 range prints all Sindhi words
+PASS language help covers arrays, functions, phases, types, input and words
+PASS contextual language questions and unknown topics are honest
+PASS all language-help code examples pass the real compiler
+PASS all number words have a downloadable CSV entry
+PASS agent generates seven-subject code and adapts follow-up counts
+PASS agent answers questions without generating a file
+PASS agent reports inconsistent requests before writing source
+24/24 flexible agent and Sindhi-number checks passed.

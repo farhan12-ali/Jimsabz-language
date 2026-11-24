@@ -1,0 +1,37 @@
+PASS defaults and named browser + native JBC
+PASS variadic and spread browser + native JBC
+PASS overload browser + native JBC
+PASS escaping mutable closure browser + native JBC
+PASS lambda callback map filter reduce browser + native JBC
+PASS generic function and class browser + native JBC
+PASS interface inheritance polymorphism browser + native JBC
+PASS dictionary set nullable iteration browser + native JBC
+PASS async scheduling browser + native JBC
+PASS async error propagation browser + native JBC
+PASS expanded libraries browser + native JBC
+PASS async file IO browser + native JBC
+PASS overload slots through base reference browser + native JBC
+PASS bound method references browser + native JBC
+PASS nullable null checks browser + native JBC
+PASS closure survives collection and recursion browser + native JBC
+PASS default evaluation and named order browser + native JBC
+PASS collection structural mutation detected browser + native JBC
+PASS task cancellation is catchable browser + native JBC
+PASS custom constructor browser + native JBC
+PASS empty parts preserved by join browser + native JBC
+PASS base constructor chaining and field default scope browser + native JBC
+PASS missing interface method
+PASS inheritance cycle
+PASS bad generic constraint
+PASS await outside async
+PASS wrong dictionary value
+PASS unknown named argument
+PASS duplicate signatures different parameter names
+PASS generic class constraint
+PASS private field rejected
+PASS nonvirtual override rejected
+PASS async default rejected
+PASS uninitialized function rejected
+PASS inherited private field rejected
+PASS base constructor must be initialized
+{ passed: 36, failed: 0 }

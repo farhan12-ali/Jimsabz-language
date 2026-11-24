@@ -1,0 +1,42 @@
+/* File management shares the existing editor layout and both themes. */
+.folder-heading { gap: 7px; padding-right: 3px; }
+#folder-name { min-width: 0; flex: 1; white-space: nowrap; }
+#folder-kind { margin-left: 0; font-size: 9px; }
+#folder-actions { flex: 0 0 28px; width: 28px; height: 30px; }
+.explorer-row { display: flex; align-items: center; min-width: 0; border-radius: 6px; }
+.explorer-row.active { background: #302643; box-shadow: inset 2px 0 #a47af6; }
+.explorer-row .file-item { min-width: 0; flex: 1; width: auto; font-size: 14px; padding: 8px 3px 8px calc(9px + var(--level, 0) * 14px); gap: 7px; }
+.explorer-row .file-item > span { overflow: hidden; text-overflow: ellipsis; }
+.explorer-row .file-item svg { flex: 0 0 16px; }
+.explorer-row.active .file-item { color: #e4d6ff; }
+.explorer-row:hover { background: #292336; }
+.explorer-row .explorer-actions { width: 28px; height: 30px; flex: 0 0 28px; color: #aaa0bc; opacity: .7; }
+.explorer-row:hover .explorer-actions, .explorer-actions:focus-visible { opacity: 1; }
+.file-item.folder-collapsed svg { opacity: .65; }
+.explorer-empty { padding: 12px 10px; color: #aaa1ba; font-size: 14px; line-height: 1.6; }
+.explorer-menu { position: fixed; z-index: 2000; width: 208px; padding: 6px; border: 1px solid #554267; border-radius: 9px; background: #242030; box-shadow: 0 12px 35px #0008; }
+.explorer-menu button { display: block; width: 100%; padding: 10px 12px; text-align: left; border-radius: 5px; font-size: 14px; color: #eee5fa; }
+.explorer-menu button:hover, .explorer-menu button:focus-visible { background: #423051; outline: 2px solid #b58bed; outline-offset: -2px; }
+.explorer-menu .danger-text { color: #ffacb8; }
+.danger-button { background: #a33651; border: 1px solid #df6683; color: #fff; }
+.danger-button:hover { background: #b83e5c; }
+.operation-error { color: #ffacb8 !important; font-size: 14px !important; }
+.operation-error:empty { display: none; }
+.trash-list { display: grid; gap: 10px; max-height: 52vh; overflow: auto; }
+.trash-item { display: flex; align-items: center; gap: 16px; padding: 13px 14px; background: #252031; border: 1px solid #493652; border-radius: 8px; }
+.trash-item > div { min-width: 0; flex: 1; }
+.trash-item strong { display: block; overflow-wrap: anywhere; font-size: 16px; font-weight: 500; }
+.trash-item span { display: block; color: #b2a4bf; font-size: 14px; margin-top: 6px; }
+.trash-empty { color: #b2a4bf; font-size: 16px; padding: 18px 0; }
+:root[data-theme="light"] .explorer-row:hover { background: #eee7f6; }
+:root[data-theme="light"] .explorer-row.active { background: #e7dcf6; }
+:root[data-theme="light"] .explorer-row.active .file-item { color: #4a286f; }
+:root[data-theme="light"] .explorer-actions, :root[data-theme="light"] .explorer-empty { color: #62516e; }
+:root[data-theme="light"] .explorer-menu { background: #fff; border-color: #c7b2d7; box-shadow: 0 12px 35px #33204430; }
+:root[data-theme="light"] .explorer-menu button { color: #362441; }
+:root[data-theme="light"] .explorer-menu button:hover, :root[data-theme="light"] .explorer-menu button:focus-visible { background: #eee4f8; }
+:root[data-theme="light"] .explorer-menu .danger-text, :root[data-theme="light"] .operation-error { color: #a22443 !important; }
+:root[data-theme="light"] .trash-item { background: #faf7fe; border-color: #d7c6e5; }
+:root[data-theme="light"] .trash-item strong { color: #30223c; }
+:root[data-theme="light"] .trash-item span, :root[data-theme="light"] .trash-empty { color: #65536f; }
+@media (max-width: 600px) { .trash-item { gap: 10px; padding: 10px; } }

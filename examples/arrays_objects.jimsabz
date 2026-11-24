@@ -1,0 +1,28 @@
+qism TalibIlm {
+    lafz naam
+    adad marks
+
+    kam passed() -> isharo {
+        wapas marks wado_barabar 50
+    }
+}
+
+TalibIlm farhan = naon TalibIlm("Farhan", 86)
+qatar adad scores = [65, 86, 94]
+scores.joryo(78)
+
+budhai farhan.naam + " scored " + farhan.marks
+budhai "Passed: " + farhan.passed()
+
+adad total = 0
+gin score andar scores {
+    total += score
+}
+budhai "Total = " + total
+budhai "Students = " + scores.lambai
+
+azmai {
+    budhai scores[20]
+} pakar (error) {
+    budhai "An invalid array index was caught safely."
+}

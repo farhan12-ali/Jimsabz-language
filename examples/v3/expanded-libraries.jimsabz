@@ -1,0 +1,8 @@
+kharna Math
+kharna String
+kharna Testing
+kharna DateTime
+Testing.truth(String.contains("Farhan", "han"), "contains")
+budhai Math.clamp(15,0,10)
+budhai String.join(String.split("a,b,c", ","), "|")
+budhai DateTime.isoUTC(0)

@@ -1,0 +1,30 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node.js
+node_modules/
+.next/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Generated build reports and temporary validation logs
+build/benchmark-*.json
+build/presentation-checks.json
+build/test-results.json
+build/validation-*.log
+
+# Generated GitHub Actions validation report
+docs/validation/windows-release.json
+
+build/jimsabz

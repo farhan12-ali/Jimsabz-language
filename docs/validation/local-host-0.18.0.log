@@ -1,0 +1,10 @@
+PASS native launcher serves the built-in local agent interface
+PASS the trained classifier is served from the local package
+PASS the local versioned knowledge index is available without an inference service
+PASS the removed model-list route is unavailable
+PASS the removed inference route cannot accept chat requests
+PASS heartbeat and startup remain usable after rejected requests
+PASS native host rejects a different Host and duplicate Host headers
+PASS encoded traversal cannot read files outside the studio directory
+
+8 native local-only host checks passed.

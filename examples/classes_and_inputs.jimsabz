@@ -1,0 +1,27 @@
+// Class, independent object state, typed array fields and reusable methods.
+qism Hisab {
+    qatar dec ang = []
+    lafz naalo = "Hisab"
+    kam joryo(dec nayo_ang) {
+        paan.ang.joryo(nayo_ang)
+    }
+    kam kul() -> dec {
+        dec jama = 0.0
+        gin hik andar paan.ang { jama += hik }
+        wapas jama
+    }
+    kam ausat() -> dec {
+        jey (paan.ang.lambai == 0) { wapas 0.0 }
+        wapas paan.kul() / paan.ang.lambai
+    }
+}
+
+Hisab natijo = naon Hisab()
+adad tadaad = budh("Ketira ang? ")
+wori (tadaad <= 0) { tadaad = budh("Hik ya vadheek ang likho: ") }
+gin (adad soochi = 0; soochi < tadaad; soochi++) {
+    dec nayo_ang = budh("Ang " + (soochi + 1) + ": ")
+    natijo.joryo(nayo_ang)
+}
+budhai "Kul: " + natijo.kul()
+budhai "Ausat: " + natijo.ausat()

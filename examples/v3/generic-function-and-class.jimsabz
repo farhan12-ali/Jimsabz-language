@@ -1,0 +1,12 @@
+kam identity<T>(T value) -> T {
+ wapas value
+}
+qism Box<T> {
+ T value
+ kam get() -> T {
+ wapas value
+ }
+}
+Box<adad> box = naon Box<adad>(identity(12))
+budhai box.get()
+budhai identity::<lafz>("hello")

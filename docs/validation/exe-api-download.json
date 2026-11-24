@@ -1,0 +1,7 @@
+{
+  "download_bytes": 4263310,
+  "sha256": "e7cd1740dc7b0d661fb75b759d7bf359f14d67239023a2a55bc5bb30d4e06f1a",
+  "api_equals_local": true,
+  "native_payload_output": "Subject 1 marks (0-100): Subject 2 marks (0-100): Total marks: 170\nPercentage: 85%\n",
+  "windows_execution": "Not Run"
+}

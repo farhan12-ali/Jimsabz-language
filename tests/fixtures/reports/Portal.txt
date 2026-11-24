@@ -1,0 +1,1 @@
+Project report: Create a web app with authentication, database, admin dashboard and payment checkout.

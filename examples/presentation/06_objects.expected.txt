@@ -1,0 +1,4 @@
+Farhan: 90
+Paas: ha
+Ali: 0
+Paas: na

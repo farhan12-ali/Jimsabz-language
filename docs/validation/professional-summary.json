@@ -1,0 +1,51 @@
+{
+  "studio": "0.18.0",
+  "automated": {
+    "passed": 482,
+    "failed": 0,
+    "executed_for_studio": "0.18.0",
+    "scope": "425 named legacy checks plus 57 new Node feature cases; the runner reports 73 cases including 16 legacy script files.",
+    "suites": [
+      {
+        "name": "Existing compiler/VM/agent/export/native/Run-window checks",
+        "status": "Passed",
+        "passed": 425
+      },
+      {
+        "name": "Professional editor, recovery, test explorer, planners, scene services, local API/Git and native file I/O",
+        "status": "Passed",
+        "passed": 57
+      }
+    ],
+    "log": "validation/professional-all-tests.log"
+  },
+  "browser_observations": [
+    "Live diagnostics displayed the actual undeclared-name code SEM-02 and file:line:column.",
+    "Formatting and a reviewed variable rename preserved behavior; the separate Run window printed 42.",
+    "A saved test case passed, and all seven bundled language examples passed through the test explorer.",
+    "IndexedDB recovery history displayed manual and before-formatting checkpoints.",
+    "A primitive was added to a 3D scene draft, changed to a sphere at X=2, rendered from actual VM initialization, and compiled/applied to source.",
+    "A 12-number request generated a checked main/module project; its fixture passed in the real VM.",
+    "A follow-up staged Edit operations for the existing main/module pair, passed compilation and one example test, and preserved unrelated files.",
+    "Keyboard resizing changed the agent width to 340; reset restored defaults. Large-text, contrast and reduced-motion settings updated rendered state.",
+    "The release tab displayed real export evidence and Not Run labels for Windows execution, installer installation and signing."
+  ],
+  "limitations": [
+    "Constrained local classifier, planners and code builders; no unrestricted code LLM, model service or new training run.",
+    "Advanced refactoring remains limited to unambiguous supported symbols; generic/overloaded/member renaming is refused.",
+    "Native Windows execution, Inno Setup compilation/installation and publisher signing were not performed in this Linux development session.",
+    "Git and disk repository integration require Node 20+, Git and an explicitly configured local workspace root; unavailable on the hosted preview.",
+    "Scene editing handles literal object properties and top-down placement; not full mesh/animation/tilemap authoring or gameplay verification.",
+    "Browser recovery is local browser storage with bounded retention; browser data removal removes that history.",
+    "Folder picker access depends on browser support; Windows graphical/file picker operation was not tested.",
+    "No current FPS/audio/memory benchmarks or narrow-screen execution measurement was performed.",
+    "Console login/hub demo retains its existing memory-only, visible-passphrase limitations."
+  ],
+  "compiler_preservation": {
+    "baseline": "Studio 0.17.0",
+    "studio": "0.18.0",
+    "files_checked": 60,
+    "changed_files": [],
+    "status": "Passed"
+  }
+}

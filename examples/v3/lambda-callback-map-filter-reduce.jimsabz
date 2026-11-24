@@ -1,0 +1,5 @@
+qatar adad a = [1,2,3]
+qatar adad b = a.map(kam(adad x)->adad => x*2)
+qatar adad c = b.filter(kam(adad x)->isharo => x>2)
+adad total = c.reduce(0, kam(adad sum, adad x)->adad => sum+x)
+budhai total

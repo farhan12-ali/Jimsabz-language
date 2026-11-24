@@ -1,0 +1,4 @@
+// Intentional error: this program needs kharna gui.
+khed "Missing Library" {
+    khirki 800, 600
+}

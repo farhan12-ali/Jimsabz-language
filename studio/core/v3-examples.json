@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Defaults and named",
+    "code": "kam total(adad a, adad b = a + 2) -> adad {\n wapas a + b\n}\nbudhai total(3)\nbudhai total(b: 9, a: 2)\n",
+    "expected": "8\n11\n",
+    "path": "examples/v3/defaults-and-named.jimsabz"
+  },
+  {
+    "title": "Variadic and spread",
+    "code": "kam sum(adad start, adad ...values) -> adad {\n gin x andar values {\n start += x\n }\n wapas start\n}\nqatar adad a = [2,3,4]\nbudhai sum(1, ...a)\n",
+    "expected": "10\n",
+    "path": "examples/v3/variadic-and-spread.jimsabz"
+  },
+  {
+    "title": "Overload",
+    "code": "kam pick(adad x) -> adad {\n wapas x+1\n}\nkam pick(lafz x) -> lafz {\n wapas x+\"!\"\n}\nbudhai pick(4)\nbudhai pick(\"hi\")\n",
+    "expected": "5\nhi!\n",
+    "path": "examples/v3/overload.jimsabz"
+  },
+  {
+    "title": "Escaping mutable closure",
+    "code": "kam counter(adad start) -> kam()->adad {\n kam next() -> adad {\n start += 1\n wapas start\n }\n wapas next\n}\nkam()->adad a = counter(10)\nkam()->adad b = counter(20)\nbudhai a()\nbudhai a()\nbudhai b()\n",
+    "expected": "11\n12\n21\n",
+    "path": "examples/v3/escaping-mutable-closure.jimsabz"
+  },
+  {
+    "title": "Lambda callback map filter reduce",
+    "code": "qatar adad a = [1,2,3]\nqatar adad b = a.map(kam(adad x)->adad => x*2)\nqatar adad c = b.filter(kam(adad x)->isharo => x>2)\nadad total = c.reduce(0, kam(adad sum, adad x)->adad => sum+x)\nbudhai total\n",
+    "expected": "10\n",
+    "path": "examples/v3/lambda-callback-map-filter-reduce.jimsabz"
+  },
+  {
+    "title": "Generic function and class",
+    "code": "kam identity<T>(T value) -> T {\n wapas value\n}\nqism Box<T> {\n T value\n kam get() -> T {\n wapas value\n }\n}\nBox<adad> box = naon Box<adad>(identity(12))\nbudhai box.get()\nbudhai identity::<lafz>(\"hello\")\n",
+    "expected": "12\nhello\n",
+    "path": "examples/v3/generic-function-and-class.jimsabz"
+  },
+  {
+    "title": "Interface inheritance polymorphism",
+    "code": "@interface qism Named {\n kam name() -> lafz\n}\nqism Animal {\n @virtual kam speak() -> lafz {\n wapas \"animal\"\n }\n}\nqism Dog : Animal, Named {\n @override kam speak() -> lafz {\n wapas \"woof\"\n }\n kam name() -> lafz {\n wapas \"Rex\"\n }\n}\nAnimal a = naon Dog()\nNamed n = naon Dog()\nbudhai a.speak()\nbudhai n.name()\n",
+    "expected": "woof\nRex\n",
+    "path": "examples/v3/interface-inheritance-polymorphism.jimsabz"
+  },
+  {
+    "title": "Dictionary set nullable iteration",
+    "code": "kharna Collections\nMap<lafz,adad> marks = naon Map<lafz,adad>()\nmarks.set(\"Sindhi\", 90)\nmarks.set(\"Math\", 80)\nbudhai marks.get(\"Math\")\nbudhai marks.tryGet(\"missing\") ?? 0\nSet<lafz> names = naon Set<lafz>()\nbudhai names.add(\"Farhan\")\nbudhai names.add(\"Farhan\")\ngin name andar names {\n budhai name\n}\nbudhai marks.size\n",
+    "expected": "80\n0\nha\nna\nFarhan\n2\n",
+    "path": "examples/v3/dictionary-set-nullable-iteration.jimsabz"
+  },
+  {
+    "title": "Async scheduling",
+    "code": "kharna Async\n@async kam calculate(adad n) -> adad {\n @await Async.sleep(0.001)\n wapas n*2\n}\n@async kam mainTask() -> adad {\n Task<adad> a = calculate(3)\n Task<adad> b = calculate(5)\n adad x = @await a\n adad y = @await b\n wapas x+y\n}\nbudhai Async.run(mainTask())\n",
+    "expected": "16\n",
+    "path": "examples/v3/async-scheduling.jimsabz"
+  },
+  {
+    "title": "Expanded libraries",
+    "code": "kharna Math\nkharna String\nkharna Testing\nkharna DateTime\nTesting.truth(String.contains(\"Farhan\", \"han\"), \"contains\")\nbudhai Math.clamp(15,0,10)\nbudhai String.join(String.split(\"a,b,c\", \",\"), \"|\")\nbudhai DateTime.isoUTC(0)\n",
+    "expected": "10\na|b|c\n1970-01-01T00:00:00Z\n",
+    "path": "examples/v3/expanded-libraries.jimsabz"
+  },
+  {
+    "title": "Async file io",
+    "code": "kharna Async\nkharna FileSystem\n@async kam files() -> lafz {\n @await FileSystem.writeTextAsync(\"out/test.txt\", \"salam\")\n wapas @await FileSystem.readTextAsync(\"out/test.txt\")\n}\nbudhai Async.run(files())\n",
+    "expected": "salam\n",
+    "path": "examples/v3/async-file-io.jimsabz"
+  },
+  {
+    "title": "Base constructor chaining and field default scope",
+    "code": "adad initial=3\nqism Base {\n adad value=initial\n adad doubled=value*2\n kam naon(adad amount) {\n value=amount\n }\n}\nqism Child : Base {\n kam naon(adad initial=8) {\n paan[Base].naon(initial)\n }\n}\nChild c=naon Child()\nbudhai c.value\nbudhai c.doubled\n",
+    "expected": "8\n6\n",
+    "path": "examples/v3/base-constructor-chaining-and-field-default-scope.jimsabz"
+  }
+]

@@ -1,0 +1,8 @@
+PASS real worker compiles and executes a typed function through the public runner
+PASS real worker returns exact compiler diagnostics without executing invalid source
+PASS real worker executes independent expected-output fixtures
+PASS real worker is terminated when its outer timeout expires
+PASS cancel terminates a real worker and the next request still succeeds
+PASS bundled file-backed knowledge excerpts match their declared source lines exactly
+
+6 real worker and source-evidence checks passed. Browser layout and model quality were not tested here.

@@ -1,0 +1,29 @@
+// Throwaway local demo only. No account data is written to disk.
+// Console passphrase input is visible; use invented demo values.
+lafz hub_user = ""
+isharo hub_session = na
+
+kam authenticate_demo(lafz entered_user, lafz entered_pass, lafz registered_user, lafz registered_pass) -> isharo {
+    wapas entered_user == registered_user && entered_pass == registered_pass
+}
+
+kam sign_in_demo() -> isharo {
+    lafz registered_user = budh("Create demo user: ")
+    lafz registered_pass = budh("Create demo passphrase (visible): ")
+    jey (registered_user == "" || registered_pass == "") {
+        budhai "Demo user and passphrase cannot be empty."
+        wapas na
+    }
+    gin (adad attempt = 0; attempt < 3; attempt += 1) {
+        lafz entered_user = budh("Login user: ")
+        lafz entered_pass = budh("Login passphrase (visible): ")
+        jey (authenticate_demo(entered_user, entered_pass, registered_user, registered_pass)) {
+            hub_user = entered_user
+            budhai "Welcome, " + hub_user
+            wapas ha
+        }
+        budhai "Invalid login. Attempts remaining: " + (3 - attempt - 1)
+    }
+    budhai "Login blocked for this run. Run again to reset the demo."
+    wapas na
+}

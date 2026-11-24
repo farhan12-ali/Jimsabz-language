@@ -1,0 +1,55 @@
+{
+  "language": "Jimsabz",
+  "examples": [
+    {
+      "id": "01_variables",
+      "title": "Variables and types",
+      "inputs": [],
+      "expected": "Naalo: Farhan\nUmar: 20\nFeesad: 87.5\nTayar: ha\nHad: 100\n"
+    },
+    {
+      "id": "02_conditions",
+      "title": "Input and conditions",
+      "inputs": [
+        75
+      ],
+      "expected": "Feesad: B\n"
+    },
+    {
+      "id": "03_loops",
+      "title": "For, while and foreach",
+      "inputs": [],
+      "expected": "Gin: 1\nGin: 2\nGin: 3\nWori: 1\nWori: 2\nWori: 3\nQatar: 10\nQatar: 20\nQatar: 30\n"
+    },
+    {
+      "id": "04_functions",
+      "title": "Functions and recursion",
+      "inputs": [],
+      "expected": "Jor: 12\nFactorial: 120\n"
+    },
+    {
+      "id": "05_arrays",
+      "title": "Dynamic and nested arrays",
+      "inputs": [],
+      "expected": "Kadhyal: 20\nTadaad: 3\nKul: 85\nMatrix: 9\n"
+    },
+    {
+      "id": "06_objects",
+      "title": "Classes and independent objects",
+      "inputs": [],
+      "expected": "Farhan: 90\nPaas: ha\nAli: 0\nPaas: na\n"
+    },
+    {
+      "id": "07_marksheet",
+      "title": "Complete marksheet",
+      "inputs": [
+        "Farhan",
+        3,
+        90,
+        80,
+        70
+      ],
+      "expected": "Naalo: Ketira mazmoon? Mazmoon 1 (0-100): Mazmoon 2 (0-100): Mazmoon 3 (0-100): \nNaalo: Farhan\nMazmoon: 3\nKul: 240\nFeesad: 80%\nAusat: 80\nDarjo: B\n"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+qatar adad nishan = [10, 20, 30]
+nishan.joryo(40)
+nishan[0] = 15
+adad kadhyal = nishan.kadh(1)
+
+adad kul = 0
+gin ang andar nishan { kul += ang }
+
+qatar qatar adad matrix = [[1, 2], [3, 4]]
+matrix[1][0] = 9
+
+budhai "Kadhyal: " + kadhyal
+budhai "Tadaad: " + nishan.lambai
+budhai "Kul: " + kul
+budhai "Matrix: " + matrix[1][0]

@@ -1,0 +1,4 @@
+9 packaged Worker frontend/API checks passed.
+Observed build: 301 assets; 16,768,418-byte Worker (prior to final release ZIP asset replacement).
+Included exact source hashes for factory/model.mjs, scene.mjs, tree.mjs, window.mjs, factory.css, run.html, run.mjs, core/worker.mjs.
+Existing IDE, local model, EXE API/PE64 checksum/diagnostics, origin/method restrictions and asset routing passed.

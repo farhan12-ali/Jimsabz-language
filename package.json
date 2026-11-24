@@ -1,0 +1,19 @@
+{
+  "name": "jimsabz-studio",
+  "version": "0.19.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node api/server.mjs",
+    "test:exe": "node tests/exe-api.test.mjs",
+    "build:worker": "node scripts/build-worker.mjs",
+    "test:professional": "node --test tests/professional.test.mjs tests/local-project.test.mjs",
+    "test:release": "node scripts/validate-release.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.0"
+  }
+}

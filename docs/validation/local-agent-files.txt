@@ -1,0 +1,27 @@
+PASS valid relative Unicode and nested paths
+PASS unsafe paths and Windows-reserved names are rejected
+PASS explorer infers folders and sorts folders before files
+PASS create files and empty folders without changing existing source
+PASS a folder ending in .jimsabz is never a program entry
+PASS duplicate paths and file/folder collisions are atomic
+PASS folder rename preserves children, binary assets, active file and entry
+PASS renamed module imports still compile and execute
+PASS moving an importing file recalculates its relative imports
+PASS imports inside a moved folder keep working together
+PASS rename does not rewrite normal strings, comments or built-in imports
+PASS rename reports lexical errors without losing that file's contents
+PASS rename refuses existing destinations and moving a folder into itself
+PASS case-only rename works and source extensions are convenient
+PASS renaming the last source to a text file clears its program entry
+PASS moving the last file out of a folder preserves its empty parent
+PASS delete file selects another source and keeps parent folders
+PASS delete folder uses a path boundary and keeps unrelated folders
+PASS deleting the last source leaves an empty editable workspace
+PASS restore folder recovers Unicode source, empty folders and binary bytes
+PASS restore refuses to overwrite a newly created path
+PASS invalid delete and restore targets do not change data
+PASS ZIP export preserves empty folder entries and excludes Trash
+PASS whole folders move out of the workspace list and restore with stable IDs
+PASS a stale tab cannot silently resurrect a deleted folder
+PASS Trash and saved records survive cloning without sharing mutable state
+26/26 file, folder, Trash, import and export checks passed.

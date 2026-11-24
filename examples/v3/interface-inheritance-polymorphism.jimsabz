@@ -1,0 +1,20 @@
+@interface qism Named {
+ kam name() -> lafz
+}
+qism Animal {
+ @virtual kam speak() -> lafz {
+ wapas "animal"
+ }
+}
+qism Dog : Animal, Named {
+ @override kam speak() -> lafz {
+ wapas "woof"
+ }
+ kam name() -> lafz {
+ wapas "Rex"
+ }
+}
+Animal a = naon Dog()
+Named n = naon Dog()
+budhai a.speak()
+budhai n.name()

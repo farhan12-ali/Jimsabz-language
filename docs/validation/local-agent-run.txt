@@ -1,0 +1,10 @@
+PASS Run opens a popup synchronously with the requested size
+PASS blocked popup is reported before execution starts
+PASS output and pending input survive a late console handshake
+PASS other origins, windows and sessions cannot control the program
+PASS rerun reuses its window and resets output with a new run id
+PASS closing the output window reports one cancellation
+PASS finished execution keeps its result readable and ends input
+PASS errors retain source locations and output buffers are bounded
+PASS debug commands cross the authenticated run-window bridge
+9/9 separate-window lifecycle checks passed.

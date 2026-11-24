@@ -1,0 +1,5 @@
+kharna gui3d
+
+// Shared HUD state; the 3D views are declared behind the login gate in main.
+lafz hub_section = "Home"
+lafz hub_controls = "1 Arena | 2 Library | 3 Profile | H Home | L Sign out"

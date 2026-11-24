@@ -1,0 +1,57 @@
+{
+  "studio": "0.19.0",
+  "recorded": "2026-11-23T16:40:34.506808+00:00",
+  "host": "linux-x64",
+  "automated": {
+    "status": "Passed",
+    "node_runner_cases": 92,
+    "named_checks_including_legacy_wrappers": 501,
+    "new_factory_cases": 19,
+    "log": "factory-all-tests.log"
+  },
+  "browser": {
+    "renderer": "Projected Canvas fallback",
+    "status": "Passed for observed workflows",
+    "observations": [
+      "Studio 0.19.0: Run opened the factory in a second window and the real VM printed 30 after the journey.",
+      "Semantic failure stopped in Room 4; later phases were Not Executed and execution remained Not Run.",
+      "Two console input requests accepted 80 and 100 and produced 80; clearing visible output preserved report output.",
+      "Actual parser/AST nodes, selection, expansion and zoom were inspected. IDE light/dark settings synchronized with the second window.",
+      "Debugger Step Over reached source line 2 and showed local a=10. A real 2D game initialized in the preserved canvas.",
+      "JSON report, compiler SVG and actual game-frame SVG downloads completed. Stop changed actual runtime status to Stopped.",
+      "A real invalid array access produced RUN-01 at source line 3, column 15 after all six compiler phases passed.",
+      "While the journey was paused, changing the editor to print 99 marked the snapshot changed; the captured add(10,20) program still printed 30.",
+      "Restart, pause, previous/next, reset, zoom, auto-camera and rerun controls were exercised. Logs displayed full chronological timestamps."
+    ],
+    "pop_up_blocked_path": "Unit-tested blocked return and new-tab action; actual browser popup blocking was not forced.",
+    "webgl_hardware": "Not Run"
+  },
+  "preservation": {
+    "status": "Passed",
+    "protected_checked": 59,
+    "unchanged": 56,
+    "expected_integration_changes": [
+      "studio/core/worker.mjs",
+      "studio/core/run-window.mjs",
+      "studio/core/compiler-trace.mjs"
+    ]
+  },
+  "not_run": [
+    "Windows desktop execution",
+    "Hardware WebGL path in the current browser",
+    "Installer compilation/installation",
+    "Publisher signing",
+    "Factory frame-rate or memory benchmark"
+  ],
+  "limitations": [
+    "Procedural blue/silver robot family; no official mesh was supplied.",
+    "Parser tree represents the actual parser return, not a separate concrete grammar tree.",
+    "Tree snapshots and event/output previews are bounded as disclosed in the guide."
+  ],
+  "packaged_worker": {
+    "status": "Passed",
+    "checks": 9,
+    "scope": "Real bundled Worker frontend, all Factory module hashes, local model, MIME/conditional/missing assets, EXE health/download/checksum/diagnostics/origin/methods.",
+    "log": "factory-packaged-worker.log"
+  }
+}

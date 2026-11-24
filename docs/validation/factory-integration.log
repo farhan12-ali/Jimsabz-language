@@ -1,0 +1,27 @@
+✔ captured source and parser evidence preserve actual input and parent relationships (2.166715ms)
+✔ snapshots do not alias mutable parser nodes, locations or parameters (2.77411ms)
+✔ tree capture limits retain true totals; collapse traverses actual children (0.536137ms)
+✔ module expansion changes AST but not the captured parser representation (2.410892ms)
+✔ factory compilation has six genuine phases and no premature execution (3.201023ms)
+✔ lexer failure halts its room and reports all later phases unexecuted (0.917852ms)
+✔ syntax failure halts its room and reports all later phases unexecuted (0.842449ms)
+✔ semantic failure halts its room and reports all later phases unexecuted (0.606313ms)
+✔ asset failure halts its room and reports all later phases unexecuted (1.110954ms)
+✔ playback pauses, waits for real phases, steps backwards and cannot reexecute a finished journey (0.633594ms)
+✔ execution timing, warnings, input, debugger, stop and source changes are factual (0.385341ms)
+✔ clearing visible console or input echoes cannot rewrite actual report output; buffers are bounded (2.521609ms)
+✔ factory execution actions reject stale sessions, run IDs, origins and windows; new-tab fallback preserves bridge (1.362253ms)
+✔ the physical package route visits every room and the execution platform (1.517336ms)
+✔ actual Worker waits for the matching factory handoff, then executes exactly once (223.622832ms)
+✔ actual Worker never offers execution after a compiler failure (140.648907ms)
+✔ real input and debugger remain behind the handoff, with actual VM variables (86.937756ms)
+✔ actual game initialization and ticks use the existing renderer data after handoff (83.503542ms)
+✔ existing direct Worker runs continue without the factory gate (91.395182ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 841.46935

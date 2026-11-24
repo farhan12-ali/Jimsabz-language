@@ -1,0 +1,9 @@
+// Run Code opens the Compiler Factory in a second window.
+// Inspect the parser and expanded AST, then view the real VM result: 30.
+kam add(adad a, adad b) -> adad {
+    wapas a + b
+}
+
+adad first = 10
+adad second = 20
+budhai add(first, second)

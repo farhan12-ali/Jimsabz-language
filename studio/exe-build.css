@@ -1,0 +1,17 @@
+.exe-intro { font-size: 16px; line-height: 1.7; color: var(--ide-text); }
+.exe-target { display: flex; gap: 13px; align-items: center; padding: 16px; margin: 17px 0; border: 1px solid var(--ide-border); border-radius: 12px; background: var(--ide-raised); }
+.exe-target > svg { width: 32px; height: 32px; color: var(--ide-accent); }
+.exe-target strong { display: block; font-size: 16px; color: var(--ide-text); }
+.exe-target span { display: block; margin-top: 5px; font-size: 13px; color: var(--ide-muted); }
+.exe-label { display: block; margin-bottom: 8px; font-size: 14px; color: var(--ide-text); }
+.exe-filename { width: 100%; padding: 11px 13px; border-radius: 9px; border: 1px solid var(--ide-border); background: var(--ide-editor); color: var(--ide-text); font: 16px Consolas, monospace; }
+.exe-transfer { font-size: 13px !important; line-height: 1.6; color: var(--ide-muted) !important; }
+.exe-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0; }
+.exe-build-status { min-height: 24px; font-size: 14px !important; line-height: 1.6; }
+.exe-build-status[data-state=working] { color: var(--ide-accent) !important; }
+.exe-build-status[data-state=passed] { color: var(--ide-green) !important; }
+.exe-build-status[data-state=failed] { color: #dc4f81 !important; }
+.exe-build-errors { padding: 12px; border-radius: 9px; border: 1px solid #c34c7955; background: #ce38751a; color: var(--ide-text); font: 13px/1.6 Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.exe-download-link { display: inline-flex; margin-top: 8px; }
+.exe-build-details { white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.7 Consolas, monospace !important; color: var(--ide-muted) !important; }
+@media (max-width: 650px) { .exe-actions .button { flex: 1 1 100%; } }

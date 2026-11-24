@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 340" fill="none">
+<defs><linearGradient id="sky" x2="1" y2="1"><stop stop-color="#19102d"/><stop offset=".6" stop-color="#4a1f7a"/><stop offset="1" stop-color="#a35cd6"/></linearGradient><linearGradient id="hill" x2="0" y2="1"><stop stop-color="#7846b2"/><stop offset="1" stop-color="#1d103d"/></linearGradient><linearGradient id="tower" x2="1" y2="1"><stop stop-color="#b277ef"/><stop offset=".5" stop-color="#6b31b0"/><stop offset="1" stop-color="#311148"/></linearGradient><radialGradient id="moon"><stop stop-color="#ead9ff" stop-opacity=".9"/><stop offset="1" stop-color="#b56af9" stop-opacity="0"/></radialGradient></defs>
+<path fill="url(#sky)" d="M0 0h650v340H0z"/><circle cx="508" cy="56" r="110" fill="url(#moon)"/><circle cx="510" cy="53" r="28" fill="#e1c8ff" opacity=".32"/>
+<g fill="#e1c1ff" opacity=".65"><circle cx="90" cy="51" r="1.5"/><circle cx="230" cy="28" r="1"/><circle cx="340" cy="69" r="1.5"/><circle cx="415" cy="20" r="1"/><circle cx="601" cy="62" r="1.5"/><circle cx="310" cy="17" r="1"/><circle cx="174" cy="89" r="1"/><circle cx="566" cy="14" r="1"/><path d="m387 44 2 5 5 2-5 2-2 5-2-5-5-2 5-2Z"/></g>
+<path d="m0 246 77-80 47 36 51-105 47 94 71-48 67 64 66-108 61 70 49-29 114 99v101H0Z" fill="#7442a0"/>
+<path d="m0 275 86-81 40 23 53-70 40 90 90-53 86 81 71-82 54 42 71-66 59 109v72H0Z" fill="#47266e"/>
+<path d="m100 215 25-48 12 32-12-7Zm63-76 12-42 23 51-18-15Zm246 30 17-60 23 32-19-8Z" fill="#c991f4" opacity=".65"/>
+<g fill="url(#tower)" stroke="#bf82ed" stroke-opacity=".4">
+<path d="M465 230V108h27v122Zm-5-122 19-42 19 42Z"/><path d="M511 242V72h31v170Zm-8-170 24-55 23 55Z"/>
+<path d="M550 243V125h27v118Zm-6-118 19-44 20 44Z"/><path d="M592 252V100h24v152Zm-4-152 16-40 17 40Z"/>
+<path d="M482 244v-76h79v76Zm-3-76v-15h12v8h14v-8h13v8h14v-8h13v8h14v-8h7v15Z"/>
+<path d="M442 252V158h20v94Zm-5-94 15-35 15 35Z"/><path d="M568 255v-62h32v62Z"/>
+</g><g fill="#edc0ff"><path d="M477 130h5v14h-5zm48-40h5v18h-5zm36 54h5v16h-5zm41-26h4v15h-4zm-88 72h5v12h-5z"/><path d="M525 17V1m0 0 15 7-15 2" stroke="#d59aff"/></g>
+<path d="M0 279c139-57 183 56 302-4s171-50 348-19v84H0Z" fill="url(#hill)"/>
+<path d="M0 321c182-90 257 19 373-24s152-36 277-9v52H0Z" fill="#251139"/>
+<path d="M318 340c65-39 144-42 165-74 19-28 47-29 51-44" stroke="#c591f4" stroke-opacity=".45" stroke-width="4"/>
+<path d="M0 339c209-33 228-8 328-22" stroke="#a660e8" stroke-opacity=".3" stroke-width="2"/>
+</svg>

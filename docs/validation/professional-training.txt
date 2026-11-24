@@ -1,0 +1,2 @@
+Validated 497 Jimsabz training targets; no request crosses the train/test split.
+Trained on 380 samples; held-out accuracy 100/117 (85.5%).

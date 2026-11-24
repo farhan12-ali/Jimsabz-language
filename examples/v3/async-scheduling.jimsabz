@@ -1,0 +1,13 @@
+kharna Async
+@async kam calculate(adad n) -> adad {
+ @await Async.sleep(0.001)
+ wapas n*2
+}
+@async kam mainTask() -> adad {
+ Task<adad> a = calculate(3)
+ Task<adad> b = calculate(5)
+ adad x = @await a
+ adad y = @await b
+ wapas x+y
+}
+budhai Async.run(mainTask())

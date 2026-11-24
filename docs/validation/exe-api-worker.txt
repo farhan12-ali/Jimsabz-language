@@ -1,0 +1,9 @@
+PASS packaged Worker serves the IDE and executable dialog module
+PASS packaged local agent assets remain available
+PASS asset conditional requests and missing paths are handled
+PASS packaged API health reports the Windows build target
+PASS packaged API produces a PE download with a matching checksum
+PASS packaged API preserves compiler diagnostics
+PASS packaged API rejects a different origin
+PASS packaged API rejects unsupported methods
+8 packaged Worker frontend/API checks passed.

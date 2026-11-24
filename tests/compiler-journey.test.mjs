@@ -1,0 +1,40 @@
+import assert from 'node:assert/strict';
+import {compile} from '../studio/core/compiler.mjs';
+import {journeyModel,JourneyPlayback,PREVIEW_LIMIT,canVisit} from '../studio/core/compiler-trace.mjs';
+import {camera,projectPoint,NODES} from '../studio/core/compiler-scene.mjs';
+import {VM} from '../studio/core/vm.mjs';
+let passed=0;
+async function check(name,fn){await fn();passed++;console.log('PASS '+name);}
+const entry='main.jimsabz',source='adad pheru = adad_satt\nadad biyo = 5\nadad kul = pheru + biyo\nbudhai kul';
+const files=text=>[{path:entry,text}];
+const trace=text=>compile(files(text),entry,()=>{},{trace:true});
+await check('real phase evidence preserves source tokens, AST, symbols and bytecode',async()=>{const r=await trace(source);assert.ok(r.ok);assert.deepEqual(r.trace.map(e=>e.kind),['tokens','tree','tree','symbols','instructions','assets']);assert.equal(r.trace[0].count,r.tokens.length-1);assert.ok(r.trace[0].rows.some(t=>t.kind==='int'&&t.text==='7'&&t.at.col===14));assert.ok(r.trace[2].rows.some(n=>n.kind==='binary'&&n.text==='+'));assert.ok(r.trace[3].rows.some(s=>s.name==='kul'&&s.type==='adad'));assert.match(r.trace[4].body,/Binary.*\+/);assert.equal(r.trace[5].count,0);let output='';await new VM(r.program,{print:s=>output+=s}).run();assert.equal(output,'12\n');});
+await check('capture is opt-in and cannot alter compiled instructions',async()=>{const a=await compile(files(source),entry),b=await trace(source);assert.deepEqual(a.trace,[]);assert.deepEqual(a.program,b.program);});
+await check('parser snapshot precedes module expansion and later type annotations',async()=>{const r=await compile([{path:entry,text:'kharna "math.jimsabz"\nbudhai jor(2,3)'},{path:'math.jimsabz',text:'kam jor(adad a, adad b) -> adad {\nwapas a+b\n}'}],entry,()=>{},{trace:true});assert.ok(r.ok);assert.ok(r.trace[1].rows.some(n=>n.kind==='import'));assert.ok(!r.trace[1].rows.some(n=>n.kind==='function'));assert.ok(r.trace[2].rows.some(n=>n.kind==='function'));assert.ok(r.trace[2].rows.some(n=>n.at.file==='math.jimsabz'));assert.ok(!r.trace[1].body.includes('function jor'));});
+await check('lexical error blocks all later phases without inventing evidence',async()=>{const r=await trace('adad x = @');const m=journeyModel(r,'adad x = @',entry);assert.equal(m.stop,0);assert.equal(m.phases[0].state,'failed');assert.ok(m.phases.slice(1).every(p=>p.state==='blocked'&&!p.evidence));assert.equal(canVisit(m,1),false);});
+await check('syntax error retains lexical tokens but creates no parsed tree',async()=>{const r=await trace('jey (ha) {\nbudhai "hi"');assert.equal(r.diagnostics[0].stage,1);assert.ok(r.trace[0].rows.length>0);assert.equal(r.trace[1],undefined);});
+await check('semantic error keeps previous artifacts and precise error location',async()=>{const code='adad pheru = "Farhan"\nbudhai pheru';const r=await trace(code),m=journeyModel(r,code,entry);assert.equal(m.stop,3);assert.equal(m.diagnostic.at.line,1);assert.equal(m.phases[3].state,'failed');assert.ok(m.phases.slice(4).every(p=>p.state==='blocked'));assert.ok(r.trace[2].rows.some(n=>n.kind==='string'));assert.equal(r.trace[3],undefined);assert.equal(r.trace[4],undefined);});
+await check('missing asset stops after actual code generation',async()=>{const r=await trace('kharna gui\nkhed "G" {\nkirdar Hero {\ntasveer: "missing.png"\n}\n}');assert.equal(r.diagnostics[0].stage,5);assert.ok(r.trace[4].count>0);assert.equal(r.trace[5],undefined);});
+await check('asset evidence identifies actual workspace files',async()=>{const code='kharna gui\nkhed "G" {\nkirdar Hero {\ntasveer: "hero.png"\n}\n}';const r=await compile([...files(code),{path:'hero.png',bytes:[1,2,3]}],entry,()=>{},{trace:true});assert.ok(r.ok);assert.deepEqual(r.trace[5].rows,['hero.png']);});
+await check('compile-only runtime stays ready until a real execution event',async()=>{const r=await trace(source),m=journeyModel(r,source,entry);assert.equal(m.phases[6].state,'ready');assert.equal(m.phases[6].evidence,null);assert.equal(m.complete,true);});
+await check('preview limits bound artifacts without changing total counts',async()=>{const code=Array.from({length:600},(_,i)=>`budhai ${i}`).join('\n'),r=await trace(code);assert.ok(r.ok);assert.ok(r.trace[0].count>PREVIEW_LIMIT);assert.equal(r.trace[0].rows.length,PREVIEW_LIMIT);assert.ok(r.trace[2].count>PREVIEW_LIMIT);assert.equal(r.trace[2].rows.length,PREVIEW_LIMIT);assert.ok(r.trace[4].body.length<=28000);});
+await check('replay pauses and resumes without skipping phases',()=>{const p=new JourneyPlayback();p.reset(6);p.play();p.tick(100);p.tick(200);const at=p.position;assert.ok(at>0&&at<1);p.pause();p.tick(5000);assert.equal(p.position,at);p.play();p.tick(6000);p.tick(6100);assert.ok(p.position>at);});
+await check('replay speed changes visual timing and stops at error phase',()=>{const a=new JourneyPlayback(),b=new JourneyPlayback();a.reset(3);b.reset(3);a.speed=1;b.speed=2;a.play();b.play();a.tick(100);b.tick(100);a.tick(200);b.tick(200);assert.equal(b.position,a.position*2);for(let t=300;t<15000;t+=100)b.tick(t);assert.equal(b.position,3);assert.equal(b.playing,false);b.seek(6);assert.equal(b.position,3);b.seek(-1);assert.equal(b.position,0);});
+await check('replay reset removes previous phase state and honors zero-step errors',()=>{const p=new JourneyPlayback();p.seek(5);p.reset(0);p.play();assert.equal(p.position,0);assert.equal(p.playing,false);p.reset(6);assert.equal(p.position,0);assert.equal(p.playing,false);});
+await check('3D projection changes with camera rotation and perspective depth',()=>{const a=camera(900,500),b=camera(900,500,.4),p=projectPoint(NODES[0],a),q=projectPoint(NODES[0],b);assert.ok(Number.isFinite(p.x)&&Number.isFinite(p.y));assert.notEqual(p.x,q.x);const distant=projectPoint([3,0,-2],a),near=projectPoint([3,0,1.1],a);assert.ok(near.depth<distant.depth);assert.equal(projectPoint(a.eye,a),null);});
+await check('all scene nodes remain visible in normal desktop and narrow views',()=>{for(const [w,h] of [[900,500],[600,440],[370,370]]){const c=camera(w,h);for(const node of NODES){const p=projectPoint([node[0],1.15,node[2]],c);assert.ok(p.x>0&&p.x<w&&p.y>0&&p.y<h,JSON.stringify({w,h,p}));}}});
+await check('class fields and qualified method signatures appear in semantic evidence',async()=>{
+ const r=await trace('qism Counter {\n adad value = 0\n kam add(adad amount) -> adad { paan.value += amount\n wapas paan.value }\n}\nCounter a = naon Counter()\nbudhai a.add(3)');
+ assert.ok(r.ok);const e=r.trace[3];
+ assert.ok(e.rows.some(s=>s.name==='Counter'&&s.kind==='Class'));
+ assert.ok(e.rows.some(s=>s.name==='Counter.value'&&s.type==='adad'&&s.kind==='Field'));
+ assert.ok(e.rows.some(s=>s.name==='Counter.add'&&s.type==='(adad amount) -> adad'&&s.kind==='Method'));
+ assert.ok(e.functions.includes('Counter.add'));assert.equal(e.count,e.rows.length);
+ assert.match(r.stages[3].detail,new RegExp('^'+e.count+' symbols'));
+});
+await check('large semantic tables keep bounded rows and complete declaration counts',async()=>{
+ const fields=Array.from({length:400},(_,i)=>'adad field_'+i+' = '+i).join('\n');
+ const r=await trace('qism Many {\n'+fields+'\n}');assert.ok(r.ok);
+ assert.equal(r.trace[3].count,404);assert.equal(r.trace[3].rows.length,PREVIEW_LIMIT);
+});
+console.log(`${passed}/${passed} compiler journey evidence, error, replay and 3D checks passed.`);

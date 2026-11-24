@@ -1,0 +1,34 @@
+{
+  "studio": "0.10.0",
+  "language": "3.0-preview",
+  "native": "0.8.0",
+  "validation": {
+    "native_existing_cli": 72,
+    "native_existing_runtime": 15,
+    "browser_existing": 92,
+    "language_existing": 42,
+    "presentation": 25,
+    "report_voice_theme": 25,
+    "flexible_agent": 25,
+    "file_management": 26,
+    "compiler_journey": 17,
+    "run_window": 9,
+    "agent_writing": 6,
+    "v3_native_feature_paths": 58,
+    "v3_browser_and_interoperability_cases": 36,
+    "debugger_modes": 4,
+    "native_debugger_protocol": 1,
+    "sanitizer_runtime_harness": 1
+  },
+  "verification_limits": [
+    "Windows PE builds cross-compiled but not executed on Windows",
+    "LeakSanitizer unavailable under executor ptrace; address/undefined-behavior harness passed with leak detection disabled; VM teardown weak-reference checks passed",
+    "No full LSP/DAP or VS Code extension; no thread/channel or async-network API"
+  ],
+  "binary_sha256": {
+    "build/jimsabz": "28e6f973c3623ebab5c1feaf874ccbdee46f9c1b0747768c733f3ee87ffb3c2b",
+    "build/jimsabz.exe": "8d42eeaf0a2d344602b7abed18f318571d01d0fca7a11a2d3acdc5e4352cd647",
+    "build/Jimsabz-Studio.exe": "dd728b2c575594aeac05f824d58a4f5288e1555926f3ef80de6acd3d26ee6f77",
+    "studio/assets/jimsabz-runtime.exe": "8d42eeaf0a2d344602b7abed18f318571d01d0fca7a11a2d3acdc5e4352cd647"
+  }
+}

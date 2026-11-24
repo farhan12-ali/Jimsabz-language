@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10111b" />
+    <title>Jimsabz — Compiler Factory</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="run.css" />
+    <link rel="stylesheet" href="themes.css" />
+    <link rel="stylesheet" href="factory/factory.css" />
+  </head>
+  <body>
+    <header class="run-header">
+      <div class="run-brand">
+        <span class="run-mark">J</span>
+        <div>
+          <h1 id="filename">Jimsabz Compiler Factory</h1>
+          <p id="project-name">Source to execution · Studio 0.19.0</p>
+        </div>
+      </div>
+      <div class="run-actions">
+        <button id="rerun" title="Run the editor’s current file again">
+          Run again</button
+        ><button id="stop" class="stop">Stop</button
+        ><button id="back-editor">Back to editor</button
+        ><button id="close" title="Close the run window">Close</button>
+      </div>
+    </header>
+    <div id="factory-root"></div>
+    <main id="factory-runtime">
+      <div class="run-toolbar">
+        <div>
+          <span id="status-dot" class="dot"></span
+          ><span id="run-status" role="status">Connecting to editor…</span
+          ><span id="compile-phase"></span>
+        </div>
+        <nav aria-label="Run views">
+          <button id="console-tab" class="active" aria-pressed="true">
+            Console</button
+          ><button id="game-tab" aria-pressed="false" hidden>Game</button>
+        </nav>
+        <button id="clear">Clear output</button>
+      </div>
+      <div id="diagnostic" class="diagnostic" hidden>
+        <strong id="error-title"></strong>
+        <p id="error-message"></p>
+        <button id="locate">Go to error in editor</button>
+      </div>
+      <section id="console-view" aria-label="Program console">
+        <pre
+          id="output"
+          tabindex="0"
+          aria-label="Program output"
+          aria-live="polite"
+        ></pre>
+        <div id="empty" class="empty">Compiling your program…</div>
+        <form id="input-form" hidden>
+          <label for="program-input">Your program is waiting for input</label>
+          <div>
+            <span>›</span
+            ><input
+              id="program-input"
+              aria-label="Program input"
+              placeholder="Type your answer…"
+              autocomplete="off"
+            /><button type="submit">Enter ↵</button>
+          </div>
+        </form>
+      </section>
+      <section id="game-view" aria-label="Game output" hidden>
+        <div class="canvas-wrap">
+          <canvas
+            id="game-canvas"
+            width="960"
+            height="600"
+            tabindex="0"
+            aria-label="Interactive game output"
+          ></canvas>
+        </div>
+        <div class="game-hint">
+          <span id="game-title">Your game</span
+          ><span>Click the canvas for controls · Esc to pause</span>
+        </div>
+      </section>
+      <section id="debug-panel" hidden aria-label="Debugger">
+        <div class="debug-toolbar"><strong id="debug-location">Debugger</strong><button id="debug-continue">Continue (F5)</button><button id="debug-into">Step into (F11)</button><button id="debug-over">Step over (F10)</button><button id="debug-out">Step out</button><button id="debug-source">Show source</button></div>
+        <form id="breakpoint-form"><label for="breakpoint-lines">Breakpoints (file:line, separated by commas)</label><input id="breakpoint-lines" placeholder="main.jimsabz:8, main.jimsabz:15"><button>Set breakpoints</button><span id="breakpoint-status" role="status"></span></form>
+        <div class="debug-columns"><div><h2>Call stack</h2><div id="debug-stack"></div></div><div><h2>Variables in selected frame</h2><dl id="debug-locals"></dl></div></div>
+      </section>
+      <footer id="process-footer">
+        <span id="process-message"
+          >Your editor stays open while this program runs.</span
+        ><span id="connection-state">Jimsabz Studio</span>
+      </footer>
+    </main>
+    <script type="module" src="run.mjs"></script>
+  </body>
+</html>

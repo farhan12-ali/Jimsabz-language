@@ -1,0 +1,596 @@
+{
+  "training_samples": 380,
+  "test_samples": 117,
+  "correct": 100,
+  "accuracy": 0.8547008547008547,
+  "compiler_validated_targets": 497,
+  "split": "Held-out request phrasings; paired please variants stay in the same split.",
+  "limitations": "Small curated domain; scores do not measure arbitrary game generation. Code uses parameterized, compiler-checked builders. No large language model was fine-tuned.",
+  "results": [
+    {
+      "prompt": "input subject marks then show total and grade in Jimsabz",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "Please input subject marks then show total and grade in Jimsabz",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "read exam scores and compute a report card",
+      "expected": "marks",
+      "actual": "percentage"
+    },
+    {
+      "prompt": "Please read exam scores and compute a report card",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "add subject scores and assign a letter grade by percentage",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "Please add subject scores and assign a letter grade by percentage",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "output hello world in Jimsabz",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "Please output hello world in Jimsabz",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "display terminal text",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "Please display terminal text",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "show the output Farhan",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "Please show the output Farhan",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "accept a string and say hello in Jimsabz",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "Please accept a string and say hello in Jimsabz",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "prompt for text",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "Please prompt for text",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "read a lafz",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "Please read a lafz",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "make a number addition program in Jimsabz",
+      "expected": "sum",
+      "actual": "condition"
+    },
+    {
+      "prompt": "Please make a number addition program in Jimsabz",
+      "expected": "sum",
+      "actual": "condition"
+    },
+    {
+      "prompt": "read two integers and show their sum",
+      "expected": "sum",
+      "actual": "sum"
+    },
+    {
+      "prompt": "Please read two integers and show their sum",
+      "expected": "sum",
+      "actual": "sum"
+    },
+    {
+      "prompt": "sum calculator in terminal",
+      "expected": "sum",
+      "actual": "sum"
+    },
+    {
+      "prompt": "Please sum calculator in terminal",
+      "expected": "sum",
+      "actual": "sum"
+    },
+    {
+      "prompt": "positive or negative number test in Jimsabz",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "Please positive or negative number test in Jimsabz",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "if a value is greater than zero",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "Please if a value is greater than zero",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "choose output based on number",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "Please choose output based on number",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "use a for loop in Jimsabz",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "Please use a for loop in Jimsabz",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "repeat an action with gin",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "Please repeat an action with gin",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "repeat printing numbers",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "Please repeat printing numbers",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "make a reusable addition function in Jimsabz",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "Please make a reusable addition function in Jimsabz",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "return the total from a function",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "Please return the total from a function",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "function returning adad",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "Please function returning adad",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "create an array and iterate in Jimsabz",
+      "expected": "array",
+      "actual": "array"
+    },
+    {
+      "prompt": "Please create an array and iterate in Jimsabz",
+      "expected": "array",
+      "actual": "array"
+    },
+    {
+      "prompt": "loop through an integer list",
+      "expected": "array",
+      "actual": "loop"
+    },
+    {
+      "prompt": "Please loop through an integer list",
+      "expected": "array",
+      "actual": "loop"
+    },
+    {
+      "prompt": "typed number list",
+      "expected": "array",
+      "actual": "array"
+    },
+    {
+      "prompt": "Please typed number list",
+      "expected": "array",
+      "actual": "array"
+    },
+    {
+      "prompt": "make a 2d square move in Jimsabz",
+      "expected": "player2d",
+      "actual": "player2d"
+    },
+    {
+      "prompt": "Please make a 2d square move in Jimsabz",
+      "expected": "player2d",
+      "actual": "player2d"
+    },
+    {
+      "prompt": "a player controlled with arrows",
+      "expected": "player2d",
+      "actual": "player2d"
+    },
+    {
+      "prompt": "Please a player controlled with arrows",
+      "expected": "player2d",
+      "actual": "player2d"
+    },
+    {
+      "prompt": "show an actor that I can move",
+      "expected": "player2d",
+      "actual": "player2d"
+    },
+    {
+      "prompt": "Please show an actor that I can move",
+      "expected": "player2d",
+      "actual": "player2d"
+    },
+    {
+      "prompt": "3d player with wasd in Jimsabz",
+      "expected": "scene3d",
+      "actual": "scene3d"
+    },
+    {
+      "prompt": "Please 3d player with wasd in Jimsabz",
+      "expected": "scene3d",
+      "actual": "scene3d"
+    },
+    {
+      "prompt": "make a moving 3d cube",
+      "expected": "scene3d",
+      "actual": "scene3d"
+    },
+    {
+      "prompt": "Please make a moving 3d cube",
+      "expected": "scene3d",
+      "actual": "scene3d"
+    },
+    {
+      "prompt": "show a 3d mesh and light",
+      "expected": "scene3d",
+      "actual": "scene3d"
+    },
+    {
+      "prompt": "Please show a 3d mesh and light",
+      "expected": "scene3d",
+      "actual": "scene3d"
+    },
+    {
+      "prompt": "make a road with moving cars in Jimsabz",
+      "expected": "racing2d",
+      "actual": "racing2d"
+    },
+    {
+      "prompt": "Please make a road with moving cars in Jimsabz",
+      "expected": "racing2d",
+      "actual": "racing2d"
+    },
+    {
+      "prompt": "make a racing game in the compiler",
+      "expected": "racing2d",
+      "actual": "racing2d"
+    },
+    {
+      "prompt": "Please make a racing game in the compiler",
+      "expected": "racing2d",
+      "actual": "racing2d"
+    },
+    {
+      "prompt": "create a playable car racing game",
+      "expected": "racing2d",
+      "actual": "racing2d"
+    },
+    {
+      "prompt": "Please create a playable car racing game",
+      "expected": "racing2d",
+      "actual": "racing2d"
+    },
+    {
+      "prompt": "te mazmoon ja number lai feesad darjo budhayo",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "generate a complete exam result from three marks inputs",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "ek asaan program banao jo naam dikhaye",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "make a beginner program to print my name",
+      "expected": "output",
+      "actual": "output"
+    },
+    {
+      "prompt": "mera naam input le kar show karo",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "make a beginner name input program",
+      "expected": "input",
+      "actual": "input"
+    },
+    {
+      "prompt": "do numbers input lekar jama kar do",
+      "expected": "sum",
+      "actual": "sum"
+    },
+    {
+      "prompt": "make a beginner two number addition calculator",
+      "expected": "sum",
+      "actual": "sum"
+    },
+    {
+      "prompt": "ek number le kar positive negative batao",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "a beginner conditional check for a positive value",
+      "expected": "condition",
+      "actual": "condition"
+    },
+    {
+      "prompt": "loop laga kar one to five likho",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "make a beginner program that repeats a counter",
+      "expected": "loop",
+      "actual": "output"
+    },
+    {
+      "prompt": "function ke andar sum karke wapas karo",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "a beginner typed function that returns an addition",
+      "expected": "function",
+      "actual": "function"
+    },
+    {
+      "prompt": "qatar ki values par loop chala kar sum karo",
+      "expected": "array",
+      "actual": "array"
+    },
+    {
+      "prompt": "a beginner integer array with a running total",
+      "expected": "array",
+      "actual": "array"
+    },
+    {
+      "prompt": "طالب علم کے نمبروں سے نتیجہ اور گریڈ بناؤ",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "صارف سے دو عدد لے کر جمع کا جواب دو",
+      "expected": "sum",
+      "actual": "sum"
+    },
+    {
+      "prompt": "صفر سے بڑا یا چھوٹا عدد چیک کرو",
+      "expected": "condition",
+      "actual": "sum"
+    },
+    {
+      "prompt": "make a seven subject result with mean and overall percentage",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "generate an exam sheet for 37 subjects each out of 80",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "a report card that asks for the subject count first",
+      "expected": "marks",
+      "actual": "loop"
+    },
+    {
+      "prompt": "hazar mazmoon ja marks lai kul feesad ain ausat dikhaayo",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "write marksheet for 11 subjects with >= 85: A, >= 60: B, else F",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "make a semester marks sheet from a variable number of subjects",
+      "expected": "marks",
+      "actual": "marks"
+    },
+    {
+      "prompt": "find the arithmetic mean of 19 entered numbers",
+      "expected": "statistics",
+      "actual": "sum"
+    },
+    {
+      "prompt": "accumulate 31 input values and print average",
+      "expected": "statistics",
+      "actual": "marks"
+    },
+    {
+      "prompt": "take a variable number of values and report total and mean",
+      "expected": "statistics",
+      "actual": "statistics"
+    },
+    {
+      "prompt": "compute mean and sum for 87 values with a qatar",
+      "expected": "statistics",
+      "actual": "array"
+    },
+    {
+      "prompt": "ausat nikalo for 16 numbers from user",
+      "expected": "statistics",
+      "actual": "sum"
+    },
+    {
+      "prompt": "build a calculator accepting however many values I need",
+      "expected": "statistics",
+      "actual": "array"
+    },
+    {
+      "prompt": "display Roman Sindhi counting from 5 through 20",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "generate counting output from 1 to 587",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "use a loop to output 700 number words",
+      "expected": "loop",
+      "actual": "loop"
+    },
+    {
+      "prompt": "create an instance and invoke its numeric processing methods",
+      "expected": "objects",
+      "actual": "objects"
+    },
+    {
+      "prompt": "write a class example accepting 19 values",
+      "expected": "objects",
+      "actual": "function"
+    },
+    {
+      "prompt": "an object program with an array for input data",
+      "expected": "objects",
+      "actual": "objects"
+    },
+    {
+      "prompt": "demonstrate qism defaults and reusable object behavior",
+      "expected": "objects",
+      "actual": "objects"
+    },
+    {
+      "prompt": "make an OOP average example with a runtime count",
+      "expected": "objects",
+      "actual": "objects"
+    },
+    {
+      "prompt": "accept a pair of exam scores and compute their percentage",
+      "expected": "percentage",
+      "actual": "percentage"
+    },
+    {
+      "prompt": "write a simple program in which the take the two inputs of the marks and their precentage",
+      "expected": "percentage",
+      "actual": "percentage"
+    },
+    {
+      "prompt": "could you please create a percent calculation for two subject inputs",
+      "expected": "percentage",
+      "actual": "percentage"
+    },
+    {
+      "prompt": "derive percent using scored marks and total possible marks",
+      "expected": "percentage",
+      "actual": "marks"
+    },
+    {
+      "prompt": "read 17 subject scores and return combined percentage",
+      "expected": "percentage",
+      "actual": "percentage"
+    },
+    {
+      "prompt": "give me four-subject percentages using a reusable function",
+      "expected": "percentage",
+      "actual": "marks"
+    },
+    {
+      "prompt": "write a code for login system for a gaming central system hub with ui architecture of 3d gaming credents",
+      "expected": "login",
+      "actual": "login"
+    },
+    {
+      "prompt": "could you implement a gaming center with registration and sign in",
+      "expected": "login",
+      "actual": "login"
+    },
+    {
+      "prompt": "create an account entry screen for a game collection hub",
+      "expected": "login",
+      "actual": "login"
+    },
+    {
+      "prompt": "native gaming lobby that requires login and supports logout",
+      "expected": "login",
+      "actual": "login"
+    },
+    {
+      "prompt": "construct a local sign-in demonstration with two attempts",
+      "expected": "login",
+      "actual": "login"
+    },
+    {
+      "prompt": "use temporary account verification before opening a three dimensional hub",
+      "expected": "login",
+      "actual": "scene3d"
+    }
+  ]
+}

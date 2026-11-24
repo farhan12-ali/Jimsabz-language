@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10111c" />
+    <title>Jimsabz Studio — Code, compile, create</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="themes.css" />
+    <link rel="stylesheet" href="files.css" />
+    <link rel="stylesheet" href="presentation.css" />
+    <link rel="stylesheet" href="compiler-journey.css" />
+    <link rel="stylesheet" href="madadgar.css" />
+    <link rel="stylesheet" href="madadgar-neon.css" />
+    <link rel="stylesheet" href="ide-workspace.css" />
+    <link rel="stylesheet" href="exe-build.css" />
+    <link rel="stylesheet" href="professional/workbench.css" />
+  </head>
+  <body>
+    <a class="pro-skip" href="#workspace-main">Skip to editor</a>
+    <svg class="sprite" aria-hidden="true">
+      <defs>
+        <symbol id="i-code" viewBox="0 0 24 24">
+          <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18" />
+        </symbol>
+        <symbol id="i-play" viewBox="0 0 24 24">
+          <path d="m8 5 11 7-11 7Z" />
+        </symbol>
+        <symbol id="i-stop" viewBox="0 0 24 24">
+          <rect x="6" y="6" width="12" height="12" rx="2" />
+        </symbol>
+        <symbol id="i-folder" viewBox="0 0 24 24">
+          <path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10H3Z" />
+        </symbol>
+        <symbol id="i-file" viewBox="0 0 24 24">
+          <path d="M14 3H5v18h14V8Zm0 0v5h5M8 13h8m-8 4h6" />
+        </symbol>
+        <symbol id="i-plus" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14" />
+        </symbol>
+        <symbol id="i-save" viewBox="0 0 24 24">
+          <path d="M4 3h13l4 4v14H3V3Zm3 0v7h10V3M7 21v-7h10v7" />
+        </symbol>
+        <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+        <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14m-5-5 5 5-5 5" />
+        </symbol>
+        <symbol id="i-down" viewBox="0 0 24 24">
+          <path d="m7 10 5 5 5-5" />
+        </symbol>
+        <symbol id="i-spark" viewBox="0 0 24 24">
+          <path
+            d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5ZM20 2v4m-2-2h4"
+          />
+        </symbol>
+        <symbol id="i-terminal" viewBox="0 0 24 24">
+          <path d="m4 6 6 6-6 6m9 0h7" />
+        </symbol>
+        <symbol id="i-game" viewBox="0 0 24 24">
+          <path
+            d="M8 7h8c3 0 4 2 5 6l1 5c0 3-3 3-5 0l-1-2H8l-1 2c-2 3-5 3-5 0l1-5c1-4 2-6 5-6Zm-2 4v5m-2-2.5h5m7-1.5h.01M19 15h.01"
+          />
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+          <path d="m5 12 4 4L19 6" />
+        </symbol>
+        <symbol id="i-x" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </symbol>
+        <symbol id="i-book" viewBox="0 0 24 24">
+          <path
+            d="M12 5c-3-2-7-2-10 0v15c3-2 7-2 10 0 3-2 7-2 10 0V5c-3-2-7-2-10 0Zm0 0v15"
+          />
+        </symbol>
+        <symbol id="i-export" viewBox="0 0 24 24">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 15v6h16v-6" />
+        </symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24">
+          <path d="m12 3 10 5-10 5L2 8Zm-10 9 10 5 10-5M2 16l10 5 10-5" />
+        </symbol>
+        <symbol id="i-cube" viewBox="0 0 24 24">
+          <path
+            d="m12 2 10 6v10l-10 5L2 18V8Zm0 10L2 8m10 4 10-4m-10 4v11M7 5l10 6"
+          />
+        </symbol>
+        <symbol id="i-home" viewBox="0 0 24 24">
+          <path d="m2 11 10-9 10 9M5 8v13h14V8M9 21v-8h6v8" />
+        </symbol>
+        <symbol id="i-info" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 11v6m0-10h.01" />
+        </symbol>
+        <symbol id="i-expand" viewBox="0 0 24 24">
+          <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5" />
+        </symbol>
+        <symbol id="i-agent-settings" viewBox="0 0 24 24"><path d="m9 3-.6 3-2.2 1.3-2.8-1-2 3.4L3.7 12l-2.3 2.3 2 3.4 2.8-1L8.4 18 9 21h4l.6-3 2.2-1.3 2.8 1 2-3.4L18.3 12l2.3-2.3-2-3.4-2.8 1L13.6 6 13 3Z"/><circle cx="11" cy="12" r="3"/></symbol>
+        <symbol id="i-agent-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></symbol>
+        <symbol id="i-agent-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></symbol>
+        <symbol id="i-agent-attach" viewBox="0 0 24 24"><path d="m8 13 7-7a3 3 0 0 1 4 4L9 20a5 5 0 0 1-7-7L13 2m-8 14 9-9"/></symbol>
+        <symbol id="i-agent-fix" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 5a5 5 0 0 0 6 6l-7 7-3-3 7-7a5 5 0 0 0-3-3Z"/></symbol>
+        <symbol id="i-agent-chat" viewBox="0 0 24 24"><path d="M21 11a9 9 0 0 1-9 9H3l2-5a9 9 0 1 1 16-4Z"/><path d="M8 10h8m-8 4h5"/></symbol>
+      </defs>
+    </svg>
+    <div class="app">
+      <header class="topbar">
+        <button id="home" class="brand" title="Workspace home"><span class="brand-mark" aria-hidden="true">J</span><span>Jimsabz Studio<span class="brand-sub">Code · Create · Innovate</span></span></button>
+        <nav class="studio-navigation" aria-label="Studio navigation">
+          <button class="studio-nav" data-ui-action="home"><svg><use href="#i-home"/></svg><span>Home</span></button>
+          <button class="studio-nav" data-ui-action="project"><svg><use href="#i-folder"/></svg><span>Project</span></button>
+          <button class="studio-nav active" data-ui-action="code" aria-current="page"><svg><use href="#i-code"/></svg><span>Code</span></button>
+          <button class="studio-nav" data-ui-action="run"><svg><use href="#i-play"/></svg><span>Run</span></button>
+          <button class="studio-nav" data-ui-action="tools"><svg><use href="#i-agent-settings"/></svg><span>Tools</span></button>
+          <button id="visualize-compiler" class="studio-nav" title="Explore the actual compiler stages in 3D"><svg><use href="#i-cube"/></svg><span>3D Lab</span></button>
+        </nav>
+        <div class="top-actions"><button class="button secondary pro-tools-button" data-pro-open="overview" title="Development workspace (Ctrl Shift P)"><svg><use href="#i-layers"/></svg><span>Develop</span></button>
+          <label class="theme-control" for="theme-select"><span class="sr-only">Theme</span><select id="theme-select" aria-label="Theme"><option value="dark">Dark</option><option value="light">Light</option></select></label>
+          <button id="toggle-agent" aria-label="Jimsabz Agent" title="Jimsabz Agent" class="button primary" aria-expanded="false"><svg><use href="#i-spark"/></svg><span>Jimsabz Agent</span></button>
+        </div>
+      </header>
+      <div class="shell">
+        <aside class="sidebar" aria-label="Project space">
+          <section class="project-space">
+            <div class="project-space-heading"><svg><use href="#i-folder"/></svg><h2>Project Space</h2><button class="icon-button" id="collapse-project" aria-label="Collapse project explorer" aria-expanded="true" aria-controls="project-explorer-body"><svg><use href="#i-down"/></svg></button></div>
+            <div id="project-explorer-body" class="project-explorer-body">
+              <div class="project-toolbar" aria-label="Project actions">
+                <button id="new-workspace" class="icon-button" title="New folder or project" aria-label="New folder or project"><svg><use href="#i-plus"/></svg></button>
+                <button id="open-folder" class="icon-button" title="Open folder" aria-label="Open folder"><svg><use href="#i-folder"/></svg></button>
+                <button id="new-file" class="icon-button" title="New file" aria-label="New file"><svg><use href="#i-file"/></svg></button>
+                <button id="new-subfolder" class="icon-button" title="New subfolder" aria-label="New subfolder"><svg><use href="#i-plus"/></svg></button>
+                <button class="icon-button" data-ui-action="search" title="Search project" aria-label="Search project"><svg><use href="#i-agent-search"/></svg></button>
+                <button id="switch-folder" class="icon-button" title="Your workspaces" aria-label="Your workspaces"><svg><use href="#i-more"/></svg></button>
+              </div>
+              <div class="workspace-location"><span id="workspace-label">Your project</span><span class="location-slash">/</span><span id="location-file">main.jimsabz</span></div>
+              <div class="folder-heading"><svg><use href="#i-cube"/></svg><span id="folder-name">Your project</span><span id="folder-kind" class="tiny-label">FOLDER</span><button id="folder-actions" class="icon-button" data-explorer-actions="true" aria-label="Folder actions" aria-haspopup="menu" aria-expanded="false"><svg><use href="#i-more"/></svg></button></div>
+              <div id="file-tree" class="file-tree" role="tree" aria-label="Files in current folder"></div>
+            </div>
+          </section>
+          <nav class="sidebar-bottom" aria-label="Workspace tools">
+            <button class="sidebar-link" data-ui-action="search"><svg><use href="#i-agent-search"/></svg>Search<span class="sidebar-key">Ctrl K</span></button>
+            <button id="open-file" class="sidebar-link"><svg><use href="#i-file"/></svg>Open file</button>
+            <button id="language-examples" class="sidebar-link"><svg><use href="#i-layers"/></svg>Language examples</button>
+            <button class="sidebar-link" data-ui-action="settings"><svg><use href="#i-agent-settings"/></svg>Settings</button>
+            <button id="guide" class="sidebar-link"><svg><use href="#i-book"/></svg>Language guide</button>
+            <button class="sidebar-link" data-pro-open="tests"><svg><use href="#i-check"/></svg>Tests</button>
+            <button class="sidebar-link" data-pro-open="history"><svg><use href="#i-save"/></svg>Recovery</button>
+            <button class="sidebar-link" data-pro-open="git"><svg><use href="#i-layers"/></svg>Source control</button>
+            <button class="sidebar-link" data-pro-open="scene"><svg><use href="#i-cube"/></svg>Scene &amp; assets</button>
+            <button id="open-trash" class="sidebar-link"><svg><use href="#i-trash"/></svg>Trash</button>
+          </nav>
+          <section class="studio-landscape"><div><h3>Build bigger<br>with Jimsabz.</h3><button class="landscape-button" data-ui-action="lab">Explore 3D <svg><use href="#i-cube"/></svg></button></div></section>
+          <a class="desktop-download" href="assets/Jimsabz-Studio-0.19.0.zip" download><svg><use href="#i-export"/></svg>Desktop app<span>Windows 10/11</span></a>
+          <div class="local-note"><span class="status-dot"></span><span id="storage-note">Your work stays on this device</span></div>
+          <button id="new-game" class="sr-only" tabindex="-1">New game project</button>
+        </aside>
+        <main class="workspace" id="workspace-main" tabindex="-1">
+          <h1 class="sr-only">Jimsabz code editor</h1>
+          <div id="popup-blocked" class="popup-notice" hidden>
+            Your browser blocked the Compiler Factory window. Allow pop-ups and run again, or <button id="open-factory-tab" class="text-button">Open the factory in a new tab</button>.
+          </div>
+          <div id="diagnostic" class="diagnostic" hidden></div>
+          <div class="workspace-commandbar panel-tabs">
+            <div id="file-tabs" class="file-tabs" aria-label="Open files"></div>
+            <button class="icon-button new-tab" data-ui-action="new-file" title="New source file" aria-label="New source file"><svg><use href="#i-plus"/></svg></button>
+            <div class="editor-actions">
+              <button id="run" class="button primary" aria-label="Run Code"><svg><use href="#i-play"/></svg><span>Run Code</span></button>
+              <button id="debug-run" class="button secondary" aria-label="Debug" title="Run with breakpoints, stepping and variable inspection"><svg><use href="#i-agent-fix"/></svg><span>Debug</span></button>
+              <button id="build-code" class="button secondary" aria-label="Build" title="Compile and check the current program"><svg><use href="#i-cube"/></svg><span>Build</span></button>
+              <button id="download-exe" class="button secondary" aria-label="Download Windows EXE" title="Build and download a standalone Windows executable"><svg><use href="#i-export"/></svg><span>EXE</span></button>
+              <button id="stop" class="icon-button stop-button" title="Stop program" aria-label="Stop program" disabled><svg><use href="#i-stop"/></svg></button>
+              <button id="save" class="icon-button" title="Save file" aria-label="Save file"><svg><use href="#i-save"/></svg></button>
+              <div class="dropdown"><button id="export" class="icon-button" title="Export source, folder or compiled program" aria-label="Export" aria-expanded="false"><svg><use href="#i-export"/></svg></button><div id="export-menu" class="menu" hidden><button data-export="source">Source file <span>.jimsabz</span></button><button data-export="folder">Whole folder <span>.zip</span></button><button data-export="bytecode">Compiled program <span>.jbc</span></button><button data-export="exe">Standalone Windows app <span>.exe</span></button></div></div>
+              <button id="maximize-editor" class="editor-size-button" title="Maximize editor" aria-label="Maximize editor" aria-pressed="false"><svg><use href="#i-expand"/></svg><span class="sr-only">Maximize editor</span></button>
+              <button id="rename-file" class="icon-button" title="Rename current file" aria-label="Rename current file"><svg><use href="#i-file"/></svg></button>
+            </div>
+          </div>
+          <div class="work-panels">
+            <section class="panel editor-panel" aria-label="Code editor">
+              <div class="editor-meta">
+                <span id="editor-description">A simple program</span><button id="live-check" class="pro-live-check" aria-label="Live source diagnostics">Checking…</button><span id="save-state"
+                  ><span class="status-dot"></span>Saved in this browser</span
+                >
+              </div>
+              <div id="agent-writing" class="agent-writing" hidden>
+                <span id="agent-writing-label" role="status"
+                  >Jimsa is preparing your code…</span
+                >
+                <button id="agent-cancel" class="text-button" type="button">
+                  Stop writing
+                </button>
+              </div>
+              <div class="code-area" id="code-area">
+                <div
+                  id="line-numbers"
+                  class="line-numbers"
+                  aria-hidden="true"
+                ></div>
+                <div class="code-scroll">
+                  <pre id="highlight" aria-hidden="true"></pre>
+                  <textarea
+                    id="editor"
+                    spellcheck="false"
+                    autocapitalize="off"
+                    autocorrect="off"
+                    autocomplete="off"
+                    aria-label="Jimsabz code editor"
+                    aria-describedby="code-intel"
+                    wrap="off"
+                  ></textarea>
+                </div>
+                <aside id="editor-minimap" class="editor-minimap" aria-hidden="true"><pre id="minimap-code"></pre><div id="minimap-viewport"></div></aside>
+                <div
+                  id="completion"
+                  class="completion"
+                  role="listbox"
+                  hidden
+                ></div>
+              </div>
+              <div id="code-intel" class="pro-code-intel">F12 Definition · F2 Rename · Alt Shift F Format</div>
+              <div id="asset-view" class="asset-view" hidden></div>
+              <div class="editor-foot">
+                <span id="cursor-position">Ln 1, Col 1</span
+                ><span class="editor-run-status" id="run-state"
+                  >Run opens a separate output window</span
+                ><button id="show-run-window" class="text-button" disabled>
+                  Show run window</button
+                ><span>Jimsabz <span class="muted">UTF-8</span></span>
+              </div>
+              <details class="next-code">
+                <summary class="next-label">
+                  <svg><use href="#i-spark" /></svg><span>Next line ideas</span
+                  ><kbd>Ctrl Space</kbd>
+                </summary>
+                <div id="suggestions" class="suggestion-chips"></div>
+              </details>
+            </section>
+            <aside id="agent-panel" class="panel result-panel" aria-label="Jimsabz Code Madadgar" hidden>
+              <div id="view-agent" class="result-view agent-view">
+                <header class="agent-profile">
+                  <div class="agent-profile-actions">
+                    <button id="agent-settings" class="icon-button" type="button" title="Agent tools and settings" aria-label="Agent tools and settings" aria-expanded="false" aria-controls="agent-navigation"><svg><use href="#i-agent-settings"/></svg></button>
+                    <button id="agent-history" class="icon-button" type="button" title="View or clear conversation history" aria-label="Conversation history"><svg><use href="#i-trash"/></svg></button>
+                  </div>
+                  <div class="agent-portrait" aria-hidden="true"><img src="assets/madadgar-mascot.svg" alt="" width="230" height="200"></div>
+                  <div class="agent-profile-copy">
+                    <h2>Jimsabz Code Madadgar</h2>
+                    <p>Your AI Programming Assistant</p>
+                    <span class="agent-presence"><span class="agent-ready-dot" aria-hidden="true"></span><span id="agent-presence" role="status">Ready · Local</span></span>
+                  </div>
+                </header>
+                <div id="agent-navigation" class="agent-navigation" hidden>
+                  <div class="agent-tabs" role="tablist" aria-label="Agent workspace">
+                    <button id="agent-tab-chat" type="button" role="tab" data-agent-tab="chat" aria-selected="true" aria-controls="agent-page-chat">Chat</button>
+                    <button id="agent-tab-tools" type="button" role="tab" data-agent-tab="tools" aria-selected="false" aria-controls="agent-page-tools" tabindex="-1">Tools</button>
+                    <button id="agent-tab-projects" type="button" role="tab" data-agent-tab="projects" aria-selected="false" aria-controls="agent-page-projects" tabindex="-1">Projects</button>
+                    <button id="agent-tab-learning" type="button" role="tab" data-agent-tab="learning" aria-selected="false" aria-controls="agent-page-learning" tabindex="-1">Learning</button>
+                  </div>
+                  <button id="close-agent" class="icon-button" type="button" title="Close agent" aria-label="Close agent"><svg><use href="#i-x"/></svg></button>
+                </div>
+                <div class="agent-state-line" hidden><span class="agent-ready-dot" aria-hidden="true"></span><p id="madadgar-state" class="madadgar-state" role="status">Ready to help with Jimsabz</p></div>
+                <section id="agent-page-chat" class="agent-page agent-chat-page" role="tabpanel" aria-labelledby="agent-tab-chat">
+                  <div id="agent-messages" class="agent-messages" aria-live="polite" aria-label="Conversation">
+                    <div class="agent-chat-row agent-welcome-row">
+                      <img class="agent-welcome-robot" src="assets/madadgar-mascot.svg" alt="Jimsabz coding companion" width="230" height="200">
+                      <span class="agent-chat-avatar" aria-hidden="true">J</span>
+                      <div class="agent-message agent-welcome">
+                        <strong>Hello! <span aria-hidden="true">👋</span></strong>
+                        <p>How can I help<br>you today?</p>
+                      </div>
+                    </div>
+                    <div class="agent-quick" aria-label="Quick requests">
+                      <button type="button" data-prompt="Explain this code"><svg><use href="#i-code"/></svg><span>Explain this code</span></button>
+                      <button type="button" data-prompt="Fix my code"><svg><use href="#i-agent-fix"/></svg><span>Fix my error</span></button>
+                      <button type="button" data-agent-action="compose-program"><svg><use href="#i-spark"/></svg><span>Generate code</span></button>
+                      <button type="button" data-agent-action="knowledge"><svg><use href="#i-book"/></svg><span>Search language docs</span></button>
+                      <button type="button" data-ui-action="compiler-details"><svg><use href="#i-layers"/></svg><span>Inspect compiler output</span></button>
+                      <button type="button" data-prompt="Create a basic 3D scene"><svg><use href="#i-cube"/></svg><span>Create a 3D game</span></button>
+                    </div>
+                  </div>
+                  <form id="agent-form" class="agent-form">
+                    <div class="agent-composer-row">
+                      <label class="sr-only" for="agent-prompt">Ask Jimsabz Code Madadgar</label>
+                      <textarea id="agent-prompt" rows="2" placeholder="Ask anything about Jimsabz…" maxlength="60000"></textarea>
+                      <button id="agent-send" class="button primary" type="submit" title="Send request" aria-label="Send request"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-7 18-4-7-7-4 18-7Zm0 0L10 14"/></svg><span class="agent-send-label sr-only">Send request</span></button>
+                    </div>
+                    <div id="agent-attachments" class="agent-attachments" aria-label="Attached reports"></div>
+                    <p id="agent-attachment-status" class="agent-attachment-status" role="status"></p>
+                    <p id="voice-status" class="voice-status" role="status"></p>
+                    <div class="agent-input-tools" aria-label="Message tools">
+                      <button type="button" class="agent-tool agent-code-mode" data-agent-action="focus-code" title="Describe a Jimsabz program"><svg><use href="#i-code"/></svg><span>Code</span></button>
+                      <button id="agent-search" type="button" class="agent-tool" data-agent-action="knowledge" title="Search bundled Jimsabz documentation"><svg><use href="#i-agent-search"/></svg><span>Search</span></button>
+                      <button id="agent-attach" type="button" class="agent-tool" title="Attach reports or Jimsabz source, up to 10 MB per file"><svg><use href="#i-agent-attach"/></svg><span>Attach</span></button>
+                      <button id="agent-voice" type="button" class="agent-tool" aria-pressed="false" title="Browser speech input may use an online service; language options are in Agent tools and settings"><svg><use href="#i-agent-mic"/></svg><span id="agent-voice-label">Voice</span></button>
+                    </div>
+                  </form>
+                </section>
+                <section id="agent-page-tools" class="agent-page agent-library-page" role="tabpanel" aria-labelledby="agent-tab-tools" tabindex="0" hidden>
+                  <div class="agent-section-heading"><span>YOUR DEVELOPMENT TOOLKIT</span><h3>A helping hand, at every step.</h3><p>Use the local compiler and your project’s context.</p></div>
+                  <h4 class="agent-subheading">GAME STARTERS</h4>
+                  <div class="agent-game-choices"><button type="button" data-prompt="Create a controllable 2D player">2D player</button><button type="button" data-prompt="Create a basic 3D scene">3D scene</button><button type="button" data-prompt="Create a simple 2D racing game">2D racing</button><button type="button" data-prompt="Build a gaming hub with local login">Gaming hub</button></div>
+                  <div class="agent-card-grid">
+                    <button type="button" class="agent-action-card" data-prompt="Check my code"><svg><use href="#i-check"/></svg><span><strong>Check code</strong><small>Find compiler diagnostics</small></span></button>
+                    <button type="button" class="agent-action-card" data-prompt="Fix my code"><svg><use href="#i-spark"/></svg><span><strong>Repair code</strong><small>Review a supported fix</small></span></button>
+                    <button type="button" class="agent-action-card" data-agent-action="run-window"><svg><use href="#i-play"/></svg><span><strong>Run program</strong><small>Open the separate output window</small></span></button>
+                    <button type="button" class="agent-action-card" data-agent-action="knowledge"><svg><use href="#i-book"/></svg><span><strong>Search knowledge</strong><small>Look up Jimsabz references</small></span></button>
+                  </div>
+                  <h4 class="agent-subheading">YOUR SESSION</h4>
+                  <div class="agent-session-actions"><button type="button" data-agent-action="history">Conversation history</button><button type="button" data-agent-action="activity">View activity</button><button type="button" data-agent-action="undo">Undo agent edit</button><button type="button" data-agent-action="retry">Retry last request</button></div>
+                  <div class="agent-settings-card">
+                    <h4>Voice &amp; local assistant</h4>
+                    <label for="voice-language">Voice language</label>
+                    <select id="voice-language" aria-label="Voice language"><option value="en-US">English</option><option value="ur-PK">Urdu</option><option value="sd-PK">Sindhi</option></select>
+                    <p class="voice-disclosure">Voice input uses your browser’s speech service and may need internet. Typed code requests run locally.</p>
+                    <div class="agent-session-actions"><button id="read-greeting" type="button">Read welcome aloud</button><button id="agent-about" type="button">About local agent</button></div>
+                  </div>
+                </section>
+                <section id="agent-page-projects" class="agent-page agent-library-page" role="tabpanel" aria-labelledby="agent-tab-projects" tabindex="0" hidden>
+                  <div class="agent-section-heading"><span>MAKE SOMETHING YOURS</span><h3>Your next idea starts here.</h3><p>Keep your code, context, and conversations together.</p></div>
+                  <div class="agent-project-card"><div class="agent-project-icon"><svg><use href="#i-folder"/></svg></div><div><span>CURRENT PROJECT</span><strong id="agent-project-name">Your workspace</strong><small id="agent-project-detail">Jimsabz source files</small></div></div>
+                  <div class="agent-card-grid">
+                    <button type="button" class="agent-action-card" data-agent-action="create-project"><svg><use href="#i-plus"/></svg><span><strong>Create a project</strong><small>Start a new workspace</small></span></button>
+                    <button type="button" class="agent-action-card" data-agent-action="open-project"><svg><use href="#i-folder"/></svg><span><strong>Open a project</strong><small>Browse saved workspaces</small></span></button>
+                    <button type="button" class="agent-action-card" data-prompt="Analyze my project"><svg><use href="#i-layers"/></svg><span><strong>Analyze project</strong><small>Understand files and imports</small></span></button>
+                    <button type="button" class="agent-action-card" data-agent-action="notes"><svg><use href="#i-file"/></svg><span><strong>Project notes</strong><small>Save decisions and context</small></span></button>
+                  </div>
+                </section>
+                <section id="agent-page-learning" class="agent-page agent-library-page" role="tabpanel" aria-labelledby="agent-tab-learning" tabindex="0" hidden>
+                  <div class="agent-section-heading"><span>LEARN. TRY. CREATE.</span><h3>Grow with your language.</h3><p>Explore Jimsabz one small program at a time.</p></div>
+                  <div class="agent-card-grid">
+                    <button type="button" class="agent-action-card" data-agent-action="guide"><svg><use href="#i-book"/></svg><span><strong>Language guide</strong><small>Syntax, keywords and examples</small></span></button>
+                    <button type="button" class="agent-action-card" data-prompt="Take two numbers as input and show their sum"><svg><use href="#i-terminal"/></svg><span><strong>Input and output</strong><small>Build your first interactive program</small></span></button>
+                    <button type="button" class="agent-action-card" data-prompt="Write a program using an array and a function"><svg><use href="#i-code"/></svg><span><strong>Arrays and functions</strong><small>Organize data and reusable code</small></span></button>
+                    <button type="button" class="agent-action-card" data-prompt="Explain Roman Sindhi number words from 1 to 1000"><svg><use href="#i-spark"/></svg><span><strong>Sindhi number words</strong><small>Explore numbers from 1 to 1000</small></span></button>
+                  </div>
+                  <button type="button" class="agent-learning-link" data-agent-action="examples">Open language examples <svg><use href="#i-arrow"/></svg></button>
+                </section>
+                <input id="agent-file-input" type="file" accept=".pdf,.docx,.txt,.md,.jimsabz,.csv" multiple hidden>
+              </div>
+              <section class="studio-feature-card" aria-label="About Jimsabz Studio"><div class="feature-copy"><h3><span aria-hidden="true">✦</span> Jimsabz Studio</h3><p>Your ideas. Your language.</p><ul><li>Smart compiler</li><li>Local coding assistant</li><li>2D &amp; 3D development</li><li>Step debugger</li></ul><span class="dream-badge">★ &nbsp; Dream · Code · Create</span></div></section>
+            </aside>
+          </div>
+          <details id="compiler-panel" class="panel pipeline-panel" aria-label="Compiler journey" open>
+            <summary class="pipeline-heading"><div><svg><use href="#i-layers"/></svg><h2>Compiler Journey</h2></div><span class="pipeline-subtitle sr-only">Follow your code, step by step</span></summary>
+            <div class="dock-tabs" role="tablist" aria-label="Compiler views">
+              <button role="tab" id="dock-journey-tab" aria-selected="true" aria-controls="dock-journey-view" data-dock-view="journey">Journey</button>
+              <button role="tab" id="dock-output-tab" aria-selected="false" aria-controls="dock-output-view" data-dock-view="output" tabindex="-1"><svg><use href="#i-terminal"/></svg>Output</button>
+              <button role="tab" id="dock-problems-tab" aria-selected="false" aria-controls="dock-problems-view" data-dock-view="problems" tabindex="-1"><svg><use href="#i-info"/></svg>Problems<span id="problem-count" hidden>0</span></button>
+              <button role="tab" id="dock-debug-tab" aria-selected="false" aria-controls="dock-debug-view" data-dock-view="debug" tabindex="-1"><svg><use href="#i-agent-fix"/></svg>Debug</button>
+              <button role="tab" id="dock-logs-tab" aria-selected="false" aria-controls="dock-logs-view" data-dock-view="logs" tabindex="-1"><svg><use href="#i-file"/></svg>Logs</button>
+            </div>
+            <div id="dock-journey-view" class="dock-view journey-grid" role="tabpanel" aria-labelledby="dock-journey-tab">
+              <div id="pipeline" class="pipeline"></div>
+              <section class="compilation-summary" id="compilation-summary"><div class="summary-orb" aria-hidden="true"><svg id="summary-icon"><use href="#i-code"/></svg></div><h3 id="build-title">Ready when you are.</h3><p id="pipeline-status" class="compile-status">Build or run your program to begin.</p><p id="build-detail">Follow every step of your code.</p><div class="pipeline-footer"><button id="ide-output-window" class="button primary"><svg><use href="#i-play"/></svg><span>Run program</span></button><button id="inspect" class="text-button">Inspect</button><button id="visualize-compiler-bottom" class="text-button">3D view</button></div></section>
+              <section class="output-peek"><div class="output-peek-heading"><h3>Program Output</h3><span id="output-state">Not run</span></div><pre id="output-preview" aria-label="Output preview">Run your code to see its output here.</pre><span class="output-location"><svg><use href="#i-terminal"/></svg>Input opens in a separate window</span></section>
+            </div>
+            <section id="dock-output-view" class="dock-view" role="tabpanel" aria-labelledby="dock-output-tab" tabindex="0" hidden><div class="dock-page-heading"><h3>Program Output</h3><button class="text-button" data-ui-action="output-window">Open output window</button></div><pre id="dock-output-text" class="dock-console">Run your code to see its output here.</pre></section>
+            <section id="dock-problems-view" class="dock-view" role="tabpanel" aria-labelledby="dock-problems-tab" tabindex="0" hidden><div id="dock-problems-content"></div></section>
+            <section id="dock-debug-view" class="dock-view" role="tabpanel" aria-labelledby="dock-debug-tab" tabindex="0" hidden><div class="dock-page-heading"><h3>Debug Console</h3><button class="text-button" data-ui-action="debug">Start debugging</button></div><pre id="dock-debug-text" class="dock-console">Start Debug to inspect breakpoints and variables in the output window.</pre></section>
+            <section id="dock-logs-view" class="dock-view" role="tabpanel" aria-labelledby="dock-logs-tab" tabindex="0" hidden><h3 class="dock-log-title">Compiler activity</h3><pre id="dock-logs-text" class="dock-console"></pre></section>
+          </details>
+          <footer class="statusbar">
+            <span
+              ><span class="status-dot"></span
+              ><span id="app-status">Ready</span></span
+            ><span
+              ><kbd>Ctrl S</kbd> Save <i>·</i><kbd>Ctrl ↵</kbd> Run <i>·</i
+              ><kbd>Ctrl Space</kbd> Suggest</span
+            ><span id="version-label">Jimsabz Studio 0.19.0 · v3 preview</span>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <button id="v3-examples" class="sr-only" tabindex="-1">v3 examples</button>
+    <dialog id="compiler-3d" class="compiler-journey" aria-labelledby="journey-title"></dialog>
+    <div id="explorer-menu" class="explorer-menu" role="menu" aria-label="File and folder actions" hidden></div>
+    <dialog id="modal" class="modal">
+      <div class="modal-head">
+        <div>
+          <span id="modal-eyebrow" class="eyebrow">JIMSABZ STUDIO</span>
+          <h2 id="modal-title"></h2>
+        </div>
+        <button id="modal-close" class="icon-button" aria-label="Close dialog">
+          <svg><use href="#i-x" /></svg>
+        </button>
+      </div>
+      <div id="modal-body"></div>
+    </dialog>
+    <div id="pro-hover" class="pro-hover" role="tooltip" hidden></div>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <input id="file-picker" type="file" multiple hidden /><input
+      id="folder-picker"
+      type="file"
+      webkitdirectory
+      multiple
+      hidden
+    />
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>

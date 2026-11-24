@@ -1,0 +1,29 @@
+name: Windows standalone validation
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'studio/**'
+      - 'api/**'
+      - 'scripts/validate-release.mjs'
+      - 'scripts/test-windows-release.ps1'
+permissions:
+  contents: read
+jobs:
+  standalone:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Execute exported Windows programs
+        shell: pwsh
+        run: ./scripts/test-windows-release.ps1
+      - name: Keep the actual Windows results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-release-evidence
+          path: docs/validation/windows-release.json
+          if-no-files-found: warn

@@ -1,0 +1,33 @@
+.modal.examples-modal { width: min(1040px, calc(100vw - 32px)); max-width: 1040px; }
+.examples-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 12px; }
+.example-check-status { min-height: 24px; padding: 11px 13px; border: 1px solid #58466d; border-radius: 7px; background: #2c2439; color: #e8dcfa !important; font-size: 14px !important; }
+.example-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.example-card { padding: 18px; border: 1px solid #4d3b5d; border-radius: 10px; background: #241f2e; min-width: 0; }
+.example-title { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.example-title h3 { font-size: 16px; margin: 0; color: #f0e7fb; line-height: 1.5; }
+.example-card p { font-size: 14px; line-height: 1.65; color: #c1b4d0; }
+.example-state { font-size: 12px; padding: 4px 8px; background: #382e43; color: #cfbfdc; border-radius: 5px; white-space: nowrap; }
+.example-state[data-state="passed"] { background: #193f36; color: #9ce6c7; }
+.example-state[data-state="failed"] { background: #512c3c; color: #ffc1ce; }
+.example-state[data-state="running"] { background: #47345e; color: #e2c3ff; }
+.example-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.example-tags span { font-size: 12px; padding: 3px 7px; border: 1px solid #625071; border-radius: 4px; color: #dfc8f5; }
+.example-card details { margin: 10px 0 16px; }
+.example-card summary { cursor: pointer; font-size: 14px; color: #dbc1f4; }
+.example-card pre { margin-top: 10px; padding: 12px; font-size: 13px; background: #18151f; border-radius: 6px; white-space: pre-wrap; overflow-wrap: anywhere; color: #d9eadf; }
+.example-card .example-error { color: #ffc1ce; font-size: 14px; }
+.example-error:empty { display: none; }
+.example-featured { grid-column: 1 / -1; border-color: #9b72ce; background: #2c223b; }
+.examples-note { font-size: 14px; color: #b6a3c7; line-height: 1.6; }
+:root[data-theme="light"] .example-card { background: #fff; border-color: #d3bfe3; }
+:root[data-theme="light"] .example-featured { background: #f6effe; border-color: #9b70c3; }
+:root[data-theme="light"] .example-title h3 { color: #352145; }
+:root[data-theme="light"] .example-card p, :root[data-theme="light"] .examples-note { color: #64526e; }
+:root[data-theme="light"] .example-tags span, :root[data-theme="light"] .example-card summary { color: #603487; border-color: #cbb3df; }
+:root[data-theme="light"] .example-card pre { background: #f1f5f2; color: #244b36; }
+:root[data-theme="light"] .example-check-status { background: #f1e9fb; border-color: #c5acdf; color: #4a2c68 !important; }
+:root[data-theme="light"] .example-state { background: #eee7f4; color: #634975; }
+:root[data-theme="light"] .example-state[data-state="passed"] { background: #d9f2e7; color: #215b43; }
+:root[data-theme="light"] .example-state[data-state="failed"] { background: #fce2e9; color: #9a2543; }
+:root[data-theme="light"] .example-card .example-error { color: #a22443; }
+@media (max-width: 700px) { .example-grid { grid-template-columns: minmax(0, 1fr); } .example-featured { grid-column: auto; } .example-card { padding: 14px; } }

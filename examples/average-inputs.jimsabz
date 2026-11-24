@@ -1,0 +1,16 @@
+// One function processes a qatar of any requested length.
+kam kul_kadh(qatar dec ang) -> dec {
+    dec kul = 0.0
+    gin hik andar ang { kul += hik }
+    wapas kul
+}
+adad tadaad = budh("Ketira ang? ")
+wori (tadaad <= 0) { tadaad = budh("Hik ya vadheek ang likho: ") }
+qatar dec ang = []
+gin (adad soochi = 0; soochi < tadaad; soochi += 1) {
+    dec pheru = budh("Ang " + (soochi + 1) + ": ")
+    ang.joryo(pheru)
+}
+dec kul = kul_kadh(ang)
+budhai "Kul: " + kul
+budhai "Ausat: " + (kul / tadaad)

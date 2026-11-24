@@ -1,0 +1,10 @@
+kharna gui3d
+khed3d "My 3D game" {
+    khirki 960, 600
+    pichaan #111527
+    camera3d {
+        jagah3d: (0.0, 4.0, 10.0)
+        fov: 62
+    }
+    // Add your own meshes and events here
+}

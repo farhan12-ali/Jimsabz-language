@@ -1,0 +1,4 @@
+Kadhyal: 20
+Tadaad: 3
+Kul: 85
+Matrix: 9

@@ -1,0 +1,43 @@
+PASS budhai output forms never request input
+PASS budh reads all primitive types
+PASS Sindhi script aliases use the same I/O roles
+PASS legacy output spelling still works
+PASS old input spelling gives migration advice
+PASS typed functions recurse and accept dynamic arrays
+PASS field defaults depend on earlier fields and allow overrides
+PASS default expressions execute once per omitted field
+PASS field defaults use declaration globals rather than caller locals
+PASS array and nested-object defaults have separate instance state
+PASS empty classes retain their methods in both compilers
+PASS paan mutates fields and calls another method on the same object
+PASS methods recurse through the current object
+PASS object arrays pass through typed functions and retain identity
+PASS prefix and postfix increments return the correct values
+PASS increment evaluates an indexed target once
+PASS increment overflow is catchable and leaves the value intact
+PASS constant aliases prevent mutation through object methods
+PASS gin accepts omitted initialization, condition and update
+PASS nested loop break and continue affect the correct loop
+PASS arithmetic precedence, remainder and compound assignments
+PASS nested arrays remain typed and independently addressable
+PASS division faults are recoverable inside ordinary functions
+PASS missing required constructor field
+PASS too many constructor arguments
+PASS wrong field default type
+PASS field default cannot read a later field
+PASS constant class fields remain explicit errors
+PASS receiver binding cannot be reassigned
+PASS receiver name cannot be a field
+PASS receiver name cannot be a method parameter
+PASS string increment is rejected
+PASS literal increment is rejected
+PASS constant increment is rejected
+PASS array length is read-only
+PASS typed array arguments reject mismatches
+PASS object builder accepts 1 inputs
+PASS object builder accepts 7 inputs
+PASS object builder accepts 1000 inputs
+PASS object builder supports a runtime count
+PASS completion uses canonical input/output and valid class snippets
+PASS Jimsa generates and explains classes with the current syntax
+42/42 language v2.6 checks passed (browser only).

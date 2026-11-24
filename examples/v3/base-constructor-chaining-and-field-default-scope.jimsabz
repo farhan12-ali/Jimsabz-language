@@ -1,0 +1,16 @@
+adad initial=3
+qism Base {
+ adad value=initial
+ adad doubled=value*2
+ kam naon(adad amount) {
+ value=amount
+ }
+}
+qism Child : Base {
+ kam naon(adad initial=8) {
+ paan[Base].naon(initial)
+ }
+}
+Child c=naon Child()
+budhai c.value
+budhai c.doubled

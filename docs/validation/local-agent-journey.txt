@@ -1,0 +1,18 @@
+PASS real phase evidence preserves source tokens, AST, symbols and bytecode
+PASS capture is opt-in and cannot alter compiled instructions
+PASS parser snapshot precedes module expansion and later type annotations
+PASS lexical error blocks all later phases without inventing evidence
+PASS syntax error retains lexical tokens but creates no parsed tree
+PASS semantic error keeps previous artifacts and precise error location
+PASS missing asset stops after actual code generation
+PASS asset evidence identifies actual workspace files
+PASS compile-only runtime stays ready until a real execution event
+PASS preview limits bound artifacts without changing total counts
+PASS replay pauses and resumes without skipping phases
+PASS replay speed changes visual timing and stops at error phase
+PASS replay reset removes previous phase state and honors zero-step errors
+PASS 3D projection changes with camera rotation and perspective depth
+PASS all scene nodes remain visible in normal desktop and narrow views
+PASS class fields and qualified method signatures appear in semantic evidence
+PASS large semantic tables keep bounded rows and complete declaration counts
+17/17 compiler journey evidence, error, replay and 3D checks passed.

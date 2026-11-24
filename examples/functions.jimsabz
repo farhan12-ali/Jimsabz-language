@@ -1,0 +1,11 @@
+kam factorial(adad n) -> adad {
+    jey (n nandho_barabar 1) {
+        wapas 1
+    } na_ta {
+        wapas n * factorial(n - 1)
+    }
+}
+
+gin (adad i = 1; i <= 6; i += 1) {
+    budhai "factorial(" + i + ") = " + factorial(i)
+}

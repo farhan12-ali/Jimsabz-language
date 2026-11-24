@@ -1,0 +1,12 @@
+kam counter(adad start) -> kam()->adad {
+ kam next() -> adad {
+ start += 1
+ wapas start
+ }
+ wapas next
+}
+kam()->adad a = counter(10)
+kam()->adad b = counter(20)
+budhai a()
+budhai a()
+budhai b()

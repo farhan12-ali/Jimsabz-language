@@ -1,0 +1,74 @@
+PASS beginner output shorthand
+PASS plain output
+PASS operator-looking strings remain strings
+PASS left operand is evaluated before side effects
+PASS arguments are evaluated left to right
+PASS compound target value is read before right side
+PASS interactive string
+PASS sum of two inputs
+PASS report input and output compatibility
+PASS EOF reports input failure
+PASS recover invalid input
+PASS decimal input
+PASS boolean input
+PASS operator precedence
+PASS integer division
+PASS decimal promotion
+PASS dual comparisons
+PASS logical precedence
+PASS short circuit
+PASS explicit casts
+PASS typed arrays and methods
+PASS nested arrays
+PASS empty typed arrays
+PASS array bound exception
+PASS objects and field mutation
+PASS object method mutation
+PASS recursive functions
+PASS for break continue
+PASS foreach loop
+PASS while and block scope
+PASS switch and break
+PASS default switch
+PASS nested exception handling
+PASS try scope unwind with break
+PASS integer overflow trapped
+PASS Unicode identifiers and aliases
+PASS comments and escapes
+PASS strict narrowing rejected
+PASS undeclared name rejected
+PASS constant mutation rejected
+PASS constant array mutation rejected
+PASS constant method mutation rejected
+PASS constant aliases cannot mutate backing array
+PASS missing library rejected in semantic stage
+PASS unclosed block rejected
+PASS unterminated string rejected
+PASS illegal symbol rejected
+PASS semicolon outside for rejected
+PASS loop control outside loop rejected
+PASS missing return rejected
+PASS wrong constructor arity rejected
+PASS math library functions
+PASS math library guard
+PASS file round trip
+PASS file traversal caught
+PASS persistent state round trip
+PASS module import
+PASS imported class declaration
+PASS circular import rejected
+PASS missing sprite rejected
+PASS binary bytecode compile and execution
+PASS jjimsa executable bytecode alias
+PASS corrupt bytecode rejected
+PASS standalone executable has embedded bytecode
+PASS standalone data persists between launches
+PASS example compiles: salam
+PASS example compiles: sum
+PASS example compiles: functions
+PASS example compiles: arrays_objects
+PASS example compiles: modules_demo
+PASS synthetic renderer: 2D
+PASS synthetic renderer: 3D
+
+72/72 tests passed

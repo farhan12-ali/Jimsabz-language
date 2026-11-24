@@ -1,0 +1,7 @@
+kharna Async
+kharna FileSystem
+@async kam files() -> lafz {
+ @await FileSystem.writeTextAsync("out/test.txt", "salam")
+ wapas @await FileSystem.readTextAsync("out/test.txt")
+}
+budhai Async.run(files())

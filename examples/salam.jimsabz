@@ -1,0 +1,4 @@
+// Real interactive input: type your answer in the terminal, then press Enter.
+lafz naam = budh("Your name: ")
+budhai "Salam, " + naam + "!"
+budhai "Welcome to Jimsabz."

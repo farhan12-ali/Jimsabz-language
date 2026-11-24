@@ -1,0 +1,8 @@
+adad pheru = adad_satt
+adad biyo = 5
+adad kul = pheru + biyo
+jey (kul > 10) {
+    budhai "Kul: " + kul
+} na_ta {
+    budhai "Hik biyo adad likho"
+}

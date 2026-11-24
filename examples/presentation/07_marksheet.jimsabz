@@ -1,0 +1,61 @@
+// All six high-level features work together in this program.
+// Try these inputs: Farhan, 3, 90, 80, 70.
+qism Marksheet {
+    lafz naalo = ""
+    dec had = 100.0
+    qatar dec nishan = []
+
+    kam joryo(dec ang) { paan.nishan.joryo(ang) }
+    kam kul() -> dec {
+        dec natijo = 0.0
+        gin ang andar paan.nishan { natijo += ang }
+        wapas natijo
+    }
+    kam ausat() -> dec {
+        jey (paan.nishan.lambai == 0) { wapas 0.0 }
+        wapas paan.kul() / paan.nishan.lambai
+    }
+    kam feesad() -> dec {
+        jey (paan.nishan.lambai == 0) { wapas 0.0 }
+        wapas paan.kul() * 100.0 / (paan.nishan.lambai * paan.had)
+    }
+}
+
+kam darjo(dec feesad) -> lafz {
+    jey (feesad > 90) { wapas "A" }
+    na_ta jey (feesad > 70) { wapas "B" }
+    na_ta jey (feesad > 50) { wapas "C" }
+    wapas "F"
+}
+
+kam nishan_watho(lafz sawal, dec had) -> dec {
+    dec ang = -1.0
+    wori (ang < 0 || ang > had) {
+        azmai { ang = budh(sawal) }
+        pakar (maslo) { budhai "Sahi ang likho." }
+        jey (ang < 0 || ang > had) { budhai "Marks 0 kha " + had + " taeen likho." }
+    }
+    wapas ang
+}
+
+lafz naalo = budh("Naalo: ")
+adad tadaad = 0
+wori (tadaad <= 0) {
+    azmai { tadaad = budh("Ketira mazmoon? ") }
+    pakar (maslo) { budhai "Sahi adad likho." }
+    jey (tadaad <= 0) { budhai "Hik ya vadheek mazmoon likho." }
+}
+
+Marksheet natijo = naon Marksheet(naalo)
+gin (adad soochi = 0; soochi < tadaad; soochi++) {
+    dec ang = nishan_watho("Mazmoon " + (soochi + 1) + " (0-" + natijo.had + "): ", natijo.had)
+    natijo.joryo(ang)
+}
+
+budhai ""
+budhai "Naalo: " + natijo.naalo
+budhai "Mazmoon: " + natijo.nishan.lambai
+budhai "Kul: " + natijo.kul()
+budhai "Feesad: " + natijo.feesad() + "%"
+budhai "Ausat: " + natijo.ausat()
+budhai "Darjo: " + darjo(natijo.feesad())

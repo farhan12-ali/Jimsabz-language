@@ -1,0 +1,5 @@
+Student Marks Report
+Read marks of three subjects, each out of 100.
+Print total marks and percentage.
+Grade: above 90 A, above 70 B, above 50 C, otherwise F.
+Use if else conditions and Roman Sindhi variable names.

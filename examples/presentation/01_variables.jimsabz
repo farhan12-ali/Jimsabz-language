@@ -1,0 +1,12 @@
+// Variables have declared types. Text goes inside quotes.
+lafz naalo = "Farhan"
+adad umar = 20
+dec feesad = 87.5
+isharo tayar = ha
+pakko adad HAD = 100
+
+budhai "Naalo: " + naalo
+budhai "Umar: " + umar
+budhai "Feesad: " + feesad
+budhai "Tayar: " + tayar
+budhai "Had: " + HAD

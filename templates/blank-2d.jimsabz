@@ -1,0 +1,6 @@
+kharna gui
+khed "My 2D game" {
+    khirki 960, 600
+    pichaan #131628
+    // Add your own actors and events here
+}

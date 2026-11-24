@@ -1,0 +1,22 @@
+{
+  "name": "Jimsabz Studio",
+  "version": "0.10.0",
+  "language_specification": "3.0-preview",
+  "entry": "examples/salam.jimsabz",
+  "source_extension": ".jimsabz",
+  "bytecode_extension": ".jbc",
+  "bytecode_alias": ".jjimsa",
+  "output_keyword": "budhai",
+  "input_function": "budh",
+  "number_word_range": [
+    0,
+    1000
+  ],
+  "number_word_prefix": "adad_",
+  "compiler_version": "0.8.0",
+  "output_compatibility_alias": "budha",
+  "bytecode_formats": [
+    2,
+    3
+  ]
+}

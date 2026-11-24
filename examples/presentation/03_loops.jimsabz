@@ -1,0 +1,17 @@
+// Counter loop
+gin (adad soochi = 1; soochi <= 3; soochi++) {
+    budhai "Gin: " + soochi
+}
+
+// While loop
+adad ang = 1
+wori (ang <= 3) {
+    budhai "Wori: " + ang
+    ang++
+}
+
+// Foreach loop
+qatar adad ang_a = [10, 20, 30]
+gin hik andar ang_a {
+    budhai "Qatar: " + hik
+}

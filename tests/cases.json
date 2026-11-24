@@ -1,0 +1,415 @@
+[
+  {
+    "name": "plain output",
+    "code": "budhai \"Farhan\"\n",
+    "expected": "Farhan\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "operator-looking strings remain strings",
+    "code": "budhai \"!\"\nbudhai \"-\"\nbudhai \"jey\"\n",
+    "expected": "!\n-\njey\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "left operand is evaluated before side effects",
+    "code": "adad n = 1\nbudhai n + (n = 2)\n",
+    "expected": "3\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "arguments are evaluated left to right",
+    "code": "kam add(adad a, adad b) -> adad {\n wapas a+b\n}\nadad n = 1\nbudhai add(n, n = 2)\n",
+    "expected": "3\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "compound target value is read before right side",
+    "code": "adad n = 1\nn += (n = 4)\nbudhai n\n",
+    "expected": "5\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "interactive string",
+    "code": "lafz n = budh(\"Name: \")\nbudhai n\n",
+    "expected": "Name: Farhan\n",
+    "stdin": "Farhan\n",
+    "error": null
+  },
+  {
+    "name": "sum of two inputs",
+    "code": "adad a = budh(\"A: \")\nadad b = budh(\"B: \")\nbudhai a + b\n",
+    "expected": "A: B: 42\n",
+    "stdin": "19\n23\n",
+    "error": null
+  },
+  {
+    "name": "report input and output compatibility",
+    "code": "lafz n = budh(\"Name: \")\nbudhai n\n",
+    "expected": "Name: Ali\n",
+    "stdin": "Ali\n",
+    "error": null
+  },
+  {
+    "name": "EOF reports input failure",
+    "code": "adad n = budh(\"N: \")\n",
+    "expected": "",
+    "stdin": "",
+    "error": "Input stream closed"
+  },
+  {
+    "name": "recover invalid input",
+    "code": "azmai {\n adad n = budh(\"\")\n} pakar (e) {\n budhai \"caught\"\n}\n",
+    "expected": "caught\n",
+    "stdin": "oops\n",
+    "error": null
+  },
+  {
+    "name": "decimal input",
+    "code": "dec n = budh(\"\")\nbudhai n + 0.5\n",
+    "expected": "3\n",
+    "stdin": "2.5\n",
+    "error": null
+  },
+  {
+    "name": "boolean input",
+    "code": "isharo yes = budh(\"\")\nbudhai yes\n",
+    "expected": "ha\n",
+    "stdin": "ha\n",
+    "error": null
+  },
+  {
+    "name": "operator precedence",
+    "code": "budhai 2 + 3 * 4\nbudhai (2 + 3) * 4\n",
+    "expected": "14\n20\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "integer division",
+    "code": "budhai 7 / 2\nbudhai 7 % 2\n",
+    "expected": "3\n1\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "decimal promotion",
+    "code": "dec d = 3\nbudhai d + 0.25\n",
+    "expected": "3.25\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "dual comparisons",
+    "code": "budhai 3 wado_barabar 3\nbudhai 3 >= 3\nbudhai 2 na_barabar 1\nbudhai 2 != 1\n",
+    "expected": "ha\nha\nha\nha\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "logical precedence",
+    "code": "budhai ha ya na ain na\n",
+    "expected": "ha\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "short circuit",
+    "code": "budhai na && (1 / 0 > 1)\nbudhai ha || (1 / 0 > 1)\n",
+    "expected": "na\nha\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "explicit casts",
+    "code": "adad n = badal(3.8, adad)\nbudhai n\nbudhai badal(ha, lafz)\n",
+    "expected": "3\nha\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "typed arrays and methods",
+    "code": "qatar adad a = [1, 2]\na.joryo(3)\na[0] = 9\nbudhai a[0]\nbudhai a.kadh(1)\nbudhai a.lambai\n",
+    "expected": "9\n2\n2\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "nested arrays",
+    "code": "qatar qatar adad a = [[1, 2], [3, 4]]\na[1][0] = 8\nbudhai a[1][0]\n",
+    "expected": "8\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "empty typed arrays",
+    "code": "qatar adad a = []\na.joryo(7)\nbudhai a[0]\n",
+    "expected": "7\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "array bound exception",
+    "code": "qatar adad a = [1]\nazmai {\n budhai a[-1]\n} pakar (e) {\n budhai \"safe\"\n}\n",
+    "expected": "safe\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "objects and field mutation",
+    "code": "qism Person {\n lafz name\n adad age\n}\nPerson p = naon Person(\"Ali\", 20)\np.age += 1\nbudhai p.name + \" \" + p.age\n",
+    "expected": "Ali 21\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "object method mutation",
+    "code": "qism Counter {\n adad count\n kam add(adad n) -> adad {\n count += n\n wapas count\n }\n}\nCounter c = naon Counter(4)\nbudhai c.add(3)\nbudhai c.count\n",
+    "expected": "7\n7\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "recursive functions",
+    "code": "kam fact(adad n) -> adad {\n jey (n <= 1) {\n wapas 1\n } na_ta {\n wapas n * fact(n-1)\n }\n}\nbudhai fact(7)\n",
+    "expected": "5040\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "for break continue",
+    "code": "adad sum = 0\ngin (adad i = 0; i < 10; i += 1) {\n jey (i == 2) {\n agty\n }\n jey (i == 5) {\n rok\n }\n sum += i\n}\nbudhai sum\n",
+    "expected": "8\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "foreach loop",
+    "code": "qatar adad a = [2,4,6]\nadad total = 0\ngin v andar a {\n total += v\n}\nbudhai total\n",
+    "expected": "12\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "while and block scope",
+    "code": "adad i = 0\nwori (i < 3) {\n adad temp = i * 2\n budhai temp\n i += 1\n}\n",
+    "expected": "0\n2\n4\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "switch and break",
+    "code": "adad n = 2\nchundo(n) {\n halat 1:\n budhai \"one\"\n rok\n halat 2:\n budhai \"two\"\n rok\n aam:\n budhai \"other\"\n}\n",
+    "expected": "two\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "default switch",
+    "code": "chundo(9) {\n halat 1:\n budhai \"one\"\n aam:\n budhai \"other\"\n}\n",
+    "expected": "other\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "nested exception handling",
+    "code": "azmai {\n azmai {\n uthao(\"inner\")\n } pakar (e) {\n uthao(\"outer\")\n }\n} pakar (e) {\n budhai \"caught\"\n}\n",
+    "expected": "caught\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "try scope unwind with break",
+    "code": "gin (adad i = 0; i < 2; i += 1) {\n azmai {\n rok\n } pakar (e) {\n budhai \"bad\"\n }\n}\nbudhai \"ok\"\n",
+    "expected": "ok\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "integer overflow trapped",
+    "code": "azmai {\n adad n = 9223372036854775807\n n += 1\n} pakar (e) {\n budhai \"overflow caught\"\n}\n",
+    "expected": "overflow caught\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "Unicode identifiers and aliases",
+    "code": "عدد نمبر = 7\nجي (نمبر > 5) {\n budhai \"سلام\"\n}\n",
+    "expected": "سلام\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "comments and escapes",
+    "code": "/* before\n after */\nbudhai \"A\\nB\" // comment\n",
+    "expected": "A\nB\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "strict narrowing rejected",
+    "code": "adad n = 2.5\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-03"
+  },
+  {
+    "name": "undeclared name rejected",
+    "code": "budhai missing\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-02"
+  },
+  {
+    "name": "constant mutation rejected",
+    "code": "pakko adad n = 1\nn = 2\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-02"
+  },
+  {
+    "name": "constant array mutation rejected",
+    "code": "pakko qatar adad n = [1]\nn[0] = 2\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-02"
+  },
+  {
+    "name": "constant method mutation rejected",
+    "code": "pakko qatar adad n = [1]\nn.joryo(2)\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-02"
+  },
+  {
+    "name": "constant aliases cannot mutate backing array",
+    "code": "pakko qatar adad a = [1]\nqatar adad b = a\nazmai {\n b.joryo(2)\n} pakar (e) {\n budhai \"immutable\"\n}\nbudhai a.lambai\n",
+    "expected": "immutable\n1\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "missing library rejected in semantic stage",
+    "code": "khed \"Game\" {\n khirki 800, 600\n}\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-01"
+  },
+  {
+    "name": "unclosed block rejected",
+    "code": "jey (ha) {\n budhai 1\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SYN-02"
+  },
+  {
+    "name": "unterminated string rejected",
+    "code": "budhai \"hello",
+    "expected": "",
+    "stdin": "",
+    "error": "LEX-01"
+  },
+  {
+    "name": "illegal symbol rejected",
+    "code": "budhai ha & na\n",
+    "expected": "",
+    "stdin": "",
+    "error": "LEX-02"
+  },
+  {
+    "name": "semicolon outside for rejected",
+    "code": "adad n = 1;\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SYN-01"
+  },
+  {
+    "name": "loop control outside loop rejected",
+    "code": "rok\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-03"
+  },
+  {
+    "name": "missing return rejected",
+    "code": "kam f() -> adad {\n budhai 1\n}\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-03"
+  },
+  {
+    "name": "wrong constructor arity rejected",
+    "code": "qism P {\n adad n\n}\nP p = naon P()\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-03"
+  },
+  {
+    "name": "math library functions",
+    "code": "kharna hisab\nbudhai sqrt(81)\nbudhai hisab.abs(-12)\n",
+    "expected": "9\n12\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "math library guard",
+    "code": "budhai sqrt(81)\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-01"
+  },
+  {
+    "name": "file round trip",
+    "code": "likh(\"notes.txt\", \"Saved by Jimsabz\")\nbudhai parh(\"notes.txt\")\n",
+    "expected": "Saved by Jimsabz\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "file traversal caught",
+    "code": "azmai {\n likh(\"../escape.txt\", \"bad\")\n} pakar (e) {\n budhai \"blocked\"\n}\n",
+    "expected": "blocked\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "persistent state round trip",
+    "code": "adad score = 19\nqatar adad values = [4,5]\nmahfooz(\"state.jimsave\")\nscore = 0\nvalues[0] = 9\nwapas_lao(\"state.jimsave\")\nbudhai score\nbudhai values[0]\n",
+    "expected": "19\n4\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "module import",
+    "code": "kharna \"module.jimsabz\"\nbudhai square(9)\n",
+    "expected": "81\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "imported class declaration",
+    "code": "kharna \"model.jimsabz\"\nStudent s = naon Student(\"Ali\")\nbudhai s.name\n",
+    "expected": "Ali\n",
+    "stdin": "",
+    "error": null
+  },
+  {
+    "name": "circular import rejected",
+    "code": "kharna \"cycle.jimsabz\"\n",
+    "expected": "",
+    "stdin": "",
+    "error": "SEM-01"
+  },
+  {
+    "name": "missing sprite rejected",
+    "code": "kharna gui\nkhed \"G\" {\n kirdar Hero {\n tasveer: \"no.bmp\"\n }\n}\n",
+    "expected": "",
+    "stdin": "",
+    "error": "ASSET-01"
+  }
+]

@@ -1,0 +1,186 @@
+{
+  "positive": [
+    [
+      "defaults and named",
+      "kam total(adad a, adad b = a + 2) -> adad {\n wapas a + b\n}\nbudhai total(3)\nbudhai total(b: 9, a: 2)\n",
+      "8\n11\n"
+    ],
+    [
+      "variadic and spread",
+      "kam sum(adad start, adad ...values) -> adad {\n gin x andar values {\n start += x\n }\n wapas start\n}\nqatar adad a = [2,3,4]\nbudhai sum(1, ...a)\n",
+      "10\n"
+    ],
+    [
+      "overload",
+      "kam pick(adad x) -> adad {\n wapas x+1\n}\nkam pick(lafz x) -> lafz {\n wapas x+\"!\"\n}\nbudhai pick(4)\nbudhai pick(\"hi\")\n",
+      "5\nhi!\n"
+    ],
+    [
+      "escaping mutable closure",
+      "kam counter(adad start) -> kam()->adad {\n kam next() -> adad {\n start += 1\n wapas start\n }\n wapas next\n}\nkam()->adad a = counter(10)\nkam()->adad b = counter(20)\nbudhai a()\nbudhai a()\nbudhai b()\n",
+      "11\n12\n21\n"
+    ],
+    [
+      "lambda callback map filter reduce",
+      "qatar adad a = [1,2,3]\nqatar adad b = a.map(kam(adad x)->adad => x*2)\nqatar adad c = b.filter(kam(adad x)->isharo => x>2)\nadad total = c.reduce(0, kam(adad sum, adad x)->adad => sum+x)\nbudhai total\n",
+      "10\n"
+    ],
+    [
+      "generic function and class",
+      "kam identity<T>(T value) -> T {\n wapas value\n}\nqism Box<T> {\n T value\n kam get() -> T {\n wapas value\n }\n}\nBox<adad> box = naon Box<adad>(identity(12))\nbudhai box.get()\nbudhai identity::<lafz>(\"hello\")\n",
+      "12\nhello\n"
+    ],
+    [
+      "interface inheritance polymorphism",
+      "@interface qism Named {\n kam name() -> lafz\n}\nqism Animal {\n @virtual kam speak() -> lafz {\n wapas \"animal\"\n }\n}\nqism Dog : Animal, Named {\n @override kam speak() -> lafz {\n wapas \"woof\"\n }\n kam name() -> lafz {\n wapas \"Rex\"\n }\n}\nAnimal a = naon Dog()\nNamed n = naon Dog()\nbudhai a.speak()\nbudhai n.name()\n",
+      "woof\nRex\n"
+    ],
+    [
+      "dictionary set nullable iteration",
+      "kharna Collections\nMap<lafz,adad> marks = naon Map<lafz,adad>()\nmarks.set(\"Sindhi\", 90)\nmarks.set(\"Math\", 80)\nbudhai marks.get(\"Math\")\nbudhai marks.tryGet(\"missing\") ?? 0\nSet<lafz> names = naon Set<lafz>()\nbudhai names.add(\"Farhan\")\nbudhai names.add(\"Farhan\")\ngin name andar names {\n budhai name\n}\nbudhai marks.size\n",
+      "80\n0\nha\nna\nFarhan\n2\n"
+    ],
+    [
+      "async scheduling",
+      "kharna Async\n@async kam calculate(adad n) -> adad {\n @await Async.sleep(0.001)\n wapas n*2\n}\n@async kam mainTask() -> adad {\n Task<adad> a = calculate(3)\n Task<adad> b = calculate(5)\n adad x = @await a\n adad y = @await b\n wapas x+y\n}\nbudhai Async.run(mainTask())\n",
+      "16\n"
+    ],
+    [
+      "async error propagation",
+      "kharna Async\n@async kam failTask() -> adad {\n @await Async.sleep(0)\n wapas 4/0\n}\nazmai {\n budhai Async.run(failTask())\n} pakar(e) {\n budhai \"caught\"\n}\n",
+      "caught\n"
+    ],
+    [
+      "expanded libraries",
+      "kharna Math\nkharna String\nkharna Testing\nkharna DateTime\nTesting.truth(String.contains(\"Farhan\", \"han\"), \"contains\")\nbudhai Math.clamp(15,0,10)\nbudhai String.join(String.split(\"a,b,c\", \",\"), \"|\")\nbudhai DateTime.isoUTC(0)\n",
+      "10\na|b|c\n1970-01-01T00:00:00Z\n"
+    ],
+    [
+      "async file IO",
+      "kharna Async\nkharna FileSystem\n@async kam files() -> lafz {\n @await FileSystem.writeTextAsync(\"out/test.txt\", \"salam\")\n wapas @await FileSystem.readTextAsync(\"out/test.txt\")\n}\nbudhai Async.run(files())\n",
+      "salam\n"
+    ],
+    [
+      "overload slots through base reference",
+      "qism Base {\n @virtual kam f(adad x)->adad {\n wapas x+1\n }\n}\nqism Child : Base {\n @override kam f(adad x)->adad {\n wapas x+2\n }\n kam f(lafz x)->lafz {\n wapas x\n }\n}\nBase b=naon Child()\nbudhai b.f(4)\n",
+      "6\n"
+    ],
+    [
+      "bound method references",
+      "qism Box {\n adad value\n kam add(adad x)->adad {\n value += x\n wapas value\n }\n}\nBox b=naon Box(10)\nkam(adad)->adad f=b.add\nbudhai f(3)\nbudhai b.value\n",
+      "13\n13\n"
+    ],
+    [
+      "nullable null checks",
+      "kharna Collections\nMap<lafz,adad> m=naon Map<lafz,adad>()\nadad? value=m.tryGet(\"missing\")\njey(value==khali) {\n budhai \"missing\"\n}\n",
+      "missing\n"
+    ],
+    [
+      "closure survives collection and recursion",
+      "kam make(adad n)->kam()->adad {\n kam f()->adad {\n wapas n\n }\n wapas f\n}\nkam()->adad f=make(44)\nadad i=0\nwori(i<2000) {\n kam()->adad unused=make(i)\n i+=1\n}\nbudhai f()\n",
+      "44\n"
+    ],
+    [
+      "default evaluation and named order",
+      "adad count=0\nkam next()->adad {\n count+=1\n wapas count\n}\nkam pair(adad a,adad b=next())->adad {\n wapas a*10+b\n}\nbudhai pair(b: next(),a: next())\nbudhai pair(3)\nbudhai count\n",
+      "21\n33\n3\n"
+    ],
+    [
+      "collection structural mutation detected",
+      "kharna Collections\nMap<lafz,adad> m=naon Map<lafz,adad>()\nm.set(\"a\",1)\nazmai {\n gin k andar m {\n m.set(\"b\",2)\n }\n} pakar(e) {\n budhai \"mutation\"\n}\n",
+      "mutation\n"
+    ],
+    [
+      "task cancellation is catchable",
+      "kharna Async\nTask<khali> t=Async.sleep(100)\nAsync.cancel(t)\nazmai {\n Async.run(t)\n} pakar(e) {\n budhai \"cancelled\"\n}\n",
+      "cancelled\n"
+    ],
+    [
+      "custom constructor",
+      "qism Counter {\n adad count=0\n kam naon(adad initial=2) {\n count=initial\n }\n kam read()->adad {\n wapas count\n }\n}\nCounter c=naon Counter()\nbudhai c.read()\n",
+      "2\n"
+    ],
+    [
+      "empty parts preserved by join",
+      "kharna String\nbudhai String.join([\"\", \"b\", \"\"], \",\")\n",
+      ",b,\n"
+    ],
+    [
+      "base constructor chaining and field default scope",
+      "adad initial=3\nqism Base {\n adad value=initial\n adad doubled=value*2\n kam naon(adad amount) {\n value=amount\n }\n}\nqism Child : Base {\n kam naon(adad initial=8) {\n paan[Base].naon(initial)\n }\n}\nChild c=naon Child()\nbudhai c.value\nbudhai c.doubled\n",
+      "8\n6\n"
+    ]
+  ],
+  "negative": [
+    [
+      "missing interface method",
+      "@interface qism I {\n kam value()->adad\n}\nqism C : I {\n}\n",
+      "SEM-142"
+    ],
+    [
+      "inheritance cycle",
+      "qism A : B {\n}\nqism B : A {\n}\n",
+      "SEM-140"
+    ],
+    [
+      "bad generic constraint",
+      "kam f<T: Numeric>(T x)->T {\n wapas x\n}\nbudhai f(\"bad\")\n",
+      "SEM-130"
+    ],
+    [
+      "await outside async",
+      "kharna Async\n@await Async.sleep(0)\n",
+      "SEM-170"
+    ],
+    [
+      "wrong dictionary value",
+      "kharna Collections\nMap<lafz,adad> m=naon Map<lafz,adad>()\nm.set(\"a\", \"bad\")\n",
+      "SEM"
+    ],
+    [
+      "unknown named argument",
+      "kam f(adad a)->adad {\n wapas a\n}\nbudhai f(no: 3)\n",
+      "SEM-110"
+    ],
+    [
+      "duplicate signatures different parameter names",
+      "kam f(adad a)->adad {\n wapas a\n}\nkam f(adad b)->adad {\n wapas b\n}\n",
+      "SEM-02"
+    ],
+    [
+      "generic class constraint",
+      "qism Box<T: Numeric> {\n T value\n}\nBox<lafz> b=naon Box<lafz>(\"bad\")\n",
+      "SEM-130"
+    ],
+    [
+      "private field rejected",
+      "qism Box {\n @private adad value=0\n}\nBox b=naon Box()\nbudhai b.value\n",
+      "SEM-141"
+    ],
+    [
+      "nonvirtual override rejected",
+      "qism Base {\n kam f()->adad {\n wapas 1\n }\n}\nqism Child:Base {\n @override kam f()->adad {\n wapas 2\n }\n}\n",
+      "SEM-140"
+    ],
+    [
+      "async default rejected",
+      "kharna Async\n@async kam f(adad x=@await Async.sleep(0))->adad {\n wapas x\n}\n",
+      "SEM-170"
+    ],
+    [
+      "uninitialized function rejected",
+      "kam()->adad f\n",
+      "SEM"
+    ],
+    [
+      "inherited private field rejected",
+      "qism Base {\n @private adad secret=1\n}\nqism Child:Base {\n kam reveal()->adad {\n wapas secret\n }\n}\n",
+      "SEM-141"
+    ],
+    [
+      "base constructor must be initialized",
+      "qism Base {\n kam naon(adad n) {\n }\n}\nqism Child:Base {\n}\n",
+      "SEM-143"
+    ]
+  ]
+}

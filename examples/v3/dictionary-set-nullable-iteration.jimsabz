@@ -1,0 +1,13 @@
+kharna Collections
+Map<lafz,adad> marks = naon Map<lafz,adad>()
+marks.set("Sindhi", 90)
+marks.set("Math", 80)
+budhai marks.get("Math")
+budhai marks.tryGet("missing") ?? 0
+Set<lafz> names = naon Set<lafz>()
+budhai names.add("Farhan")
+budhai names.add("Farhan")
+gin name andar names {
+ budhai name
+}
+budhai marks.size

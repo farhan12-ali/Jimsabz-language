@@ -1,0 +1,1002 @@
+number,roman_sindhi,literal,suggested_identifier
+0,sifar,adad_sifar,ang_sifar
+1,hik,adad_hik,pheru
+2,ba,adad_ba,biyo
+3,te,adad_te,teyo
+4,chaar,adad_chaar,ang_chaar
+5,panj,adad_panj,ang_panj
+6,chhah,adad_chhah,ang_chhah
+7,satt,adad_satt,ang_satt
+8,ath,adad_ath,ang_ath
+9,nav,adad_nav,ang_nav
+10,dah,adad_dah,ang_dah
+11,yarahn,adad_yarahn,ang_yarahn
+12,barahn,adad_barahn,ang_barahn
+13,terahn,adad_terahn,ang_terahn
+14,chaudahn,adad_chaudahn,ang_chaudahn
+15,pandhran,adad_pandhran,ang_pandhran
+16,sorahn,adad_sorahn,ang_sorahn
+17,satrahn,adad_satrahn,ang_satrahn
+18,arrahnh,adad_arrahnh,ang_arrahnh
+19,unih,adad_unih,ang_unih
+20,vih,adad_vih,ang_vih
+21,ekih,adad_ekih,ang_ekih
+22,bavih,adad_bavih,ang_bavih
+23,tevih,adad_tevih,ang_tevih
+24,chovih,adad_chovih,ang_chovih
+25,panjvih,adad_panjvih,ang_panjvih
+26,chhavih,adad_chhavih,ang_chhavih
+27,satavih,adad_satavih,ang_satavih
+28,athavih,adad_athavih,ang_athavih
+29,untih,adad_untih,ang_untih
+30,tih,adad_tih,ang_tih
+31,ektih,adad_ektih,ang_ektih
+32,batih,adad_batih,ang_batih
+33,tetih,adad_tetih,ang_tetih
+34,chotih,adad_chotih,ang_chotih
+35,panjtih,adad_panjtih,ang_panjtih
+36,chhatih,adad_chhatih,ang_chhatih
+37,sattih,adad_sattih,ang_sattih
+38,athtih,adad_athtih,ang_athtih
+39,unitalih,adad_unitalih,ang_unitalih
+40,chalih,adad_chalih,ang_chalih
+41,ekitalih,adad_ekitalih,ang_ekitalih
+42,baitalih,adad_baitalih,ang_baitalih
+43,tetalih,adad_tetalih,ang_tetalih
+44,choitalih,adad_choitalih,ang_choitalih
+45,panjtalih,adad_panjtalih,ang_panjtalih
+46,chhaitalih,adad_chhaitalih,ang_chhaitalih
+47,sattetalih,adad_sattetalih,ang_sattetalih
+48,athetalih,adad_athetalih,ang_athetalih
+49,unvanjah,adad_unvanjah,ang_unvanjah
+50,panjah,adad_panjah,ang_panjah
+51,ekvanjah,adad_ekvanjah,ang_ekvanjah
+52,bavanjah,adad_bavanjah,ang_bavanjah
+53,tevanjah,adad_tevanjah,ang_tevanjah
+54,chovanjah,adad_chovanjah,ang_chovanjah
+55,panjvanjah,adad_panjvanjah,ang_panjvanjah
+56,chhavanjah,adad_chhavanjah,ang_chhavanjah
+57,satvanjah,adad_satvanjah,ang_satvanjah
+58,athvanjah,adad_athvanjah,ang_athvanjah
+59,unhath,adad_unhath,ang_unhath
+60,sath,adad_sath,ang_sath
+61,ekhath,adad_ekhath,ang_ekhath
+62,bahath,adad_bahath,ang_bahath
+63,tehath,adad_tehath,ang_tehath
+64,chohath,adad_chohath,ang_chohath
+65,panjhath,adad_panjhath,ang_panjhath
+66,chhahath,adad_chhahath,ang_chhahath
+67,sathath,adad_sathath,ang_sathath
+68,athhath,adad_athhath,ang_athhath
+69,unhatar,adad_unhatar,ang_unhatar
+70,satar,adad_satar,ang_satar
+71,ekhatar,adad_ekhatar,ang_ekhatar
+72,bahatar,adad_bahatar,ang_bahatar
+73,tehatar,adad_tehatar,ang_tehatar
+74,chohatar,adad_chohatar,ang_chohatar
+75,panjhatar,adad_panjhatar,ang_panjhatar
+76,chhahatar,adad_chhahatar,ang_chhahatar
+77,sathatar,adad_sathatar,ang_sathatar
+78,athhatar,adad_athhatar,ang_athhatar
+79,unasi,adad_unasi,ang_unasi
+80,asi,adad_asi,ang_asi
+81,ekasi,adad_ekasi,ang_ekasi
+82,biasi,adad_biasi,ang_biasi
+83,teasi,adad_teasi,ang_teasi
+84,chorasi,adad_chorasi,ang_chorasi
+85,panjasi,adad_panjasi,ang_panjasi
+86,chhasi,adad_chhasi,ang_chhasi
+87,satasi,adad_satasi,ang_satasi
+88,athasi,adad_athasi,ang_athasi
+89,unanve,adad_unanve,ang_unanve
+90,nave,adad_nave,ang_nave
+91,ekanve,adad_ekanve,ang_ekanve
+92,bianve,adad_bianve,ang_bianve
+93,teanve,adad_teanve,ang_teanve
+94,choranve,adad_choranve,ang_choranve
+95,panjanve,adad_panjanve,ang_panjanve
+96,chhanve,adad_chhanve,ang_chhanve
+97,satanve,adad_satanve,ang_satanve
+98,athanve,adad_athanve,ang_athanve
+99,navanve,adad_navanve,ang_navanve
+100,hik sau,adad_hik_sau,ang_hik_sau
+101,hik sau hik,adad_hik_sau_hik,ang_hik_sau_hik
+102,hik sau ba,adad_hik_sau_ba,ang_hik_sau_ba
+103,hik sau te,adad_hik_sau_te,ang_hik_sau_te
+104,hik sau chaar,adad_hik_sau_chaar,ang_hik_sau_chaar
+105,hik sau panj,adad_hik_sau_panj,ang_hik_sau_panj
+106,hik sau chhah,adad_hik_sau_chhah,ang_hik_sau_chhah
+107,hik sau satt,adad_hik_sau_satt,ang_hik_sau_satt
+108,hik sau ath,adad_hik_sau_ath,ang_hik_sau_ath
+109,hik sau nav,adad_hik_sau_nav,ang_hik_sau_nav
+110,hik sau dah,adad_hik_sau_dah,ang_hik_sau_dah
+111,hik sau yarahn,adad_hik_sau_yarahn,ang_hik_sau_yarahn
+112,hik sau barahn,adad_hik_sau_barahn,ang_hik_sau_barahn
+113,hik sau terahn,adad_hik_sau_terahn,ang_hik_sau_terahn
+114,hik sau chaudahn,adad_hik_sau_chaudahn,ang_hik_sau_chaudahn
+115,hik sau pandhran,adad_hik_sau_pandhran,ang_hik_sau_pandhran
+116,hik sau sorahn,adad_hik_sau_sorahn,ang_hik_sau_sorahn
+117,hik sau satrahn,adad_hik_sau_satrahn,ang_hik_sau_satrahn
+118,hik sau arrahnh,adad_hik_sau_arrahnh,ang_hik_sau_arrahnh
+119,hik sau unih,adad_hik_sau_unih,ang_hik_sau_unih
+120,hik sau vih,adad_hik_sau_vih,ang_hik_sau_vih
+121,hik sau ekih,adad_hik_sau_ekih,ang_hik_sau_ekih
+122,hik sau bavih,adad_hik_sau_bavih,ang_hik_sau_bavih
+123,hik sau tevih,adad_hik_sau_tevih,ang_hik_sau_tevih
+124,hik sau chovih,adad_hik_sau_chovih,ang_hik_sau_chovih
+125,hik sau panjvih,adad_hik_sau_panjvih,ang_hik_sau_panjvih
+126,hik sau chhavih,adad_hik_sau_chhavih,ang_hik_sau_chhavih
+127,hik sau satavih,adad_hik_sau_satavih,ang_hik_sau_satavih
+128,hik sau athavih,adad_hik_sau_athavih,ang_hik_sau_athavih
+129,hik sau untih,adad_hik_sau_untih,ang_hik_sau_untih
+130,hik sau tih,adad_hik_sau_tih,ang_hik_sau_tih
+131,hik sau ektih,adad_hik_sau_ektih,ang_hik_sau_ektih
+132,hik sau batih,adad_hik_sau_batih,ang_hik_sau_batih
+133,hik sau tetih,adad_hik_sau_tetih,ang_hik_sau_tetih
+134,hik sau chotih,adad_hik_sau_chotih,ang_hik_sau_chotih
+135,hik sau panjtih,adad_hik_sau_panjtih,ang_hik_sau_panjtih
+136,hik sau chhatih,adad_hik_sau_chhatih,ang_hik_sau_chhatih
+137,hik sau sattih,adad_hik_sau_sattih,ang_hik_sau_sattih
+138,hik sau athtih,adad_hik_sau_athtih,ang_hik_sau_athtih
+139,hik sau unitalih,adad_hik_sau_unitalih,ang_hik_sau_unitalih
+140,hik sau chalih,adad_hik_sau_chalih,ang_hik_sau_chalih
+141,hik sau ekitalih,adad_hik_sau_ekitalih,ang_hik_sau_ekitalih
+142,hik sau baitalih,adad_hik_sau_baitalih,ang_hik_sau_baitalih
+143,hik sau tetalih,adad_hik_sau_tetalih,ang_hik_sau_tetalih
+144,hik sau choitalih,adad_hik_sau_choitalih,ang_hik_sau_choitalih
+145,hik sau panjtalih,adad_hik_sau_panjtalih,ang_hik_sau_panjtalih
+146,hik sau chhaitalih,adad_hik_sau_chhaitalih,ang_hik_sau_chhaitalih
+147,hik sau sattetalih,adad_hik_sau_sattetalih,ang_hik_sau_sattetalih
+148,hik sau athetalih,adad_hik_sau_athetalih,ang_hik_sau_athetalih
+149,hik sau unvanjah,adad_hik_sau_unvanjah,ang_hik_sau_unvanjah
+150,hik sau panjah,adad_hik_sau_panjah,ang_hik_sau_panjah
+151,hik sau ekvanjah,adad_hik_sau_ekvanjah,ang_hik_sau_ekvanjah
+152,hik sau bavanjah,adad_hik_sau_bavanjah,ang_hik_sau_bavanjah
+153,hik sau tevanjah,adad_hik_sau_tevanjah,ang_hik_sau_tevanjah
+154,hik sau chovanjah,adad_hik_sau_chovanjah,ang_hik_sau_chovanjah
+155,hik sau panjvanjah,adad_hik_sau_panjvanjah,ang_hik_sau_panjvanjah
+156,hik sau chhavanjah,adad_hik_sau_chhavanjah,ang_hik_sau_chhavanjah
+157,hik sau satvanjah,adad_hik_sau_satvanjah,ang_hik_sau_satvanjah
+158,hik sau athvanjah,adad_hik_sau_athvanjah,ang_hik_sau_athvanjah
+159,hik sau unhath,adad_hik_sau_unhath,ang_hik_sau_unhath
+160,hik sau sath,adad_hik_sau_sath,ang_hik_sau_sath
+161,hik sau ekhath,adad_hik_sau_ekhath,ang_hik_sau_ekhath
+162,hik sau bahath,adad_hik_sau_bahath,ang_hik_sau_bahath
+163,hik sau tehath,adad_hik_sau_tehath,ang_hik_sau_tehath
+164,hik sau chohath,adad_hik_sau_chohath,ang_hik_sau_chohath
+165,hik sau panjhath,adad_hik_sau_panjhath,ang_hik_sau_panjhath
+166,hik sau chhahath,adad_hik_sau_chhahath,ang_hik_sau_chhahath
+167,hik sau sathath,adad_hik_sau_sathath,ang_hik_sau_sathath
+168,hik sau athhath,adad_hik_sau_athhath,ang_hik_sau_athhath
+169,hik sau unhatar,adad_hik_sau_unhatar,ang_hik_sau_unhatar
+170,hik sau satar,adad_hik_sau_satar,ang_hik_sau_satar
+171,hik sau ekhatar,adad_hik_sau_ekhatar,ang_hik_sau_ekhatar
+172,hik sau bahatar,adad_hik_sau_bahatar,ang_hik_sau_bahatar
+173,hik sau tehatar,adad_hik_sau_tehatar,ang_hik_sau_tehatar
+174,hik sau chohatar,adad_hik_sau_chohatar,ang_hik_sau_chohatar
+175,hik sau panjhatar,adad_hik_sau_panjhatar,ang_hik_sau_panjhatar
+176,hik sau chhahatar,adad_hik_sau_chhahatar,ang_hik_sau_chhahatar
+177,hik sau sathatar,adad_hik_sau_sathatar,ang_hik_sau_sathatar
+178,hik sau athhatar,adad_hik_sau_athhatar,ang_hik_sau_athhatar
+179,hik sau unasi,adad_hik_sau_unasi,ang_hik_sau_unasi
+180,hik sau asi,adad_hik_sau_asi,ang_hik_sau_asi
+181,hik sau ekasi,adad_hik_sau_ekasi,ang_hik_sau_ekasi
+182,hik sau biasi,adad_hik_sau_biasi,ang_hik_sau_biasi
+183,hik sau teasi,adad_hik_sau_teasi,ang_hik_sau_teasi
+184,hik sau chorasi,adad_hik_sau_chorasi,ang_hik_sau_chorasi
+185,hik sau panjasi,adad_hik_sau_panjasi,ang_hik_sau_panjasi
+186,hik sau chhasi,adad_hik_sau_chhasi,ang_hik_sau_chhasi
+187,hik sau satasi,adad_hik_sau_satasi,ang_hik_sau_satasi
+188,hik sau athasi,adad_hik_sau_athasi,ang_hik_sau_athasi
+189,hik sau unanve,adad_hik_sau_unanve,ang_hik_sau_unanve
+190,hik sau nave,adad_hik_sau_nave,ang_hik_sau_nave
+191,hik sau ekanve,adad_hik_sau_ekanve,ang_hik_sau_ekanve
+192,hik sau bianve,adad_hik_sau_bianve,ang_hik_sau_bianve
+193,hik sau teanve,adad_hik_sau_teanve,ang_hik_sau_teanve
+194,hik sau choranve,adad_hik_sau_choranve,ang_hik_sau_choranve
+195,hik sau panjanve,adad_hik_sau_panjanve,ang_hik_sau_panjanve
+196,hik sau chhanve,adad_hik_sau_chhanve,ang_hik_sau_chhanve
+197,hik sau satanve,adad_hik_sau_satanve,ang_hik_sau_satanve
+198,hik sau athanve,adad_hik_sau_athanve,ang_hik_sau_athanve
+199,hik sau navanve,adad_hik_sau_navanve,ang_hik_sau_navanve
+200,ba sau,adad_ba_sau,ang_ba_sau
+201,ba sau hik,adad_ba_sau_hik,ang_ba_sau_hik
+202,ba sau ba,adad_ba_sau_ba,ang_ba_sau_ba
+203,ba sau te,adad_ba_sau_te,ang_ba_sau_te
+204,ba sau chaar,adad_ba_sau_chaar,ang_ba_sau_chaar
+205,ba sau panj,adad_ba_sau_panj,ang_ba_sau_panj
+206,ba sau chhah,adad_ba_sau_chhah,ang_ba_sau_chhah
+207,ba sau satt,adad_ba_sau_satt,ang_ba_sau_satt
+208,ba sau ath,adad_ba_sau_ath,ang_ba_sau_ath
+209,ba sau nav,adad_ba_sau_nav,ang_ba_sau_nav
+210,ba sau dah,adad_ba_sau_dah,ang_ba_sau_dah
+211,ba sau yarahn,adad_ba_sau_yarahn,ang_ba_sau_yarahn
+212,ba sau barahn,adad_ba_sau_barahn,ang_ba_sau_barahn
+213,ba sau terahn,adad_ba_sau_terahn,ang_ba_sau_terahn
+214,ba sau chaudahn,adad_ba_sau_chaudahn,ang_ba_sau_chaudahn
+215,ba sau pandhran,adad_ba_sau_pandhran,ang_ba_sau_pandhran
+216,ba sau sorahn,adad_ba_sau_sorahn,ang_ba_sau_sorahn
+217,ba sau satrahn,adad_ba_sau_satrahn,ang_ba_sau_satrahn
+218,ba sau arrahnh,adad_ba_sau_arrahnh,ang_ba_sau_arrahnh
+219,ba sau unih,adad_ba_sau_unih,ang_ba_sau_unih
+220,ba sau vih,adad_ba_sau_vih,ang_ba_sau_vih
+221,ba sau ekih,adad_ba_sau_ekih,ang_ba_sau_ekih
+222,ba sau bavih,adad_ba_sau_bavih,ang_ba_sau_bavih
+223,ba sau tevih,adad_ba_sau_tevih,ang_ba_sau_tevih
+224,ba sau chovih,adad_ba_sau_chovih,ang_ba_sau_chovih
+225,ba sau panjvih,adad_ba_sau_panjvih,ang_ba_sau_panjvih
+226,ba sau chhavih,adad_ba_sau_chhavih,ang_ba_sau_chhavih
+227,ba sau satavih,adad_ba_sau_satavih,ang_ba_sau_satavih
+228,ba sau athavih,adad_ba_sau_athavih,ang_ba_sau_athavih
+229,ba sau untih,adad_ba_sau_untih,ang_ba_sau_untih
+230,ba sau tih,adad_ba_sau_tih,ang_ba_sau_tih
+231,ba sau ektih,adad_ba_sau_ektih,ang_ba_sau_ektih
+232,ba sau batih,adad_ba_sau_batih,ang_ba_sau_batih
+233,ba sau tetih,adad_ba_sau_tetih,ang_ba_sau_tetih
+234,ba sau chotih,adad_ba_sau_chotih,ang_ba_sau_chotih
+235,ba sau panjtih,adad_ba_sau_panjtih,ang_ba_sau_panjtih
+236,ba sau chhatih,adad_ba_sau_chhatih,ang_ba_sau_chhatih
+237,ba sau sattih,adad_ba_sau_sattih,ang_ba_sau_sattih
+238,ba sau athtih,adad_ba_sau_athtih,ang_ba_sau_athtih
+239,ba sau unitalih,adad_ba_sau_unitalih,ang_ba_sau_unitalih
+240,ba sau chalih,adad_ba_sau_chalih,ang_ba_sau_chalih
+241,ba sau ekitalih,adad_ba_sau_ekitalih,ang_ba_sau_ekitalih
+242,ba sau baitalih,adad_ba_sau_baitalih,ang_ba_sau_baitalih
+243,ba sau tetalih,adad_ba_sau_tetalih,ang_ba_sau_tetalih
+244,ba sau choitalih,adad_ba_sau_choitalih,ang_ba_sau_choitalih
+245,ba sau panjtalih,adad_ba_sau_panjtalih,ang_ba_sau_panjtalih
+246,ba sau chhaitalih,adad_ba_sau_chhaitalih,ang_ba_sau_chhaitalih
+247,ba sau sattetalih,adad_ba_sau_sattetalih,ang_ba_sau_sattetalih
+248,ba sau athetalih,adad_ba_sau_athetalih,ang_ba_sau_athetalih
+249,ba sau unvanjah,adad_ba_sau_unvanjah,ang_ba_sau_unvanjah
+250,ba sau panjah,adad_ba_sau_panjah,ang_ba_sau_panjah
+251,ba sau ekvanjah,adad_ba_sau_ekvanjah,ang_ba_sau_ekvanjah
+252,ba sau bavanjah,adad_ba_sau_bavanjah,ang_ba_sau_bavanjah
+253,ba sau tevanjah,adad_ba_sau_tevanjah,ang_ba_sau_tevanjah
+254,ba sau chovanjah,adad_ba_sau_chovanjah,ang_ba_sau_chovanjah
+255,ba sau panjvanjah,adad_ba_sau_panjvanjah,ang_ba_sau_panjvanjah
+256,ba sau chhavanjah,adad_ba_sau_chhavanjah,ang_ba_sau_chhavanjah
+257,ba sau satvanjah,adad_ba_sau_satvanjah,ang_ba_sau_satvanjah
+258,ba sau athvanjah,adad_ba_sau_athvanjah,ang_ba_sau_athvanjah
+259,ba sau unhath,adad_ba_sau_unhath,ang_ba_sau_unhath
+260,ba sau sath,adad_ba_sau_sath,ang_ba_sau_sath
+261,ba sau ekhath,adad_ba_sau_ekhath,ang_ba_sau_ekhath
+262,ba sau bahath,adad_ba_sau_bahath,ang_ba_sau_bahath
+263,ba sau tehath,adad_ba_sau_tehath,ang_ba_sau_tehath
+264,ba sau chohath,adad_ba_sau_chohath,ang_ba_sau_chohath
+265,ba sau panjhath,adad_ba_sau_panjhath,ang_ba_sau_panjhath
+266,ba sau chhahath,adad_ba_sau_chhahath,ang_ba_sau_chhahath
+267,ba sau sathath,adad_ba_sau_sathath,ang_ba_sau_sathath
+268,ba sau athhath,adad_ba_sau_athhath,ang_ba_sau_athhath
+269,ba sau unhatar,adad_ba_sau_unhatar,ang_ba_sau_unhatar
+270,ba sau satar,adad_ba_sau_satar,ang_ba_sau_satar
+271,ba sau ekhatar,adad_ba_sau_ekhatar,ang_ba_sau_ekhatar
+272,ba sau bahatar,adad_ba_sau_bahatar,ang_ba_sau_bahatar
+273,ba sau tehatar,adad_ba_sau_tehatar,ang_ba_sau_tehatar
+274,ba sau chohatar,adad_ba_sau_chohatar,ang_ba_sau_chohatar
+275,ba sau panjhatar,adad_ba_sau_panjhatar,ang_ba_sau_panjhatar
+276,ba sau chhahatar,adad_ba_sau_chhahatar,ang_ba_sau_chhahatar
+277,ba sau sathatar,adad_ba_sau_sathatar,ang_ba_sau_sathatar
+278,ba sau athhatar,adad_ba_sau_athhatar,ang_ba_sau_athhatar
+279,ba sau unasi,adad_ba_sau_unasi,ang_ba_sau_unasi
+280,ba sau asi,adad_ba_sau_asi,ang_ba_sau_asi
+281,ba sau ekasi,adad_ba_sau_ekasi,ang_ba_sau_ekasi
+282,ba sau biasi,adad_ba_sau_biasi,ang_ba_sau_biasi
+283,ba sau teasi,adad_ba_sau_teasi,ang_ba_sau_teasi
+284,ba sau chorasi,adad_ba_sau_chorasi,ang_ba_sau_chorasi
+285,ba sau panjasi,adad_ba_sau_panjasi,ang_ba_sau_panjasi
+286,ba sau chhasi,adad_ba_sau_chhasi,ang_ba_sau_chhasi
+287,ba sau satasi,adad_ba_sau_satasi,ang_ba_sau_satasi
+288,ba sau athasi,adad_ba_sau_athasi,ang_ba_sau_athasi
+289,ba sau unanve,adad_ba_sau_unanve,ang_ba_sau_unanve
+290,ba sau nave,adad_ba_sau_nave,ang_ba_sau_nave
+291,ba sau ekanve,adad_ba_sau_ekanve,ang_ba_sau_ekanve
+292,ba sau bianve,adad_ba_sau_bianve,ang_ba_sau_bianve
+293,ba sau teanve,adad_ba_sau_teanve,ang_ba_sau_teanve
+294,ba sau choranve,adad_ba_sau_choranve,ang_ba_sau_choranve
+295,ba sau panjanve,adad_ba_sau_panjanve,ang_ba_sau_panjanve
+296,ba sau chhanve,adad_ba_sau_chhanve,ang_ba_sau_chhanve
+297,ba sau satanve,adad_ba_sau_satanve,ang_ba_sau_satanve
+298,ba sau athanve,adad_ba_sau_athanve,ang_ba_sau_athanve
+299,ba sau navanve,adad_ba_sau_navanve,ang_ba_sau_navanve
+300,te sau,adad_te_sau,ang_te_sau
+301,te sau hik,adad_te_sau_hik,ang_te_sau_hik
+302,te sau ba,adad_te_sau_ba,ang_te_sau_ba
+303,te sau te,adad_te_sau_te,ang_te_sau_te
+304,te sau chaar,adad_te_sau_chaar,ang_te_sau_chaar
+305,te sau panj,adad_te_sau_panj,ang_te_sau_panj
+306,te sau chhah,adad_te_sau_chhah,ang_te_sau_chhah
+307,te sau satt,adad_te_sau_satt,ang_te_sau_satt
+308,te sau ath,adad_te_sau_ath,ang_te_sau_ath
+309,te sau nav,adad_te_sau_nav,ang_te_sau_nav
+310,te sau dah,adad_te_sau_dah,ang_te_sau_dah
+311,te sau yarahn,adad_te_sau_yarahn,ang_te_sau_yarahn
+312,te sau barahn,adad_te_sau_barahn,ang_te_sau_barahn
+313,te sau terahn,adad_te_sau_terahn,ang_te_sau_terahn
+314,te sau chaudahn,adad_te_sau_chaudahn,ang_te_sau_chaudahn
+315,te sau pandhran,adad_te_sau_pandhran,ang_te_sau_pandhran
+316,te sau sorahn,adad_te_sau_sorahn,ang_te_sau_sorahn
+317,te sau satrahn,adad_te_sau_satrahn,ang_te_sau_satrahn
+318,te sau arrahnh,adad_te_sau_arrahnh,ang_te_sau_arrahnh
+319,te sau unih,adad_te_sau_unih,ang_te_sau_unih
+320,te sau vih,adad_te_sau_vih,ang_te_sau_vih
+321,te sau ekih,adad_te_sau_ekih,ang_te_sau_ekih
+322,te sau bavih,adad_te_sau_bavih,ang_te_sau_bavih
+323,te sau tevih,adad_te_sau_tevih,ang_te_sau_tevih
+324,te sau chovih,adad_te_sau_chovih,ang_te_sau_chovih
+325,te sau panjvih,adad_te_sau_panjvih,ang_te_sau_panjvih
+326,te sau chhavih,adad_te_sau_chhavih,ang_te_sau_chhavih
+327,te sau satavih,adad_te_sau_satavih,ang_te_sau_satavih
+328,te sau athavih,adad_te_sau_athavih,ang_te_sau_athavih
+329,te sau untih,adad_te_sau_untih,ang_te_sau_untih
+330,te sau tih,adad_te_sau_tih,ang_te_sau_tih
+331,te sau ektih,adad_te_sau_ektih,ang_te_sau_ektih
+332,te sau batih,adad_te_sau_batih,ang_te_sau_batih
+333,te sau tetih,adad_te_sau_tetih,ang_te_sau_tetih
+334,te sau chotih,adad_te_sau_chotih,ang_te_sau_chotih
+335,te sau panjtih,adad_te_sau_panjtih,ang_te_sau_panjtih
+336,te sau chhatih,adad_te_sau_chhatih,ang_te_sau_chhatih
+337,te sau sattih,adad_te_sau_sattih,ang_te_sau_sattih
+338,te sau athtih,adad_te_sau_athtih,ang_te_sau_athtih
+339,te sau unitalih,adad_te_sau_unitalih,ang_te_sau_unitalih
+340,te sau chalih,adad_te_sau_chalih,ang_te_sau_chalih
+341,te sau ekitalih,adad_te_sau_ekitalih,ang_te_sau_ekitalih
+342,te sau baitalih,adad_te_sau_baitalih,ang_te_sau_baitalih
+343,te sau tetalih,adad_te_sau_tetalih,ang_te_sau_tetalih
+344,te sau choitalih,adad_te_sau_choitalih,ang_te_sau_choitalih
+345,te sau panjtalih,adad_te_sau_panjtalih,ang_te_sau_panjtalih
+346,te sau chhaitalih,adad_te_sau_chhaitalih,ang_te_sau_chhaitalih
+347,te sau sattetalih,adad_te_sau_sattetalih,ang_te_sau_sattetalih
+348,te sau athetalih,adad_te_sau_athetalih,ang_te_sau_athetalih
+349,te sau unvanjah,adad_te_sau_unvanjah,ang_te_sau_unvanjah
+350,te sau panjah,adad_te_sau_panjah,ang_te_sau_panjah
+351,te sau ekvanjah,adad_te_sau_ekvanjah,ang_te_sau_ekvanjah
+352,te sau bavanjah,adad_te_sau_bavanjah,ang_te_sau_bavanjah
+353,te sau tevanjah,adad_te_sau_tevanjah,ang_te_sau_tevanjah
+354,te sau chovanjah,adad_te_sau_chovanjah,ang_te_sau_chovanjah
+355,te sau panjvanjah,adad_te_sau_panjvanjah,ang_te_sau_panjvanjah
+356,te sau chhavanjah,adad_te_sau_chhavanjah,ang_te_sau_chhavanjah
+357,te sau satvanjah,adad_te_sau_satvanjah,ang_te_sau_satvanjah
+358,te sau athvanjah,adad_te_sau_athvanjah,ang_te_sau_athvanjah
+359,te sau unhath,adad_te_sau_unhath,ang_te_sau_unhath
+360,te sau sath,adad_te_sau_sath,ang_te_sau_sath
+361,te sau ekhath,adad_te_sau_ekhath,ang_te_sau_ekhath
+362,te sau bahath,adad_te_sau_bahath,ang_te_sau_bahath
+363,te sau tehath,adad_te_sau_tehath,ang_te_sau_tehath
+364,te sau chohath,adad_te_sau_chohath,ang_te_sau_chohath
+365,te sau panjhath,adad_te_sau_panjhath,ang_te_sau_panjhath
+366,te sau chhahath,adad_te_sau_chhahath,ang_te_sau_chhahath
+367,te sau sathath,adad_te_sau_sathath,ang_te_sau_sathath
+368,te sau athhath,adad_te_sau_athhath,ang_te_sau_athhath
+369,te sau unhatar,adad_te_sau_unhatar,ang_te_sau_unhatar
+370,te sau satar,adad_te_sau_satar,ang_te_sau_satar
+371,te sau ekhatar,adad_te_sau_ekhatar,ang_te_sau_ekhatar
+372,te sau bahatar,adad_te_sau_bahatar,ang_te_sau_bahatar
+373,te sau tehatar,adad_te_sau_tehatar,ang_te_sau_tehatar
+374,te sau chohatar,adad_te_sau_chohatar,ang_te_sau_chohatar
+375,te sau panjhatar,adad_te_sau_panjhatar,ang_te_sau_panjhatar
+376,te sau chhahatar,adad_te_sau_chhahatar,ang_te_sau_chhahatar
+377,te sau sathatar,adad_te_sau_sathatar,ang_te_sau_sathatar
+378,te sau athhatar,adad_te_sau_athhatar,ang_te_sau_athhatar
+379,te sau unasi,adad_te_sau_unasi,ang_te_sau_unasi
+380,te sau asi,adad_te_sau_asi,ang_te_sau_asi
+381,te sau ekasi,adad_te_sau_ekasi,ang_te_sau_ekasi
+382,te sau biasi,adad_te_sau_biasi,ang_te_sau_biasi
+383,te sau teasi,adad_te_sau_teasi,ang_te_sau_teasi
+384,te sau chorasi,adad_te_sau_chorasi,ang_te_sau_chorasi
+385,te sau panjasi,adad_te_sau_panjasi,ang_te_sau_panjasi
+386,te sau chhasi,adad_te_sau_chhasi,ang_te_sau_chhasi
+387,te sau satasi,adad_te_sau_satasi,ang_te_sau_satasi
+388,te sau athasi,adad_te_sau_athasi,ang_te_sau_athasi
+389,te sau unanve,adad_te_sau_unanve,ang_te_sau_unanve
+390,te sau nave,adad_te_sau_nave,ang_te_sau_nave
+391,te sau ekanve,adad_te_sau_ekanve,ang_te_sau_ekanve
+392,te sau bianve,adad_te_sau_bianve,ang_te_sau_bianve
+393,te sau teanve,adad_te_sau_teanve,ang_te_sau_teanve
+394,te sau choranve,adad_te_sau_choranve,ang_te_sau_choranve
+395,te sau panjanve,adad_te_sau_panjanve,ang_te_sau_panjanve
+396,te sau chhanve,adad_te_sau_chhanve,ang_te_sau_chhanve
+397,te sau satanve,adad_te_sau_satanve,ang_te_sau_satanve
+398,te sau athanve,adad_te_sau_athanve,ang_te_sau_athanve
+399,te sau navanve,adad_te_sau_navanve,ang_te_sau_navanve
+400,chaar sau,adad_chaar_sau,ang_chaar_sau
+401,chaar sau hik,adad_chaar_sau_hik,ang_chaar_sau_hik
+402,chaar sau ba,adad_chaar_sau_ba,ang_chaar_sau_ba
+403,chaar sau te,adad_chaar_sau_te,ang_chaar_sau_te
+404,chaar sau chaar,adad_chaar_sau_chaar,ang_chaar_sau_chaar
+405,chaar sau panj,adad_chaar_sau_panj,ang_chaar_sau_panj
+406,chaar sau chhah,adad_chaar_sau_chhah,ang_chaar_sau_chhah
+407,chaar sau satt,adad_chaar_sau_satt,ang_chaar_sau_satt
+408,chaar sau ath,adad_chaar_sau_ath,ang_chaar_sau_ath
+409,chaar sau nav,adad_chaar_sau_nav,ang_chaar_sau_nav
+410,chaar sau dah,adad_chaar_sau_dah,ang_chaar_sau_dah
+411,chaar sau yarahn,adad_chaar_sau_yarahn,ang_chaar_sau_yarahn
+412,chaar sau barahn,adad_chaar_sau_barahn,ang_chaar_sau_barahn
+413,chaar sau terahn,adad_chaar_sau_terahn,ang_chaar_sau_terahn
+414,chaar sau chaudahn,adad_chaar_sau_chaudahn,ang_chaar_sau_chaudahn
+415,chaar sau pandhran,adad_chaar_sau_pandhran,ang_chaar_sau_pandhran
+416,chaar sau sorahn,adad_chaar_sau_sorahn,ang_chaar_sau_sorahn
+417,chaar sau satrahn,adad_chaar_sau_satrahn,ang_chaar_sau_satrahn
+418,chaar sau arrahnh,adad_chaar_sau_arrahnh,ang_chaar_sau_arrahnh
+419,chaar sau unih,adad_chaar_sau_unih,ang_chaar_sau_unih
+420,chaar sau vih,adad_chaar_sau_vih,ang_chaar_sau_vih
+421,chaar sau ekih,adad_chaar_sau_ekih,ang_chaar_sau_ekih
+422,chaar sau bavih,adad_chaar_sau_bavih,ang_chaar_sau_bavih
+423,chaar sau tevih,adad_chaar_sau_tevih,ang_chaar_sau_tevih
+424,chaar sau chovih,adad_chaar_sau_chovih,ang_chaar_sau_chovih
+425,chaar sau panjvih,adad_chaar_sau_panjvih,ang_chaar_sau_panjvih
+426,chaar sau chhavih,adad_chaar_sau_chhavih,ang_chaar_sau_chhavih
+427,chaar sau satavih,adad_chaar_sau_satavih,ang_chaar_sau_satavih
+428,chaar sau athavih,adad_chaar_sau_athavih,ang_chaar_sau_athavih
+429,chaar sau untih,adad_chaar_sau_untih,ang_chaar_sau_untih
+430,chaar sau tih,adad_chaar_sau_tih,ang_chaar_sau_tih
+431,chaar sau ektih,adad_chaar_sau_ektih,ang_chaar_sau_ektih
+432,chaar sau batih,adad_chaar_sau_batih,ang_chaar_sau_batih
+433,chaar sau tetih,adad_chaar_sau_tetih,ang_chaar_sau_tetih
+434,chaar sau chotih,adad_chaar_sau_chotih,ang_chaar_sau_chotih
+435,chaar sau panjtih,adad_chaar_sau_panjtih,ang_chaar_sau_panjtih
+436,chaar sau chhatih,adad_chaar_sau_chhatih,ang_chaar_sau_chhatih
+437,chaar sau sattih,adad_chaar_sau_sattih,ang_chaar_sau_sattih
+438,chaar sau athtih,adad_chaar_sau_athtih,ang_chaar_sau_athtih
+439,chaar sau unitalih,adad_chaar_sau_unitalih,ang_chaar_sau_unitalih
+440,chaar sau chalih,adad_chaar_sau_chalih,ang_chaar_sau_chalih
+441,chaar sau ekitalih,adad_chaar_sau_ekitalih,ang_chaar_sau_ekitalih
+442,chaar sau baitalih,adad_chaar_sau_baitalih,ang_chaar_sau_baitalih
+443,chaar sau tetalih,adad_chaar_sau_tetalih,ang_chaar_sau_tetalih
+444,chaar sau choitalih,adad_chaar_sau_choitalih,ang_chaar_sau_choitalih
+445,chaar sau panjtalih,adad_chaar_sau_panjtalih,ang_chaar_sau_panjtalih
+446,chaar sau chhaitalih,adad_chaar_sau_chhaitalih,ang_chaar_sau_chhaitalih
+447,chaar sau sattetalih,adad_chaar_sau_sattetalih,ang_chaar_sau_sattetalih
+448,chaar sau athetalih,adad_chaar_sau_athetalih,ang_chaar_sau_athetalih
+449,chaar sau unvanjah,adad_chaar_sau_unvanjah,ang_chaar_sau_unvanjah
+450,chaar sau panjah,adad_chaar_sau_panjah,ang_chaar_sau_panjah
+451,chaar sau ekvanjah,adad_chaar_sau_ekvanjah,ang_chaar_sau_ekvanjah
+452,chaar sau bavanjah,adad_chaar_sau_bavanjah,ang_chaar_sau_bavanjah
+453,chaar sau tevanjah,adad_chaar_sau_tevanjah,ang_chaar_sau_tevanjah
+454,chaar sau chovanjah,adad_chaar_sau_chovanjah,ang_chaar_sau_chovanjah
+455,chaar sau panjvanjah,adad_chaar_sau_panjvanjah,ang_chaar_sau_panjvanjah
+456,chaar sau chhavanjah,adad_chaar_sau_chhavanjah,ang_chaar_sau_chhavanjah
+457,chaar sau satvanjah,adad_chaar_sau_satvanjah,ang_chaar_sau_satvanjah
+458,chaar sau athvanjah,adad_chaar_sau_athvanjah,ang_chaar_sau_athvanjah
+459,chaar sau unhath,adad_chaar_sau_unhath,ang_chaar_sau_unhath
+460,chaar sau sath,adad_chaar_sau_sath,ang_chaar_sau_sath
+461,chaar sau ekhath,adad_chaar_sau_ekhath,ang_chaar_sau_ekhath
+462,chaar sau bahath,adad_chaar_sau_bahath,ang_chaar_sau_bahath
+463,chaar sau tehath,adad_chaar_sau_tehath,ang_chaar_sau_tehath
+464,chaar sau chohath,adad_chaar_sau_chohath,ang_chaar_sau_chohath
+465,chaar sau panjhath,adad_chaar_sau_panjhath,ang_chaar_sau_panjhath
+466,chaar sau chhahath,adad_chaar_sau_chhahath,ang_chaar_sau_chhahath
+467,chaar sau sathath,adad_chaar_sau_sathath,ang_chaar_sau_sathath
+468,chaar sau athhath,adad_chaar_sau_athhath,ang_chaar_sau_athhath
+469,chaar sau unhatar,adad_chaar_sau_unhatar,ang_chaar_sau_unhatar
+470,chaar sau satar,adad_chaar_sau_satar,ang_chaar_sau_satar
+471,chaar sau ekhatar,adad_chaar_sau_ekhatar,ang_chaar_sau_ekhatar
+472,chaar sau bahatar,adad_chaar_sau_bahatar,ang_chaar_sau_bahatar
+473,chaar sau tehatar,adad_chaar_sau_tehatar,ang_chaar_sau_tehatar
+474,chaar sau chohatar,adad_chaar_sau_chohatar,ang_chaar_sau_chohatar
+475,chaar sau panjhatar,adad_chaar_sau_panjhatar,ang_chaar_sau_panjhatar
+476,chaar sau chhahatar,adad_chaar_sau_chhahatar,ang_chaar_sau_chhahatar
+477,chaar sau sathatar,adad_chaar_sau_sathatar,ang_chaar_sau_sathatar
+478,chaar sau athhatar,adad_chaar_sau_athhatar,ang_chaar_sau_athhatar
+479,chaar sau unasi,adad_chaar_sau_unasi,ang_chaar_sau_unasi
+480,chaar sau asi,adad_chaar_sau_asi,ang_chaar_sau_asi
+481,chaar sau ekasi,adad_chaar_sau_ekasi,ang_chaar_sau_ekasi
+482,chaar sau biasi,adad_chaar_sau_biasi,ang_chaar_sau_biasi
+483,chaar sau teasi,adad_chaar_sau_teasi,ang_chaar_sau_teasi
+484,chaar sau chorasi,adad_chaar_sau_chorasi,ang_chaar_sau_chorasi
+485,chaar sau panjasi,adad_chaar_sau_panjasi,ang_chaar_sau_panjasi
+486,chaar sau chhasi,adad_chaar_sau_chhasi,ang_chaar_sau_chhasi
+487,chaar sau satasi,adad_chaar_sau_satasi,ang_chaar_sau_satasi
+488,chaar sau athasi,adad_chaar_sau_athasi,ang_chaar_sau_athasi
+489,chaar sau unanve,adad_chaar_sau_unanve,ang_chaar_sau_unanve
+490,chaar sau nave,adad_chaar_sau_nave,ang_chaar_sau_nave
+491,chaar sau ekanve,adad_chaar_sau_ekanve,ang_chaar_sau_ekanve
+492,chaar sau bianve,adad_chaar_sau_bianve,ang_chaar_sau_bianve
+493,chaar sau teanve,adad_chaar_sau_teanve,ang_chaar_sau_teanve
+494,chaar sau choranve,adad_chaar_sau_choranve,ang_chaar_sau_choranve
+495,chaar sau panjanve,adad_chaar_sau_panjanve,ang_chaar_sau_panjanve
+496,chaar sau chhanve,adad_chaar_sau_chhanve,ang_chaar_sau_chhanve
+497,chaar sau satanve,adad_chaar_sau_satanve,ang_chaar_sau_satanve
+498,chaar sau athanve,adad_chaar_sau_athanve,ang_chaar_sau_athanve
+499,chaar sau navanve,adad_chaar_sau_navanve,ang_chaar_sau_navanve
+500,panj sau,adad_panj_sau,ang_panj_sau
+501,panj sau hik,adad_panj_sau_hik,ang_panj_sau_hik
+502,panj sau ba,adad_panj_sau_ba,ang_panj_sau_ba
+503,panj sau te,adad_panj_sau_te,ang_panj_sau_te
+504,panj sau chaar,adad_panj_sau_chaar,ang_panj_sau_chaar
+505,panj sau panj,adad_panj_sau_panj,ang_panj_sau_panj
+506,panj sau chhah,adad_panj_sau_chhah,ang_panj_sau_chhah
+507,panj sau satt,adad_panj_sau_satt,ang_panj_sau_satt
+508,panj sau ath,adad_panj_sau_ath,ang_panj_sau_ath
+509,panj sau nav,adad_panj_sau_nav,ang_panj_sau_nav
+510,panj sau dah,adad_panj_sau_dah,ang_panj_sau_dah
+511,panj sau yarahn,adad_panj_sau_yarahn,ang_panj_sau_yarahn
+512,panj sau barahn,adad_panj_sau_barahn,ang_panj_sau_barahn
+513,panj sau terahn,adad_panj_sau_terahn,ang_panj_sau_terahn
+514,panj sau chaudahn,adad_panj_sau_chaudahn,ang_panj_sau_chaudahn
+515,panj sau pandhran,adad_panj_sau_pandhran,ang_panj_sau_pandhran
+516,panj sau sorahn,adad_panj_sau_sorahn,ang_panj_sau_sorahn
+517,panj sau satrahn,adad_panj_sau_satrahn,ang_panj_sau_satrahn
+518,panj sau arrahnh,adad_panj_sau_arrahnh,ang_panj_sau_arrahnh
+519,panj sau unih,adad_panj_sau_unih,ang_panj_sau_unih
+520,panj sau vih,adad_panj_sau_vih,ang_panj_sau_vih
+521,panj sau ekih,adad_panj_sau_ekih,ang_panj_sau_ekih
+522,panj sau bavih,adad_panj_sau_bavih,ang_panj_sau_bavih
+523,panj sau tevih,adad_panj_sau_tevih,ang_panj_sau_tevih
+524,panj sau chovih,adad_panj_sau_chovih,ang_panj_sau_chovih
+525,panj sau panjvih,adad_panj_sau_panjvih,ang_panj_sau_panjvih
+526,panj sau chhavih,adad_panj_sau_chhavih,ang_panj_sau_chhavih
+527,panj sau satavih,adad_panj_sau_satavih,ang_panj_sau_satavih
+528,panj sau athavih,adad_panj_sau_athavih,ang_panj_sau_athavih
+529,panj sau untih,adad_panj_sau_untih,ang_panj_sau_untih
+530,panj sau tih,adad_panj_sau_tih,ang_panj_sau_tih
+531,panj sau ektih,adad_panj_sau_ektih,ang_panj_sau_ektih
+532,panj sau batih,adad_panj_sau_batih,ang_panj_sau_batih
+533,panj sau tetih,adad_panj_sau_tetih,ang_panj_sau_tetih
+534,panj sau chotih,adad_panj_sau_chotih,ang_panj_sau_chotih
+535,panj sau panjtih,adad_panj_sau_panjtih,ang_panj_sau_panjtih
+536,panj sau chhatih,adad_panj_sau_chhatih,ang_panj_sau_chhatih
+537,panj sau sattih,adad_panj_sau_sattih,ang_panj_sau_sattih
+538,panj sau athtih,adad_panj_sau_athtih,ang_panj_sau_athtih
+539,panj sau unitalih,adad_panj_sau_unitalih,ang_panj_sau_unitalih
+540,panj sau chalih,adad_panj_sau_chalih,ang_panj_sau_chalih
+541,panj sau ekitalih,adad_panj_sau_ekitalih,ang_panj_sau_ekitalih
+542,panj sau baitalih,adad_panj_sau_baitalih,ang_panj_sau_baitalih
+543,panj sau tetalih,adad_panj_sau_tetalih,ang_panj_sau_tetalih
+544,panj sau choitalih,adad_panj_sau_choitalih,ang_panj_sau_choitalih
+545,panj sau panjtalih,adad_panj_sau_panjtalih,ang_panj_sau_panjtalih
+546,panj sau chhaitalih,adad_panj_sau_chhaitalih,ang_panj_sau_chhaitalih
+547,panj sau sattetalih,adad_panj_sau_sattetalih,ang_panj_sau_sattetalih
+548,panj sau athetalih,adad_panj_sau_athetalih,ang_panj_sau_athetalih
+549,panj sau unvanjah,adad_panj_sau_unvanjah,ang_panj_sau_unvanjah
+550,panj sau panjah,adad_panj_sau_panjah,ang_panj_sau_panjah
+551,panj sau ekvanjah,adad_panj_sau_ekvanjah,ang_panj_sau_ekvanjah
+552,panj sau bavanjah,adad_panj_sau_bavanjah,ang_panj_sau_bavanjah
+553,panj sau tevanjah,adad_panj_sau_tevanjah,ang_panj_sau_tevanjah
+554,panj sau chovanjah,adad_panj_sau_chovanjah,ang_panj_sau_chovanjah
+555,panj sau panjvanjah,adad_panj_sau_panjvanjah,ang_panj_sau_panjvanjah
+556,panj sau chhavanjah,adad_panj_sau_chhavanjah,ang_panj_sau_chhavanjah
+557,panj sau satvanjah,adad_panj_sau_satvanjah,ang_panj_sau_satvanjah
+558,panj sau athvanjah,adad_panj_sau_athvanjah,ang_panj_sau_athvanjah
+559,panj sau unhath,adad_panj_sau_unhath,ang_panj_sau_unhath
+560,panj sau sath,adad_panj_sau_sath,ang_panj_sau_sath
+561,panj sau ekhath,adad_panj_sau_ekhath,ang_panj_sau_ekhath
+562,panj sau bahath,adad_panj_sau_bahath,ang_panj_sau_bahath
+563,panj sau tehath,adad_panj_sau_tehath,ang_panj_sau_tehath
+564,panj sau chohath,adad_panj_sau_chohath,ang_panj_sau_chohath
+565,panj sau panjhath,adad_panj_sau_panjhath,ang_panj_sau_panjhath
+566,panj sau chhahath,adad_panj_sau_chhahath,ang_panj_sau_chhahath
+567,panj sau sathath,adad_panj_sau_sathath,ang_panj_sau_sathath
+568,panj sau athhath,adad_panj_sau_athhath,ang_panj_sau_athhath
+569,panj sau unhatar,adad_panj_sau_unhatar,ang_panj_sau_unhatar
+570,panj sau satar,adad_panj_sau_satar,ang_panj_sau_satar
+571,panj sau ekhatar,adad_panj_sau_ekhatar,ang_panj_sau_ekhatar
+572,panj sau bahatar,adad_panj_sau_bahatar,ang_panj_sau_bahatar
+573,panj sau tehatar,adad_panj_sau_tehatar,ang_panj_sau_tehatar
+574,panj sau chohatar,adad_panj_sau_chohatar,ang_panj_sau_chohatar
+575,panj sau panjhatar,adad_panj_sau_panjhatar,ang_panj_sau_panjhatar
+576,panj sau chhahatar,adad_panj_sau_chhahatar,ang_panj_sau_chhahatar
+577,panj sau sathatar,adad_panj_sau_sathatar,ang_panj_sau_sathatar
+578,panj sau athhatar,adad_panj_sau_athhatar,ang_panj_sau_athhatar
+579,panj sau unasi,adad_panj_sau_unasi,ang_panj_sau_unasi
+580,panj sau asi,adad_panj_sau_asi,ang_panj_sau_asi
+581,panj sau ekasi,adad_panj_sau_ekasi,ang_panj_sau_ekasi
+582,panj sau biasi,adad_panj_sau_biasi,ang_panj_sau_biasi
+583,panj sau teasi,adad_panj_sau_teasi,ang_panj_sau_teasi
+584,panj sau chorasi,adad_panj_sau_chorasi,ang_panj_sau_chorasi
+585,panj sau panjasi,adad_panj_sau_panjasi,ang_panj_sau_panjasi
+586,panj sau chhasi,adad_panj_sau_chhasi,ang_panj_sau_chhasi
+587,panj sau satasi,adad_panj_sau_satasi,ang_panj_sau_satasi
+588,panj sau athasi,adad_panj_sau_athasi,ang_panj_sau_athasi
+589,panj sau unanve,adad_panj_sau_unanve,ang_panj_sau_unanve
+590,panj sau nave,adad_panj_sau_nave,ang_panj_sau_nave
+591,panj sau ekanve,adad_panj_sau_ekanve,ang_panj_sau_ekanve
+592,panj sau bianve,adad_panj_sau_bianve,ang_panj_sau_bianve
+593,panj sau teanve,adad_panj_sau_teanve,ang_panj_sau_teanve
+594,panj sau choranve,adad_panj_sau_choranve,ang_panj_sau_choranve
+595,panj sau panjanve,adad_panj_sau_panjanve,ang_panj_sau_panjanve
+596,panj sau chhanve,adad_panj_sau_chhanve,ang_panj_sau_chhanve
+597,panj sau satanve,adad_panj_sau_satanve,ang_panj_sau_satanve
+598,panj sau athanve,adad_panj_sau_athanve,ang_panj_sau_athanve
+599,panj sau navanve,adad_panj_sau_navanve,ang_panj_sau_navanve
+600,chhah sau,adad_chhah_sau,ang_chhah_sau
+601,chhah sau hik,adad_chhah_sau_hik,ang_chhah_sau_hik
+602,chhah sau ba,adad_chhah_sau_ba,ang_chhah_sau_ba
+603,chhah sau te,adad_chhah_sau_te,ang_chhah_sau_te
+604,chhah sau chaar,adad_chhah_sau_chaar,ang_chhah_sau_chaar
+605,chhah sau panj,adad_chhah_sau_panj,ang_chhah_sau_panj
+606,chhah sau chhah,adad_chhah_sau_chhah,ang_chhah_sau_chhah
+607,chhah sau satt,adad_chhah_sau_satt,ang_chhah_sau_satt
+608,chhah sau ath,adad_chhah_sau_ath,ang_chhah_sau_ath
+609,chhah sau nav,adad_chhah_sau_nav,ang_chhah_sau_nav
+610,chhah sau dah,adad_chhah_sau_dah,ang_chhah_sau_dah
+611,chhah sau yarahn,adad_chhah_sau_yarahn,ang_chhah_sau_yarahn
+612,chhah sau barahn,adad_chhah_sau_barahn,ang_chhah_sau_barahn
+613,chhah sau terahn,adad_chhah_sau_terahn,ang_chhah_sau_terahn
+614,chhah sau chaudahn,adad_chhah_sau_chaudahn,ang_chhah_sau_chaudahn
+615,chhah sau pandhran,adad_chhah_sau_pandhran,ang_chhah_sau_pandhran
+616,chhah sau sorahn,adad_chhah_sau_sorahn,ang_chhah_sau_sorahn
+617,chhah sau satrahn,adad_chhah_sau_satrahn,ang_chhah_sau_satrahn
+618,chhah sau arrahnh,adad_chhah_sau_arrahnh,ang_chhah_sau_arrahnh
+619,chhah sau unih,adad_chhah_sau_unih,ang_chhah_sau_unih
+620,chhah sau vih,adad_chhah_sau_vih,ang_chhah_sau_vih
+621,chhah sau ekih,adad_chhah_sau_ekih,ang_chhah_sau_ekih
+622,chhah sau bavih,adad_chhah_sau_bavih,ang_chhah_sau_bavih
+623,chhah sau tevih,adad_chhah_sau_tevih,ang_chhah_sau_tevih
+624,chhah sau chovih,adad_chhah_sau_chovih,ang_chhah_sau_chovih
+625,chhah sau panjvih,adad_chhah_sau_panjvih,ang_chhah_sau_panjvih
+626,chhah sau chhavih,adad_chhah_sau_chhavih,ang_chhah_sau_chhavih
+627,chhah sau satavih,adad_chhah_sau_satavih,ang_chhah_sau_satavih
+628,chhah sau athavih,adad_chhah_sau_athavih,ang_chhah_sau_athavih
+629,chhah sau untih,adad_chhah_sau_untih,ang_chhah_sau_untih
+630,chhah sau tih,adad_chhah_sau_tih,ang_chhah_sau_tih
+631,chhah sau ektih,adad_chhah_sau_ektih,ang_chhah_sau_ektih
+632,chhah sau batih,adad_chhah_sau_batih,ang_chhah_sau_batih
+633,chhah sau tetih,adad_chhah_sau_tetih,ang_chhah_sau_tetih
+634,chhah sau chotih,adad_chhah_sau_chotih,ang_chhah_sau_chotih
+635,chhah sau panjtih,adad_chhah_sau_panjtih,ang_chhah_sau_panjtih
+636,chhah sau chhatih,adad_chhah_sau_chhatih,ang_chhah_sau_chhatih
+637,chhah sau sattih,adad_chhah_sau_sattih,ang_chhah_sau_sattih
+638,chhah sau athtih,adad_chhah_sau_athtih,ang_chhah_sau_athtih
+639,chhah sau unitalih,adad_chhah_sau_unitalih,ang_chhah_sau_unitalih
+640,chhah sau chalih,adad_chhah_sau_chalih,ang_chhah_sau_chalih
+641,chhah sau ekitalih,adad_chhah_sau_ekitalih,ang_chhah_sau_ekitalih
+642,chhah sau baitalih,adad_chhah_sau_baitalih,ang_chhah_sau_baitalih
+643,chhah sau tetalih,adad_chhah_sau_tetalih,ang_chhah_sau_tetalih
+644,chhah sau choitalih,adad_chhah_sau_choitalih,ang_chhah_sau_choitalih
+645,chhah sau panjtalih,adad_chhah_sau_panjtalih,ang_chhah_sau_panjtalih
+646,chhah sau chhaitalih,adad_chhah_sau_chhaitalih,ang_chhah_sau_chhaitalih
+647,chhah sau sattetalih,adad_chhah_sau_sattetalih,ang_chhah_sau_sattetalih
+648,chhah sau athetalih,adad_chhah_sau_athetalih,ang_chhah_sau_athetalih
+649,chhah sau unvanjah,adad_chhah_sau_unvanjah,ang_chhah_sau_unvanjah
+650,chhah sau panjah,adad_chhah_sau_panjah,ang_chhah_sau_panjah
+651,chhah sau ekvanjah,adad_chhah_sau_ekvanjah,ang_chhah_sau_ekvanjah
+652,chhah sau bavanjah,adad_chhah_sau_bavanjah,ang_chhah_sau_bavanjah
+653,chhah sau tevanjah,adad_chhah_sau_tevanjah,ang_chhah_sau_tevanjah
+654,chhah sau chovanjah,adad_chhah_sau_chovanjah,ang_chhah_sau_chovanjah
+655,chhah sau panjvanjah,adad_chhah_sau_panjvanjah,ang_chhah_sau_panjvanjah
+656,chhah sau chhavanjah,adad_chhah_sau_chhavanjah,ang_chhah_sau_chhavanjah
+657,chhah sau satvanjah,adad_chhah_sau_satvanjah,ang_chhah_sau_satvanjah
+658,chhah sau athvanjah,adad_chhah_sau_athvanjah,ang_chhah_sau_athvanjah
+659,chhah sau unhath,adad_chhah_sau_unhath,ang_chhah_sau_unhath
+660,chhah sau sath,adad_chhah_sau_sath,ang_chhah_sau_sath
+661,chhah sau ekhath,adad_chhah_sau_ekhath,ang_chhah_sau_ekhath
+662,chhah sau bahath,adad_chhah_sau_bahath,ang_chhah_sau_bahath
+663,chhah sau tehath,adad_chhah_sau_tehath,ang_chhah_sau_tehath
+664,chhah sau chohath,adad_chhah_sau_chohath,ang_chhah_sau_chohath
+665,chhah sau panjhath,adad_chhah_sau_panjhath,ang_chhah_sau_panjhath
+666,chhah sau chhahath,adad_chhah_sau_chhahath,ang_chhah_sau_chhahath
+667,chhah sau sathath,adad_chhah_sau_sathath,ang_chhah_sau_sathath
+668,chhah sau athhath,adad_chhah_sau_athhath,ang_chhah_sau_athhath
+669,chhah sau unhatar,adad_chhah_sau_unhatar,ang_chhah_sau_unhatar
+670,chhah sau satar,adad_chhah_sau_satar,ang_chhah_sau_satar
+671,chhah sau ekhatar,adad_chhah_sau_ekhatar,ang_chhah_sau_ekhatar
+672,chhah sau bahatar,adad_chhah_sau_bahatar,ang_chhah_sau_bahatar
+673,chhah sau tehatar,adad_chhah_sau_tehatar,ang_chhah_sau_tehatar
+674,chhah sau chohatar,adad_chhah_sau_chohatar,ang_chhah_sau_chohatar
+675,chhah sau panjhatar,adad_chhah_sau_panjhatar,ang_chhah_sau_panjhatar
+676,chhah sau chhahatar,adad_chhah_sau_chhahatar,ang_chhah_sau_chhahatar
+677,chhah sau sathatar,adad_chhah_sau_sathatar,ang_chhah_sau_sathatar
+678,chhah sau athhatar,adad_chhah_sau_athhatar,ang_chhah_sau_athhatar
+679,chhah sau unasi,adad_chhah_sau_unasi,ang_chhah_sau_unasi
+680,chhah sau asi,adad_chhah_sau_asi,ang_chhah_sau_asi
+681,chhah sau ekasi,adad_chhah_sau_ekasi,ang_chhah_sau_ekasi
+682,chhah sau biasi,adad_chhah_sau_biasi,ang_chhah_sau_biasi
+683,chhah sau teasi,adad_chhah_sau_teasi,ang_chhah_sau_teasi
+684,chhah sau chorasi,adad_chhah_sau_chorasi,ang_chhah_sau_chorasi
+685,chhah sau panjasi,adad_chhah_sau_panjasi,ang_chhah_sau_panjasi
+686,chhah sau chhasi,adad_chhah_sau_chhasi,ang_chhah_sau_chhasi
+687,chhah sau satasi,adad_chhah_sau_satasi,ang_chhah_sau_satasi
+688,chhah sau athasi,adad_chhah_sau_athasi,ang_chhah_sau_athasi
+689,chhah sau unanve,adad_chhah_sau_unanve,ang_chhah_sau_unanve
+690,chhah sau nave,adad_chhah_sau_nave,ang_chhah_sau_nave
+691,chhah sau ekanve,adad_chhah_sau_ekanve,ang_chhah_sau_ekanve
+692,chhah sau bianve,adad_chhah_sau_bianve,ang_chhah_sau_bianve
+693,chhah sau teanve,adad_chhah_sau_teanve,ang_chhah_sau_teanve
+694,chhah sau choranve,adad_chhah_sau_choranve,ang_chhah_sau_choranve
+695,chhah sau panjanve,adad_chhah_sau_panjanve,ang_chhah_sau_panjanve
+696,chhah sau chhanve,adad_chhah_sau_chhanve,ang_chhah_sau_chhanve
+697,chhah sau satanve,adad_chhah_sau_satanve,ang_chhah_sau_satanve
+698,chhah sau athanve,adad_chhah_sau_athanve,ang_chhah_sau_athanve
+699,chhah sau navanve,adad_chhah_sau_navanve,ang_chhah_sau_navanve
+700,satt sau,adad_satt_sau,ang_satt_sau
+701,satt sau hik,adad_satt_sau_hik,ang_satt_sau_hik
+702,satt sau ba,adad_satt_sau_ba,ang_satt_sau_ba
+703,satt sau te,adad_satt_sau_te,ang_satt_sau_te
+704,satt sau chaar,adad_satt_sau_chaar,ang_satt_sau_chaar
+705,satt sau panj,adad_satt_sau_panj,ang_satt_sau_panj
+706,satt sau chhah,adad_satt_sau_chhah,ang_satt_sau_chhah
+707,satt sau satt,adad_satt_sau_satt,ang_satt_sau_satt
+708,satt sau ath,adad_satt_sau_ath,ang_satt_sau_ath
+709,satt sau nav,adad_satt_sau_nav,ang_satt_sau_nav
+710,satt sau dah,adad_satt_sau_dah,ang_satt_sau_dah
+711,satt sau yarahn,adad_satt_sau_yarahn,ang_satt_sau_yarahn
+712,satt sau barahn,adad_satt_sau_barahn,ang_satt_sau_barahn
+713,satt sau terahn,adad_satt_sau_terahn,ang_satt_sau_terahn
+714,satt sau chaudahn,adad_satt_sau_chaudahn,ang_satt_sau_chaudahn
+715,satt sau pandhran,adad_satt_sau_pandhran,ang_satt_sau_pandhran
+716,satt sau sorahn,adad_satt_sau_sorahn,ang_satt_sau_sorahn
+717,satt sau satrahn,adad_satt_sau_satrahn,ang_satt_sau_satrahn
+718,satt sau arrahnh,adad_satt_sau_arrahnh,ang_satt_sau_arrahnh
+719,satt sau unih,adad_satt_sau_unih,ang_satt_sau_unih
+720,satt sau vih,adad_satt_sau_vih,ang_satt_sau_vih
+721,satt sau ekih,adad_satt_sau_ekih,ang_satt_sau_ekih
+722,satt sau bavih,adad_satt_sau_bavih,ang_satt_sau_bavih
+723,satt sau tevih,adad_satt_sau_tevih,ang_satt_sau_tevih
+724,satt sau chovih,adad_satt_sau_chovih,ang_satt_sau_chovih
+725,satt sau panjvih,adad_satt_sau_panjvih,ang_satt_sau_panjvih
+726,satt sau chhavih,adad_satt_sau_chhavih,ang_satt_sau_chhavih
+727,satt sau satavih,adad_satt_sau_satavih,ang_satt_sau_satavih
+728,satt sau athavih,adad_satt_sau_athavih,ang_satt_sau_athavih
+729,satt sau untih,adad_satt_sau_untih,ang_satt_sau_untih
+730,satt sau tih,adad_satt_sau_tih,ang_satt_sau_tih
+731,satt sau ektih,adad_satt_sau_ektih,ang_satt_sau_ektih
+732,satt sau batih,adad_satt_sau_batih,ang_satt_sau_batih
+733,satt sau tetih,adad_satt_sau_tetih,ang_satt_sau_tetih
+734,satt sau chotih,adad_satt_sau_chotih,ang_satt_sau_chotih
+735,satt sau panjtih,adad_satt_sau_panjtih,ang_satt_sau_panjtih
+736,satt sau chhatih,adad_satt_sau_chhatih,ang_satt_sau_chhatih
+737,satt sau sattih,adad_satt_sau_sattih,ang_satt_sau_sattih
+738,satt sau athtih,adad_satt_sau_athtih,ang_satt_sau_athtih
+739,satt sau unitalih,adad_satt_sau_unitalih,ang_satt_sau_unitalih
+740,satt sau chalih,adad_satt_sau_chalih,ang_satt_sau_chalih
+741,satt sau ekitalih,adad_satt_sau_ekitalih,ang_satt_sau_ekitalih
+742,satt sau baitalih,adad_satt_sau_baitalih,ang_satt_sau_baitalih
+743,satt sau tetalih,adad_satt_sau_tetalih,ang_satt_sau_tetalih
+744,satt sau choitalih,adad_satt_sau_choitalih,ang_satt_sau_choitalih
+745,satt sau panjtalih,adad_satt_sau_panjtalih,ang_satt_sau_panjtalih
+746,satt sau chhaitalih,adad_satt_sau_chhaitalih,ang_satt_sau_chhaitalih
+747,satt sau sattetalih,adad_satt_sau_sattetalih,ang_satt_sau_sattetalih
+748,satt sau athetalih,adad_satt_sau_athetalih,ang_satt_sau_athetalih
+749,satt sau unvanjah,adad_satt_sau_unvanjah,ang_satt_sau_unvanjah
+750,satt sau panjah,adad_satt_sau_panjah,ang_satt_sau_panjah
+751,satt sau ekvanjah,adad_satt_sau_ekvanjah,ang_satt_sau_ekvanjah
+752,satt sau bavanjah,adad_satt_sau_bavanjah,ang_satt_sau_bavanjah
+753,satt sau tevanjah,adad_satt_sau_tevanjah,ang_satt_sau_tevanjah
+754,satt sau chovanjah,adad_satt_sau_chovanjah,ang_satt_sau_chovanjah
+755,satt sau panjvanjah,adad_satt_sau_panjvanjah,ang_satt_sau_panjvanjah
+756,satt sau chhavanjah,adad_satt_sau_chhavanjah,ang_satt_sau_chhavanjah
+757,satt sau satvanjah,adad_satt_sau_satvanjah,ang_satt_sau_satvanjah
+758,satt sau athvanjah,adad_satt_sau_athvanjah,ang_satt_sau_athvanjah
+759,satt sau unhath,adad_satt_sau_unhath,ang_satt_sau_unhath
+760,satt sau sath,adad_satt_sau_sath,ang_satt_sau_sath
+761,satt sau ekhath,adad_satt_sau_ekhath,ang_satt_sau_ekhath
+762,satt sau bahath,adad_satt_sau_bahath,ang_satt_sau_bahath
+763,satt sau tehath,adad_satt_sau_tehath,ang_satt_sau_tehath
+764,satt sau chohath,adad_satt_sau_chohath,ang_satt_sau_chohath
+765,satt sau panjhath,adad_satt_sau_panjhath,ang_satt_sau_panjhath
+766,satt sau chhahath,adad_satt_sau_chhahath,ang_satt_sau_chhahath
+767,satt sau sathath,adad_satt_sau_sathath,ang_satt_sau_sathath
+768,satt sau athhath,adad_satt_sau_athhath,ang_satt_sau_athhath
+769,satt sau unhatar,adad_satt_sau_unhatar,ang_satt_sau_unhatar
+770,satt sau satar,adad_satt_sau_satar,ang_satt_sau_satar
+771,satt sau ekhatar,adad_satt_sau_ekhatar,ang_satt_sau_ekhatar
+772,satt sau bahatar,adad_satt_sau_bahatar,ang_satt_sau_bahatar
+773,satt sau tehatar,adad_satt_sau_tehatar,ang_satt_sau_tehatar
+774,satt sau chohatar,adad_satt_sau_chohatar,ang_satt_sau_chohatar
+775,satt sau panjhatar,adad_satt_sau_panjhatar,ang_satt_sau_panjhatar
+776,satt sau chhahatar,adad_satt_sau_chhahatar,ang_satt_sau_chhahatar
+777,satt sau sathatar,adad_satt_sau_sathatar,ang_satt_sau_sathatar
+778,satt sau athhatar,adad_satt_sau_athhatar,ang_satt_sau_athhatar
+779,satt sau unasi,adad_satt_sau_unasi,ang_satt_sau_unasi
+780,satt sau asi,adad_satt_sau_asi,ang_satt_sau_asi
+781,satt sau ekasi,adad_satt_sau_ekasi,ang_satt_sau_ekasi
+782,satt sau biasi,adad_satt_sau_biasi,ang_satt_sau_biasi
+783,satt sau teasi,adad_satt_sau_teasi,ang_satt_sau_teasi
+784,satt sau chorasi,adad_satt_sau_chorasi,ang_satt_sau_chorasi
+785,satt sau panjasi,adad_satt_sau_panjasi,ang_satt_sau_panjasi
+786,satt sau chhasi,adad_satt_sau_chhasi,ang_satt_sau_chhasi
+787,satt sau satasi,adad_satt_sau_satasi,ang_satt_sau_satasi
+788,satt sau athasi,adad_satt_sau_athasi,ang_satt_sau_athasi
+789,satt sau unanve,adad_satt_sau_unanve,ang_satt_sau_unanve
+790,satt sau nave,adad_satt_sau_nave,ang_satt_sau_nave
+791,satt sau ekanve,adad_satt_sau_ekanve,ang_satt_sau_ekanve
+792,satt sau bianve,adad_satt_sau_bianve,ang_satt_sau_bianve
+793,satt sau teanve,adad_satt_sau_teanve,ang_satt_sau_teanve
+794,satt sau choranve,adad_satt_sau_choranve,ang_satt_sau_choranve
+795,satt sau panjanve,adad_satt_sau_panjanve,ang_satt_sau_panjanve
+796,satt sau chhanve,adad_satt_sau_chhanve,ang_satt_sau_chhanve
+797,satt sau satanve,adad_satt_sau_satanve,ang_satt_sau_satanve
+798,satt sau athanve,adad_satt_sau_athanve,ang_satt_sau_athanve
+799,satt sau navanve,adad_satt_sau_navanve,ang_satt_sau_navanve
+800,ath sau,adad_ath_sau,ang_ath_sau
+801,ath sau hik,adad_ath_sau_hik,ang_ath_sau_hik
+802,ath sau ba,adad_ath_sau_ba,ang_ath_sau_ba
+803,ath sau te,adad_ath_sau_te,ang_ath_sau_te
+804,ath sau chaar,adad_ath_sau_chaar,ang_ath_sau_chaar
+805,ath sau panj,adad_ath_sau_panj,ang_ath_sau_panj
+806,ath sau chhah,adad_ath_sau_chhah,ang_ath_sau_chhah
+807,ath sau satt,adad_ath_sau_satt,ang_ath_sau_satt
+808,ath sau ath,adad_ath_sau_ath,ang_ath_sau_ath
+809,ath sau nav,adad_ath_sau_nav,ang_ath_sau_nav
+810,ath sau dah,adad_ath_sau_dah,ang_ath_sau_dah
+811,ath sau yarahn,adad_ath_sau_yarahn,ang_ath_sau_yarahn
+812,ath sau barahn,adad_ath_sau_barahn,ang_ath_sau_barahn
+813,ath sau terahn,adad_ath_sau_terahn,ang_ath_sau_terahn
+814,ath sau chaudahn,adad_ath_sau_chaudahn,ang_ath_sau_chaudahn
+815,ath sau pandhran,adad_ath_sau_pandhran,ang_ath_sau_pandhran
+816,ath sau sorahn,adad_ath_sau_sorahn,ang_ath_sau_sorahn
+817,ath sau satrahn,adad_ath_sau_satrahn,ang_ath_sau_satrahn
+818,ath sau arrahnh,adad_ath_sau_arrahnh,ang_ath_sau_arrahnh
+819,ath sau unih,adad_ath_sau_unih,ang_ath_sau_unih
+820,ath sau vih,adad_ath_sau_vih,ang_ath_sau_vih
+821,ath sau ekih,adad_ath_sau_ekih,ang_ath_sau_ekih
+822,ath sau bavih,adad_ath_sau_bavih,ang_ath_sau_bavih
+823,ath sau tevih,adad_ath_sau_tevih,ang_ath_sau_tevih
+824,ath sau chovih,adad_ath_sau_chovih,ang_ath_sau_chovih
+825,ath sau panjvih,adad_ath_sau_panjvih,ang_ath_sau_panjvih
+826,ath sau chhavih,adad_ath_sau_chhavih,ang_ath_sau_chhavih
+827,ath sau satavih,adad_ath_sau_satavih,ang_ath_sau_satavih
+828,ath sau athavih,adad_ath_sau_athavih,ang_ath_sau_athavih
+829,ath sau untih,adad_ath_sau_untih,ang_ath_sau_untih
+830,ath sau tih,adad_ath_sau_tih,ang_ath_sau_tih
+831,ath sau ektih,adad_ath_sau_ektih,ang_ath_sau_ektih
+832,ath sau batih,adad_ath_sau_batih,ang_ath_sau_batih
+833,ath sau tetih,adad_ath_sau_tetih,ang_ath_sau_tetih
+834,ath sau chotih,adad_ath_sau_chotih,ang_ath_sau_chotih
+835,ath sau panjtih,adad_ath_sau_panjtih,ang_ath_sau_panjtih
+836,ath sau chhatih,adad_ath_sau_chhatih,ang_ath_sau_chhatih
+837,ath sau sattih,adad_ath_sau_sattih,ang_ath_sau_sattih
+838,ath sau athtih,adad_ath_sau_athtih,ang_ath_sau_athtih
+839,ath sau unitalih,adad_ath_sau_unitalih,ang_ath_sau_unitalih
+840,ath sau chalih,adad_ath_sau_chalih,ang_ath_sau_chalih
+841,ath sau ekitalih,adad_ath_sau_ekitalih,ang_ath_sau_ekitalih
+842,ath sau baitalih,adad_ath_sau_baitalih,ang_ath_sau_baitalih
+843,ath sau tetalih,adad_ath_sau_tetalih,ang_ath_sau_tetalih
+844,ath sau choitalih,adad_ath_sau_choitalih,ang_ath_sau_choitalih
+845,ath sau panjtalih,adad_ath_sau_panjtalih,ang_ath_sau_panjtalih
+846,ath sau chhaitalih,adad_ath_sau_chhaitalih,ang_ath_sau_chhaitalih
+847,ath sau sattetalih,adad_ath_sau_sattetalih,ang_ath_sau_sattetalih
+848,ath sau athetalih,adad_ath_sau_athetalih,ang_ath_sau_athetalih
+849,ath sau unvanjah,adad_ath_sau_unvanjah,ang_ath_sau_unvanjah
+850,ath sau panjah,adad_ath_sau_panjah,ang_ath_sau_panjah
+851,ath sau ekvanjah,adad_ath_sau_ekvanjah,ang_ath_sau_ekvanjah
+852,ath sau bavanjah,adad_ath_sau_bavanjah,ang_ath_sau_bavanjah
+853,ath sau tevanjah,adad_ath_sau_tevanjah,ang_ath_sau_tevanjah
+854,ath sau chovanjah,adad_ath_sau_chovanjah,ang_ath_sau_chovanjah
+855,ath sau panjvanjah,adad_ath_sau_panjvanjah,ang_ath_sau_panjvanjah
+856,ath sau chhavanjah,adad_ath_sau_chhavanjah,ang_ath_sau_chhavanjah
+857,ath sau satvanjah,adad_ath_sau_satvanjah,ang_ath_sau_satvanjah
+858,ath sau athvanjah,adad_ath_sau_athvanjah,ang_ath_sau_athvanjah
+859,ath sau unhath,adad_ath_sau_unhath,ang_ath_sau_unhath
+860,ath sau sath,adad_ath_sau_sath,ang_ath_sau_sath
+861,ath sau ekhath,adad_ath_sau_ekhath,ang_ath_sau_ekhath
+862,ath sau bahath,adad_ath_sau_bahath,ang_ath_sau_bahath
+863,ath sau tehath,adad_ath_sau_tehath,ang_ath_sau_tehath
+864,ath sau chohath,adad_ath_sau_chohath,ang_ath_sau_chohath
+865,ath sau panjhath,adad_ath_sau_panjhath,ang_ath_sau_panjhath
+866,ath sau chhahath,adad_ath_sau_chhahath,ang_ath_sau_chhahath
+867,ath sau sathath,adad_ath_sau_sathath,ang_ath_sau_sathath
+868,ath sau athhath,adad_ath_sau_athhath,ang_ath_sau_athhath
+869,ath sau unhatar,adad_ath_sau_unhatar,ang_ath_sau_unhatar
+870,ath sau satar,adad_ath_sau_satar,ang_ath_sau_satar
+871,ath sau ekhatar,adad_ath_sau_ekhatar,ang_ath_sau_ekhatar
+872,ath sau bahatar,adad_ath_sau_bahatar,ang_ath_sau_bahatar
+873,ath sau tehatar,adad_ath_sau_tehatar,ang_ath_sau_tehatar
+874,ath sau chohatar,adad_ath_sau_chohatar,ang_ath_sau_chohatar
+875,ath sau panjhatar,adad_ath_sau_panjhatar,ang_ath_sau_panjhatar
+876,ath sau chhahatar,adad_ath_sau_chhahatar,ang_ath_sau_chhahatar
+877,ath sau sathatar,adad_ath_sau_sathatar,ang_ath_sau_sathatar
+878,ath sau athhatar,adad_ath_sau_athhatar,ang_ath_sau_athhatar
+879,ath sau unasi,adad_ath_sau_unasi,ang_ath_sau_unasi
+880,ath sau asi,adad_ath_sau_asi,ang_ath_sau_asi
+881,ath sau ekasi,adad_ath_sau_ekasi,ang_ath_sau_ekasi
+882,ath sau biasi,adad_ath_sau_biasi,ang_ath_sau_biasi
+883,ath sau teasi,adad_ath_sau_teasi,ang_ath_sau_teasi
+884,ath sau chorasi,adad_ath_sau_chorasi,ang_ath_sau_chorasi
+885,ath sau panjasi,adad_ath_sau_panjasi,ang_ath_sau_panjasi
+886,ath sau chhasi,adad_ath_sau_chhasi,ang_ath_sau_chhasi
+887,ath sau satasi,adad_ath_sau_satasi,ang_ath_sau_satasi
+888,ath sau athasi,adad_ath_sau_athasi,ang_ath_sau_athasi
+889,ath sau unanve,adad_ath_sau_unanve,ang_ath_sau_unanve
+890,ath sau nave,adad_ath_sau_nave,ang_ath_sau_nave
+891,ath sau ekanve,adad_ath_sau_ekanve,ang_ath_sau_ekanve
+892,ath sau bianve,adad_ath_sau_bianve,ang_ath_sau_bianve
+893,ath sau teanve,adad_ath_sau_teanve,ang_ath_sau_teanve
+894,ath sau choranve,adad_ath_sau_choranve,ang_ath_sau_choranve
+895,ath sau panjanve,adad_ath_sau_panjanve,ang_ath_sau_panjanve
+896,ath sau chhanve,adad_ath_sau_chhanve,ang_ath_sau_chhanve
+897,ath sau satanve,adad_ath_sau_satanve,ang_ath_sau_satanve
+898,ath sau athanve,adad_ath_sau_athanve,ang_ath_sau_athanve
+899,ath sau navanve,adad_ath_sau_navanve,ang_ath_sau_navanve
+900,nav sau,adad_nav_sau,ang_nav_sau
+901,nav sau hik,adad_nav_sau_hik,ang_nav_sau_hik
+902,nav sau ba,adad_nav_sau_ba,ang_nav_sau_ba
+903,nav sau te,adad_nav_sau_te,ang_nav_sau_te
+904,nav sau chaar,adad_nav_sau_chaar,ang_nav_sau_chaar
+905,nav sau panj,adad_nav_sau_panj,ang_nav_sau_panj
+906,nav sau chhah,adad_nav_sau_chhah,ang_nav_sau_chhah
+907,nav sau satt,adad_nav_sau_satt,ang_nav_sau_satt
+908,nav sau ath,adad_nav_sau_ath,ang_nav_sau_ath
+909,nav sau nav,adad_nav_sau_nav,ang_nav_sau_nav
+910,nav sau dah,adad_nav_sau_dah,ang_nav_sau_dah
+911,nav sau yarahn,adad_nav_sau_yarahn,ang_nav_sau_yarahn
+912,nav sau barahn,adad_nav_sau_barahn,ang_nav_sau_barahn
+913,nav sau terahn,adad_nav_sau_terahn,ang_nav_sau_terahn
+914,nav sau chaudahn,adad_nav_sau_chaudahn,ang_nav_sau_chaudahn
+915,nav sau pandhran,adad_nav_sau_pandhran,ang_nav_sau_pandhran
+916,nav sau sorahn,adad_nav_sau_sorahn,ang_nav_sau_sorahn
+917,nav sau satrahn,adad_nav_sau_satrahn,ang_nav_sau_satrahn
+918,nav sau arrahnh,adad_nav_sau_arrahnh,ang_nav_sau_arrahnh
+919,nav sau unih,adad_nav_sau_unih,ang_nav_sau_unih
+920,nav sau vih,adad_nav_sau_vih,ang_nav_sau_vih
+921,nav sau ekih,adad_nav_sau_ekih,ang_nav_sau_ekih
+922,nav sau bavih,adad_nav_sau_bavih,ang_nav_sau_bavih
+923,nav sau tevih,adad_nav_sau_tevih,ang_nav_sau_tevih
+924,nav sau chovih,adad_nav_sau_chovih,ang_nav_sau_chovih
+925,nav sau panjvih,adad_nav_sau_panjvih,ang_nav_sau_panjvih
+926,nav sau chhavih,adad_nav_sau_chhavih,ang_nav_sau_chhavih
+927,nav sau satavih,adad_nav_sau_satavih,ang_nav_sau_satavih
+928,nav sau athavih,adad_nav_sau_athavih,ang_nav_sau_athavih
+929,nav sau untih,adad_nav_sau_untih,ang_nav_sau_untih
+930,nav sau tih,adad_nav_sau_tih,ang_nav_sau_tih
+931,nav sau ektih,adad_nav_sau_ektih,ang_nav_sau_ektih
+932,nav sau batih,adad_nav_sau_batih,ang_nav_sau_batih
+933,nav sau tetih,adad_nav_sau_tetih,ang_nav_sau_tetih
+934,nav sau chotih,adad_nav_sau_chotih,ang_nav_sau_chotih
+935,nav sau panjtih,adad_nav_sau_panjtih,ang_nav_sau_panjtih
+936,nav sau chhatih,adad_nav_sau_chhatih,ang_nav_sau_chhatih
+937,nav sau sattih,adad_nav_sau_sattih,ang_nav_sau_sattih
+938,nav sau athtih,adad_nav_sau_athtih,ang_nav_sau_athtih
+939,nav sau unitalih,adad_nav_sau_unitalih,ang_nav_sau_unitalih
+940,nav sau chalih,adad_nav_sau_chalih,ang_nav_sau_chalih
+941,nav sau ekitalih,adad_nav_sau_ekitalih,ang_nav_sau_ekitalih
+942,nav sau baitalih,adad_nav_sau_baitalih,ang_nav_sau_baitalih
+943,nav sau tetalih,adad_nav_sau_tetalih,ang_nav_sau_tetalih
+944,nav sau choitalih,adad_nav_sau_choitalih,ang_nav_sau_choitalih
+945,nav sau panjtalih,adad_nav_sau_panjtalih,ang_nav_sau_panjtalih
+946,nav sau chhaitalih,adad_nav_sau_chhaitalih,ang_nav_sau_chhaitalih
+947,nav sau sattetalih,adad_nav_sau_sattetalih,ang_nav_sau_sattetalih
+948,nav sau athetalih,adad_nav_sau_athetalih,ang_nav_sau_athetalih
+949,nav sau unvanjah,adad_nav_sau_unvanjah,ang_nav_sau_unvanjah
+950,nav sau panjah,adad_nav_sau_panjah,ang_nav_sau_panjah
+951,nav sau ekvanjah,adad_nav_sau_ekvanjah,ang_nav_sau_ekvanjah
+952,nav sau bavanjah,adad_nav_sau_bavanjah,ang_nav_sau_bavanjah
+953,nav sau tevanjah,adad_nav_sau_tevanjah,ang_nav_sau_tevanjah
+954,nav sau chovanjah,adad_nav_sau_chovanjah,ang_nav_sau_chovanjah
+955,nav sau panjvanjah,adad_nav_sau_panjvanjah,ang_nav_sau_panjvanjah
+956,nav sau chhavanjah,adad_nav_sau_chhavanjah,ang_nav_sau_chhavanjah
+957,nav sau satvanjah,adad_nav_sau_satvanjah,ang_nav_sau_satvanjah
+958,nav sau athvanjah,adad_nav_sau_athvanjah,ang_nav_sau_athvanjah
+959,nav sau unhath,adad_nav_sau_unhath,ang_nav_sau_unhath
+960,nav sau sath,adad_nav_sau_sath,ang_nav_sau_sath
+961,nav sau ekhath,adad_nav_sau_ekhath,ang_nav_sau_ekhath
+962,nav sau bahath,adad_nav_sau_bahath,ang_nav_sau_bahath
+963,nav sau tehath,adad_nav_sau_tehath,ang_nav_sau_tehath
+964,nav sau chohath,adad_nav_sau_chohath,ang_nav_sau_chohath
+965,nav sau panjhath,adad_nav_sau_panjhath,ang_nav_sau_panjhath
+966,nav sau chhahath,adad_nav_sau_chhahath,ang_nav_sau_chhahath
+967,nav sau sathath,adad_nav_sau_sathath,ang_nav_sau_sathath
+968,nav sau athhath,adad_nav_sau_athhath,ang_nav_sau_athhath
+969,nav sau unhatar,adad_nav_sau_unhatar,ang_nav_sau_unhatar
+970,nav sau satar,adad_nav_sau_satar,ang_nav_sau_satar
+971,nav sau ekhatar,adad_nav_sau_ekhatar,ang_nav_sau_ekhatar
+972,nav sau bahatar,adad_nav_sau_bahatar,ang_nav_sau_bahatar
+973,nav sau tehatar,adad_nav_sau_tehatar,ang_nav_sau_tehatar
+974,nav sau chohatar,adad_nav_sau_chohatar,ang_nav_sau_chohatar
+975,nav sau panjhatar,adad_nav_sau_panjhatar,ang_nav_sau_panjhatar
+976,nav sau chhahatar,adad_nav_sau_chhahatar,ang_nav_sau_chhahatar
+977,nav sau sathatar,adad_nav_sau_sathatar,ang_nav_sau_sathatar
+978,nav sau athhatar,adad_nav_sau_athhatar,ang_nav_sau_athhatar
+979,nav sau unasi,adad_nav_sau_unasi,ang_nav_sau_unasi
+980,nav sau asi,adad_nav_sau_asi,ang_nav_sau_asi
+981,nav sau ekasi,adad_nav_sau_ekasi,ang_nav_sau_ekasi
+982,nav sau biasi,adad_nav_sau_biasi,ang_nav_sau_biasi
+983,nav sau teasi,adad_nav_sau_teasi,ang_nav_sau_teasi
+984,nav sau chorasi,adad_nav_sau_chorasi,ang_nav_sau_chorasi
+985,nav sau panjasi,adad_nav_sau_panjasi,ang_nav_sau_panjasi
+986,nav sau chhasi,adad_nav_sau_chhasi,ang_nav_sau_chhasi
+987,nav sau satasi,adad_nav_sau_satasi,ang_nav_sau_satasi
+988,nav sau athasi,adad_nav_sau_athasi,ang_nav_sau_athasi
+989,nav sau unanve,adad_nav_sau_unanve,ang_nav_sau_unanve
+990,nav sau nave,adad_nav_sau_nave,ang_nav_sau_nave
+991,nav sau ekanve,adad_nav_sau_ekanve,ang_nav_sau_ekanve
+992,nav sau bianve,adad_nav_sau_bianve,ang_nav_sau_bianve
+993,nav sau teanve,adad_nav_sau_teanve,ang_nav_sau_teanve
+994,nav sau choranve,adad_nav_sau_choranve,ang_nav_sau_choranve
+995,nav sau panjanve,adad_nav_sau_panjanve,ang_nav_sau_panjanve
+996,nav sau chhanve,adad_nav_sau_chhanve,ang_nav_sau_chhanve
+997,nav sau satanve,adad_nav_sau_satanve,ang_nav_sau_satanve
+998,nav sau athanve,adad_nav_sau_athanve,ang_nav_sau_athanve
+999,nav sau navanve,adad_nav_sau_navanve,ang_nav_sau_navanve
+1000,hazar,adad_hazar,ang_hazar

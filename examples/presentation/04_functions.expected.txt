@@ -1,0 +1,2 @@
+Jor: 12
+Factorial: 120

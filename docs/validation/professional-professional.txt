@@ -1,0 +1,39 @@
+PASS exact reported marks request reads exactly two values and computes 85 percent
+PASS natural request produces verified code: Could you please write a program that reads two subjects and their percentage?
+PASS natural request produces verified code: write a simple program for two inputs marks percentge
+PASS natural request produces verified code: Create a 7 subjects percentage program using an array and a function
+PASS natural request produces verified code: Give me code for 4 subject marks and percentage
+PASS obtained and total marks are distinct from two subject inputs
+PASS invalid obtained/total values cannot produce a misleading percentage: 80,0
+PASS invalid obtained/total values cannot produce a misleading percentage: -1,100
+PASS invalid obtained/total values cannot produce a misleading percentage: 101,100
+PASS out-of-range subject marks are rejected
+PASS text entered for numeric marks is caught and explained
+PASS per-subject maximum and decimals affect the actual calculation
+PASS non-binary decimal maxima retain truthful verification
+PASS runtime-selected subject count is used and checked
+PASS 1000 subject percentage inputs remain general and use the real VM
+PASS array/function follow-up preserves count and old live source
+PASS obtained/total follow-up can actually add a function and array
+PASS grade requests still accept a count stated as inputs
+PASS quoted output is preserved while request prose is normalized
+PASS polite compile requests compile current source without generating a file
+PASS exact gaming hub request stages the whole project and tests login
+PASS failed login cannot start the 3D hub
+PASS wrong account name is rejected even when passphrase matches
+PASS empty account values are rejected before login and world initialization
+PASS requested attempt limit controls runtime behavior
+PASS successful console-only login does not invent a game window
+PASS scene navigation works and logout prevents reentry
+PASS conceptual account question answers without new source: Explain the gaming hub architecture
+PASS conceptual account question answers without new source: How do login attempts work?
+PASS repeated hub generation chooses a separate folder and preserves the old one
+PASS report login creates the working local component and lists production gaps
+PASS report percentages use the same minimal count-aware generator
+PASS failed generated example tests disable Apply and mark verification failed
+PASS local generation works with every network fetch denied
+PASS unknown requests receive a targeted clarification and do not create unrelated code
+Compilation successful.
+Compilation successful.
+PASS new programs compile and run using the existing native compiler
+36 professional request, program behavior, account boundary and native checks passed.

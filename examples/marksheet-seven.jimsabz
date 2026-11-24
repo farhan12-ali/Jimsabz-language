@@ -1,0 +1,48 @@
+// Marksheet: subject count follows your request; arrays store all inputs.
+kam marks_watho(lafz sawal, dec had) -> dec {
+    dec ang = budh(sawal)
+    wori (ang < 0 || ang > had) {
+        budhai "Marks 0 kha 100 taeen likho."
+        ang = budh(sawal)
+    }
+    wapas ang
+}
+
+kam darjo_kadh(dec feesad, dec ausat, dec kul) -> lafz {
+    qatar dec hadain = [90, 70, 50]
+    qatar lafz darja = ["A", "B", "C"]
+    qatar lafz muqabla = [">", ">", ">"]
+    qatar lafz paimana = ["feesad", "feesad", "feesad"]
+    gin (adad soochi = 0; soochi < hadain.lambai; soochi += 1) {
+        dec ang = feesad
+        jey (paimana[soochi] == "ausat") { ang = ausat }
+        jey (paimana[soochi] == "kul") { ang = kul }
+        lafz op = muqabla[soochi]
+        dec had = hadain[soochi]
+        jey ((op == ">" && ang > had) || (op == ">=" && ang >= had) || (op == "<" && ang < had) || (op == "<=" && ang <= had) || (op == "==" && ang == had)) {
+            wapas darja[soochi]
+        }
+    }
+    wapas "F"
+}
+
+adad mazmoon_ja_ang = adad_satt
+qatar dec nishan = []
+qatar lafz naala = []
+dec kul = 0.0
+gin (adad soochi = 0; soochi < mazmoon_ja_ang; soochi += 1) {
+    lafz mazmoon_naam = "Mazmoon " + (soochi + 1)
+    jey (soochi < 1000) { mazmoon_naam = "Mazmoon " + sindhi_lafz(soochi + 1) }
+    jey (soochi < naala.lambai) { mazmoon_naam = naala[soochi] }
+    dec ang = marks_watho(mazmoon_naam + " ja marks (0-100): ", 100.0)
+    nishan.joryo(ang)
+    kul += ang
+}
+dec ausat = kul / mazmoon_ja_ang
+dec feesad = kul * 100.0 / (mazmoon_ja_ang * 100.0)
+lafz darjo = darjo_kadh(feesad, ausat, kul)
+
+budhai "Kul marks: " + kul
+budhai "Feesad: " + feesad + "%"
+budhai "Ausat: " + ausat
+budhai "Darjo: " + darjo

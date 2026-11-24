@@ -1,0 +1,31 @@
+// Marks jo hisab: 3 mazmoon, har hik 100 marks maan
+// Darjo: strict > comparisons; exact thresholds follow the lower band.
+kam marks_watho(lafz sawal) -> adad {
+    adad ang = budh(sawal)
+    wori (ang < 0 || ang > 100) {
+        budhai "Marks 0 kha 100 taeen likho."
+        ang = budh(sawal)
+    }
+    wapas ang
+}
+
+adad pheru = marks_watho("Mazmoon 1 ja marks (0-100): ")
+adad biyo = marks_watho("Mazmoon 2 ja marks (0-100): ")
+adad teyo = marks_watho("Mazmoon 3 ja marks (0-100): ")
+adad kul = pheru + biyo + teyo
+dec feesad = kul * 100.0 / 300.0
+lafz darjo = ""
+
+jey (feesad > 90) {
+    darjo = "A"
+} na_ta jey (feesad > 70) {
+    darjo = "B"
+} na_ta jey (feesad > 50) {
+    darjo = "C"
+} na_ta {
+    darjo = "F"
+}
+
+budhai "Kul marks: " + kul
+budhai "Feesad: " + feesad + "%"
+budhai "Darjo: " + darjo

@@ -1,0 +1,8 @@
+kam sum(adad start, adad ...values) -> adad {
+ gin x andar values {
+ start += x
+ }
+ wapas start
+}
+qatar adad a = [2,3,4]
+budhai sum(1, ...a)

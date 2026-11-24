@@ -1,0 +1,4 @@
+// Ba adad watho, po kul dikhaayo
+adad pheru = budh("Pheru adad: ")
+adad biyo = budh("Biyo adad: ")
+budhai pheru + biyo

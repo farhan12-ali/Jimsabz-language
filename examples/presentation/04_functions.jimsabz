@@ -1,0 +1,11 @@
+kam jor(adad pheru, adad biyo) -> adad {
+    wapas pheru + biyo
+}
+
+kam factorial(adad ang) -> adad {
+    jey (ang <= 1) { wapas 1 }
+    wapas ang * factorial(ang - 1)
+}
+
+budhai "Jor: " + jor(7, 5)
+budhai "Factorial: " + factorial(5)

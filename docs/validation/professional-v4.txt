@@ -1,0 +1,25 @@
+PASS strict grade boundary 0 -> F
+PASS strict grade boundary 50 -> F
+PASS strict grade boundary 51 -> C
+PASS strict grade boundary 70 -> C
+PASS strict grade boundary 71 -> B
+PASS strict grade boundary 90 -> B
+PASS strict grade boundary 91 -> A
+PASS strict grade boundary 100 -> A
+PASS percentage uses decimal division
+PASS out-of-range marks are requested again
+PASS subject count and maximum can be requested
+PASS ordinary generators use Roman Sindhi numeric names
+PASS if / else-if / else chooses one branch: -3
+PASS if / else-if / else chooses one branch: 0
+PASS if / else-if / else chooses one branch: 3
+PASS the user's complete marks request is generated
+PASS report produces a separate runnable project and plan
+PASS unsupported report requirements remain explicit
+PASS multiple supported report examples all compile
+PASS attachment size and unsupported types fail clearly
+PASS text reports retain their readable content
+PASS voice results, stop and denied microphone recover
+PASS unsupported voice has a useful fallback
+PASS theme persists and follows changes from another window
+24/24 marks, report, voice and theme checks passed.

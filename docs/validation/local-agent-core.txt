@@ -1,0 +1,49 @@
+PASS staged multi-file edits compile and execute while live files remain untouched
+PASS existing files must be read before replacement or deletion
+PASS absolute/traversal/executable paths and case collisions are rejected
+PASS stale drafts cannot overwrite subsequent user source edits
+PASS a draft from another workspace is rejected even with identical files
+PASS rename updates entry and imported module paths using the actual file adapter
+PASS deletion goes to Trash only after Apply and undo restores exact source
+PASS undo refuses later file edits and preserves unrelated newer project notes
+PASS staged memory refuses to overwrite later manual notes
+PASS applying a new program entry selects it so Run uses the verified entry
+PASS private paths and secret-bearing draft/memory text are blocked
+PASS tool registry rejects unknown actions, unknown arguments and invalid types
+PASS retrieval returns exact versioned source lines, with current profile above old brief
+PASS English array/function queries retrieve real Jimsabz example code
+PASS retrieval treats constructor and prototype-like words as ordinary untrusted text
+PASS compile-only evidence leaves runtime Not Run and includes seven real stages
+PASS compiler failures expose real diagnostics and block later phases
+PASS VM consumes supplied input, compares output and reports failed expectations
+PASS missing inputs and runtime faults are reported, never fabricated as successful output
+PASS test and compiler evidence becomes stale after another edit
+PASS agent run file writes are confined to cloned runtime state
+PASS agent runtime rejects networking and marks game initialization as headless
+PASS local greeting and language answers require no model service configuration
+PASS the included trained classifier generates compiler-verified source locally
+PASS generation never contacts an external service when the local model is supplied
+PASS local programs use reusable arrays/functions for 1000 numeric inputs
+PASS follow-up counts reuse the previous generator request without overwriting source
+PASS check current source reports actual phases and leaves runtime Not Run
+PASS run and test requests consume explicit fixtures through the real VM
+PASS a test without expectations is Not Run and requests a concrete fixture
+PASS input parsing rejects malformed arrays and never invents missing inputs
+PASS fixture input strings preserve brackets, quotes, backslashes and Unicode
+PASS the local agent repairs a missing library import and verifies the complete draft
+PASS lexer-based block repair ignores braces in strings and comments
+PASS legacy input repair changes only the diagnosed input spelling
+PASS a module diagnostic repairs its own file while preserving its importer
+PASS unsupported repairs explain the actual error without changing files
+PASS analyze and explain requests report real source structure without edits
+PASS project notes are retrievable as unverified context and stay separate by project
+PASS supplied Jimsabz code can use language features beyond the built-in generator intents
+PASS invalid provided source remains an unapplied draft with Apply disabled
+PASS an explicitly requested current-file replacement still needs review
+PASS reports are read locally and prepare an isolated folder with explicit remaining work
+PASS repeated report generation chooses a new folder and preserves all old report files
+PASS unsupported game generation is honest about the available local builders
+PASS cancellation before local generation leaves the source untouched
+PASS agent source and native launcher contain no external model connection code
+
+47 built-in local agent checks passed with the real included classifier and compiler/VM.

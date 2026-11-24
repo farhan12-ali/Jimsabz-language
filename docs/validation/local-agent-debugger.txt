@@ -1,0 +1,4 @@
+PASS debugger into real VM frames/locals
+PASS debugger over real VM frames/locals
+PASS debugger out real VM frames/locals
+PASS debugger breakpoint real VM frames/locals

@@ -1,0 +1,2 @@
+kharna "modules/math.jimsabz"
+budhai "Square of 12 = " + square(12)

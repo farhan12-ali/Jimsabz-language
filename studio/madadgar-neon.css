@@ -1,0 +1,121 @@
+/* Reference-inspired Code Madadgar panel. The editor and Run window are untouched. */
+#agent-panel {
+  --agent-bg: #0b1020;
+  --agent-text: #f1f4ff;
+  --agent-muted: #a5b1d0;
+  background: linear-gradient(128deg, #101225, #0a1020 55%, #0c1226) padding-box,
+    linear-gradient(140deg, #a15aff, #6949e8 36%, #1d9fff 80%, #35c8ff) border-box;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #4735a526, 0 0 18px #2155cd14, inset 0 0 30px #302a7010;
+  color: var(--agent-text);
+}
+#agent-panel .agent-view { padding: 0; gap: 0; background: transparent; }
+#agent-panel .agent-profile {
+  position: relative; display: flex; align-items: center; gap: 13px;
+  flex-shrink: 0; min-height: 137px; padding: 24px 17px 16px;
+  background: radial-gradient(ellipse at 2% 15%, #54298f2b, transparent 63%);
+}
+#agent-panel .agent-profile-actions { position: absolute; display: flex; gap: 2px; top: 0; right: 0; padding: 3px 6px; border: 1px solid #293b5c; border-top: 0; border-right: 0; border-radius: 0 15px 0 13px; background: linear-gradient(135deg, #16243c, #121b30); z-index: 1; }
+#agent-panel .agent-profile-actions .icon-button { width: 28px; height: 29px; margin: 0; border-radius: 6px; color: #bdc8ec; }
+#agent-panel .agent-profile-actions svg { width: 18px; height: 18px; }
+#agent-panel .agent-profile-actions button:hover { color: #fff; background: #293565; }
+#agent-panel .agent-profile-actions button[aria-expanded=true] { color: #8bdfff; background: #27365d; }
+#agent-panel .agent-portrait { position: relative; width: 88px; height: 96px; flex: 0 0 88px; overflow: hidden; border-radius: 20px; border: 1px solid #583d998c; background: radial-gradient(ellipse at 50% 48%, #184b8b88, transparent 70%), linear-gradient(145deg, #13162e, #101c32); box-shadow: inset 0 0 16px #5539e426, 0 0 13px #7732cf1f; }
+#agent-panel .agent-portrait img { position: absolute; width: 168px; max-width: none; height: 146px; left: -51px; top: -8px; object-fit: contain; }
+#agent-panel .agent-profile-copy { min-width: 0; padding-top: 3px; }
+#agent-panel .agent-profile-copy h2 { font-size: 17px; font-weight: 700; line-height: 1.3; letter-spacing: -.25px; margin: 0 0 6px; color: #f5f6ff; }
+#agent-panel .agent-profile-copy p { font-size: 14px; color: #c3cbe6; margin: 0 0 7px; line-height: 1.5; }
+#agent-panel .agent-presence { display: flex; gap: 7px; align-items: center; font-size: 13px; color: #43e3a0; line-height: 1.5; }
+#agent-panel .agent-presence .agent-ready-dot { width: 8px; height: 8px; flex-basis: 8px; background: #15d88e; box-shadow: 0 0 8px #16d69330; }
+#agent-panel.agent-is-working .agent-presence { color: #a2c9ff; }
+#agent-panel.agent-is-working .agent-presence .agent-ready-dot { background: #74a7ff; }
+#agent-panel .agent-navigation { display: flex; align-items: center; gap: 2px; padding-right: 7px; background: #10182b; border-top: 1px solid #293559; border-bottom: 1px solid #293559; flex-shrink: 0; }
+#agent-panel .agent-tabs { padding: 8px 9px; border: 0; background: transparent; flex: 1; gap: 5px; }
+#agent-panel .agent-tabs button { font-size: 12px; }
+#agent-panel .agent-navigation > .icon-button { width: 25px; height: 28px; color: #a9b9d7; }
+#agent-panel .agent-state-line { padding: 2px 17px 5px; min-height: 0; }
+#agent-panel .madadgar-state { font-size: 12px; color: #9cb9d7; }
+#agent-panel .agent-messages { padding: 15px 15px 18px; scrollbar-color: #394b79 transparent; min-height: 130px; }
+#agent-panel .agent-chat-row { gap: 9px; margin-bottom: 23px; }
+#agent-panel .agent-chat-avatar { width: 31px; height: 34px; flex-basis: 31px; margin-top: 5px; border-radius: 13px; font-size: 23px; font-style: italic; border-color: #8f50dc99; background: radial-gradient(circle at 35% 20%, #a05ef7, #4e219d 70%); box-shadow: 0 0 0 3px #6537b91c, 0 0 10px #6f34d326; }
+#agent-panel .agent-message { color: #f0f3ff; background: linear-gradient(125deg, #25304c, #1b2742); border-color: #2e3c5d; border-radius: 19px; padding: 14px; font-size: 16px; line-height: 1.65; box-shadow: none; }
+#agent-panel .agent-welcome { flex: initial; max-width: 100%; padding: 13px 15px; }
+#agent-panel .agent-welcome strong { color: #f3f5ff; font-size: 16px; font-weight: 500; }
+#agent-panel .agent-welcome p { font-size: 16px; line-height: 1.6; margin: 0; }
+#agent-panel .agent-welcome b { font-weight: 550; }
+#agent-panel .agent-chat-row-user { padding-left: 18px; }
+#agent-panel .agent-chat-row-user .agent-chat-avatar { background: #1f3552; font-size: 12px; font-style: normal; border-color: #375782; box-shadow: none; width: 29px; height: 29px; flex-basis: 29px; border-radius: 50%; }
+#agent-panel .user-message { background: #202f50; border-color: #344e7c; border-radius: 15px; color: #dceaff; }
+#agent-panel .agent-quick { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin: 4px 0 16px; }
+#agent-panel .agent-quick button { display: flex; align-items: center; justify-content: flex-start; gap: 9px; min-height: 48px; padding: 11px 14px; border-radius: 15px; border: 1px solid #304269; color: #e8eeff; background: linear-gradient(120deg, #16203a, #111a30); font-size: 14px; font-weight: 500; line-height: 1.3; text-align: left; }
+#agent-panel .agent-quick button:hover { border-color: #617ebd; background: linear-gradient(120deg, #233254, #1d2648); }
+#agent-panel .agent-quick button:active { background: #273a61; }
+#agent-panel .agent-quick svg { width: 18px; height: 18px; color: #d0daf8; }
+#agent-panel .agent-quick button:nth-child(2) svg { color: #b65bfa; }
+#agent-panel .agent-quick button:nth-child(3) svg { color: #47d8e8; }
+#agent-panel .agent-quick button:nth-child(4) svg, #agent-panel .agent-quick button:nth-child(5) svg, #agent-panel .agent-quick button:nth-child(6) svg { color: #c3d0f5; }
+#agent-panel .agent-form { display: block; flex-shrink: 0; padding: 10px 9px 8px; margin: 6px 9px 12px; border: 1px solid #253557; border-radius: 19px; background: linear-gradient(128deg, #1a2038, #151b31); box-shadow: 0 2px 14px #00000020, inset 0 0 18px #3133610d; overflow: visible; }
+#agent-panel .agent-form:focus-within { border-color: #395d9c; box-shadow: 0 0 0 1px #337bec30, 0 0 16px #3177ed14; }
+#agent-panel .agent-form > .agent-composer-row { display: flex; align-items: stretch; gap: 8px; padding: 0; }
+#agent-panel .agent-form textarea { flex: 1; min-width: 0; padding: 12px 13px; height: 56px; min-height: 56px; max-height: 150px; border: 1px solid #253253; border-radius: 14px; background: linear-gradient(120deg, #101a30, #141a31); color: #edf3ff; font-size: 16px; line-height: 1.6; resize: vertical; }
+#agent-panel .agent-form textarea::placeholder { color: #b4bfdc; }
+#agent-panel #agent-send { align-self: center; width: 42px; height: 48px; flex-basis: 42px; margin: 0; padding: 0; border-radius: 14px; border: 1px solid #5378ff; color: #fff; background: linear-gradient(145deg, #3d76ff, #2149f5); box-shadow: inset 0 1px 1px #a9c5ff55, 0 3px 12px #2358ea24; }
+#agent-panel #agent-send:hover { background: linear-gradient(145deg, #5594ff, #315dff); }
+#agent-panel #agent-send svg { width: 23px; height: 23px; }
+#agent-panel .agent-form > .agent-input-tools { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 11px 0 0; gap: 7px; border: 0; }
+#agent-panel .agent-input-tools .agent-tool { display: flex; justify-content: center; align-items: center; gap: 6px; height: 39px; padding: 5px 6px; border: 1px solid #283456; border-radius: 14px; color: #d7e1f9; background: linear-gradient(125deg, #151c33, #111a2c); font-size: 13px; white-space: nowrap; }
+#agent-panel .agent-input-tools .agent-tool:hover { border-color: #536fac; color: #fff; background: #223253; }
+#agent-panel .agent-input-tools .agent-code-mode { color: #edf3ff; border-color: #354871; }
+#agent-panel .agent-tool svg { width: 17px; height: 17px; color: #b8c9f2; }
+#agent-panel .agent-input-tools .agent-tool[aria-pressed=true] { background: #5c2c52; border-color: #b46ca9; color: #fff; }
+#agent-panel .voice-status, #agent-panel .agent-attachment-status { margin-top: 7px; padding: 0 4px; font-size: 12px; }
+#agent-panel .agent-form > .agent-attachments { padding: 8px 0 0; }
+#agent-panel .agent-settings-card { margin-top: 18px; padding: 14px; border-radius: 12px; background: #131e33; border: 1px solid #2a3d61; }
+#agent-panel .agent-settings-card h4 { margin: 0 0 12px; font-size: 14px; color: #e0e8fc; font-weight: 550; }
+#agent-panel .agent-settings-card label { display: inline-block; margin-right: 12px; color: #aabbd8; font-size: 13px; }
+#agent-panel #voice-language { margin: 0; max-width: 105px; border: 1px solid #3f5076; background: #1a2944; color: #d7e4fa; font-size: 13px; }
+#agent-panel .agent-settings-card .voice-disclosure { margin: 10px 0 12px; padding: 0; font-size: 12px; color: #9cb0d0; line-height: 1.6; }
+#agent-panel .agent-subheading { color: #9cb2d2; }
+#agent-panel .agent-game-choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-bottom: 15px; }
+#agent-panel .agent-game-choices button { color: #d9e6fb; font-size: 14px; padding: 11px 8px; border-radius: 9px; border: 1px solid #394c79; background: #1b2542; }
+#agent-panel .agent-game-choices button:hover { border-color: #7c77cc; background: #2b3158; }
+#agent-panel .agent-library-page { padding: 12px 15px 20px; }
+#agent-panel [hidden] { display: none !important; }
+@container (max-width: 360px) {
+  #agent-panel .agent-profile { padding: 27px 12px 13px; gap: 10px; min-height: 124px; }
+  #agent-panel .agent-portrait { width: 71px; height: 83px; flex-basis: 71px; }
+  #agent-panel .agent-portrait img { width: 148px; height: 129px; left: -47px; top: -8px; }
+  #agent-panel .agent-profile-copy h2 { font-size: 15px; }
+  #agent-panel .agent-profile-copy p { font-size: 12px; }
+  #agent-panel .agent-presence { font-size: 12px; }
+  #agent-panel .agent-messages { padding-left: 11px; padding-right: 11px; }
+  #agent-panel .agent-welcome strong, #agent-panel .agent-welcome p { font-size: 14px; }
+  #agent-panel .agent-quick { gap: 6px; }
+  #agent-panel .agent-quick button { font-size: 12px; gap: 6px; padding: 10px 9px; }
+  #agent-panel .agent-quick svg { width: 16px; height: 16px; }
+  #agent-panel .agent-form { margin-left: 8px; margin-right: 8px; padding-left: 7px; padding-right: 7px; }
+  #agent-panel .agent-form > .agent-input-tools { gap: 5px; }
+  #agent-panel .agent-input-tools .agent-tool { font-size: 12px; gap: 4px; padding: 5px 3px; }
+  #agent-panel .agent-tool svg { width: 14px; height: 14px; }
+}
+@media (max-height: 740px) and (min-width: 731px) {
+  #agent-panel .agent-profile { min-height: 110px; padding-top: 22px; padding-bottom: 7px; }
+  #agent-panel .agent-portrait { height: 80px; }
+  #agent-panel .agent-chat-row { margin-bottom: 16px; }
+  #agent-panel .agent-quick button { min-height: 42px; padding-top: 8px; padding-bottom: 8px; }
+}
+:root[data-theme=light] #agent-panel { background: linear-gradient(135deg, #f6f8ff, #eff3ff) padding-box, linear-gradient(140deg, #9977dc, #59a6ec) border-box; }
+:root[data-theme=light] #agent-panel .agent-profile { background: linear-gradient(130deg, #172140, #182a4c); }
+:root[data-theme=light] #agent-panel .agent-form { background: #e7edf9; border-color: #a5b8d9; }
+:root[data-theme=light] #agent-panel .agent-form textarea { color: #283d60; background: #f9fbff; border-color: #bccbe3; }
+:root[data-theme=light] #agent-panel .agent-form textarea::placeholder { color: #697c9b; }
+:root[data-theme=light] #agent-panel .agent-input-tools .agent-tool { color: #3e547b; background: #f3f6fc; border-color: #bccce5; }
+:root[data-theme=light] #agent-panel .agent-tool svg { color: #546e9e; }
+:root[data-theme=light] #agent-panel .agent-settings-card { background: #edf2fc; border-color: #bfcee6; }
+:root[data-theme=light] #agent-panel .agent-settings-card h4 { color: #344b71; }
+:root[data-theme=light] #agent-panel .agent-settings-card label, :root[data-theme=light] #agent-panel .agent-settings-card .voice-disclosure { color: #637a9f; }
+:root[data-theme=light] #agent-panel .agent-game-choices button { background: #edf1fc; border-color: #adbfdf; color: #425b86; }
+@media (prefers-reduced-motion: reduce) {
+  #agent-panel *, #agent-panel *::before, #agent-panel *::after { transition: none !important; animation: none !important; }
+}

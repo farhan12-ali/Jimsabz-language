@@ -1,0 +1,14 @@
+// budh reads input; budhai prints output.
+dec feesad = budh("Feesad: ")
+
+jey (feesad < 0 || feesad > 100) {
+    budhai "Feesad 0 kha 100 taeen likho."
+} na_ta jey (feesad > 90) {
+    budhai "A"
+} na_ta jey (feesad > 70) {
+    budhai "B"
+} na_ta jey (feesad > 50) {
+    budhai "C"
+} na_ta {
+    budhai "F"
+}

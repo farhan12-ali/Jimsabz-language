@@ -1,0 +1,8 @@
+kam pick(adad x) -> adad {
+ wapas x+1
+}
+kam pick(lafz x) -> lafz {
+ wapas x+"!"
+}
+budhai pick(4)
+budhai pick("hi")

@@ -1,0 +1,22 @@
+// Planned locally from the requested inputs and operations.
+kharna "modules/numeric.jimsabz"
+adad count = 7
+qatar dec values = []
+jey (count >= 1 && count <= 1000) {
+    gin (adad i = 0; i < count; i++) {
+        dec value = budh("Number: ")
+        values.joryo(value)
+    }
+}
+jey (values.lambai > 0) {
+    lafz report = ""
+    report += "Total: " + totalValues(values) + "\n"
+    report += "Average: " + totalValues(values) / values.lambai + "\n"
+    report += "Minimum: " + minimumValue(values) + "\n"
+    report += "Maximum: " + maximumValue(values) + "\n"
+    sortValues(values)
+    report += "Median: " + medianValue(values) + "\n"
+    budhai report
+} na_ta {
+    budhai "Choose between 1 and 1000 numbers."
+}

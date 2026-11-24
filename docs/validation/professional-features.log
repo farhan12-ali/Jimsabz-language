@@ -1,0 +1,526 @@
+PASS each visible update adds one line and preserves Unicode/blank lines
+PASS no final newline, CRLF and empty source remain intact
+PASS Stop leaves the visible draft and prevents later lines
+PASS cancel before writing creates no visible code
+PASS Stop interrupts a pending line delay immediately
+PASS a new writing request works after cancellation
+✔ tests/agent-writing.test.mjs (124.633916ms)
+PASS plain output
+PASS operator-looking strings remain strings
+PASS left operand is evaluated before side effects
+PASS arguments are evaluated left to right
+PASS compound target value is read before right side
+PASS interactive string
+PASS sum of two inputs
+PASS report input and output compatibility
+PASS recover invalid input
+PASS decimal input
+PASS boolean input
+PASS operator precedence
+PASS integer division
+PASS decimal promotion
+PASS dual comparisons
+PASS logical precedence
+PASS short circuit
+PASS explicit casts
+PASS typed arrays and methods
+PASS nested arrays
+PASS empty typed arrays
+PASS array bound exception
+PASS objects and field mutation
+PASS object method mutation
+PASS recursive functions
+PASS for break continue
+PASS foreach loop
+PASS while and block scope
+PASS switch and break
+PASS default switch
+PASS nested exception handling
+PASS try scope unwind with break
+PASS integer overflow trapped
+PASS Unicode identifiers and aliases
+PASS comments and escapes
+PASS strict narrowing rejected
+PASS undeclared name rejected
+PASS constant mutation rejected
+PASS constant array mutation rejected
+PASS constant method mutation rejected
+PASS constant aliases cannot mutate backing array
+PASS missing library rejected in semantic stage
+PASS unclosed block rejected
+PASS unterminated string rejected
+PASS illegal symbol rejected
+PASS semicolon outside for rejected
+PASS loop control outside loop rejected
+PASS missing return rejected
+PASS wrong constructor arity rejected
+PASS math library functions
+PASS math library guard
+PASS file round trip
+PASS file traversal caught
+PASS persistent state round trip
+PASS missing sprite rejected
+PASS beginner output shorthand
+PASS module compilation uses workspace files
+PASS circular import failure is semantic
+PASS blank 2D has no actors or handlers
+PASS blank 3D has no actors or handlers
+PASS agent builder percentage
+PASS agent builder login
+PASS agent builder objects
+PASS agent builder statistics
+PASS agent builder output
+PASS agent builder input
+PASS agent builder sum
+PASS agent builder condition
+PASS agent builder marks
+PASS agent builder loop
+PASS agent builder function
+PASS agent builder array
+PASS agent builder player2d
+PASS agent builder scene3d
+PASS agent builder racing2d
+PASS held input moves an actor
+PASS timer executes authored game code
+PASS collision updates authored state
+PASS instruction budget halts an endless loop
+PASS Jimsa greeting is conversational and creates no source
+PASS beginner request writes quoted Jimsabz output
+PASS Roman Urdu number input request is executable
+PASS salutation inside a program request still generates source
+PASS requested racing phrasing classified
+PASS agent refuses other languages
+PASS unsupported games are not substituted
+PASS agent checks generated code
+PASS ZIP preserves nested files
+PASS Windows executable embeds current JBC2
+89/89 browser compiler, VM, agent and export checks passed.
+✔ tests/browser.test.mjs (272.364058ms)
+PASS real phase evidence preserves source tokens, AST, symbols and bytecode
+PASS capture is opt-in and cannot alter compiled instructions
+PASS parser snapshot precedes module expansion and later type annotations
+PASS lexical error blocks all later phases without inventing evidence
+PASS syntax error retains lexical tokens but creates no parsed tree
+PASS semantic error keeps previous artifacts and precise error location
+PASS missing asset stops after actual code generation
+PASS asset evidence identifies actual workspace files
+PASS compile-only runtime stays ready until a real execution event
+PASS preview limits bound artifacts without changing total counts
+PASS replay pauses and resumes without skipping phases
+PASS replay speed changes visual timing and stops at error phase
+PASS replay reset removes previous phase state and honors zero-step errors
+PASS 3D projection changes with camera rotation and perspective depth
+PASS all scene nodes remain visible in normal desktop and narrow views
+PASS class fields and qualified method signatures appear in semantic evidence
+PASS large semantic tables keep bounded rows and complete declaration counts
+17/17 compiler journey evidence, error, replay and 3D checks passed.
+✔ tests/compiler-journey.test.mjs (166.890933ms)
+PASS debugger into real VM frames/locals
+PASS debugger over real VM frames/locals
+PASS debugger out real VM frames/locals
+PASS debugger breakpoint real VM frames/locals
+✔ tests/debugger.test.mjs (85.711257ms)
+PASS health describes the real target without loading the native runtime
+PASS API returns an actual PE64 executable with a download filename
+PASS standalone output includes the exact trusted runtime and valid bytecode
+PASS API-generated bytecode executes in the existing native VM
+PASS imported modules, typed functions and interactive input survive packaging
+PASS embedded payload runs standalone in the native Linux harness from an empty directory
+PASS referenced binary assets are embedded exactly and unused files are omitted
+PASS compiler errors return 422 with the real phase, code and location
+PASS missing referenced assets prevent an executable download
+PASS invalid source syntax is reported without executing the source
+PASS request method and media type are enforced
+PASS cross-origin builds are rejected without CORS credentials
+PASS malformed JSON and missing entry source return actionable client errors
+PASS absolute paths, traversal, Windows devices and duplicate case paths are rejected
+PASS output names cannot inject headers or escape a directory
+PASS unsupported targets and malformed binary assets are rejected
+PASS oversized source and declared request sizes are rejected before compilation
+PASS a wrong runtime fails closed rather than returning a corrupted executable
+PASS frontend payload keeps binary assets and excludes history, trash and file handles
+PASS frontend validates the real API checksum before allowing download
+PASS frontend reports API unavailability and preserves the local build alternative
+PASS real HTTP server serves Studio and the download control
+PASS real HTTP API returns an independently verified Windows executable
+PASS HTTP host validation and project-only file serving remain bounded
+PASS simultaneous HTTP builds are bounded to one isolated job
+PASS timed-out build jobs terminate and the HTTP service recovers
+
+26 executable API, native payload, frontend contract and HTTP integration checks passed.
+✔ tests/exe-api.test.mjs (743.8124ms)
+PASS strict grade boundary 0 -> F
+PASS strict grade boundary 50 -> F
+PASS strict grade boundary 51 -> C
+PASS strict grade boundary 70 -> C
+PASS strict grade boundary 71 -> B
+PASS strict grade boundary 90 -> B
+PASS strict grade boundary 91 -> A
+PASS strict grade boundary 100 -> A
+PASS percentage uses decimal division
+PASS out-of-range marks are requested again
+PASS subject count and maximum can be requested
+PASS ordinary generators use Roman Sindhi numeric names
+PASS if / else-if / else chooses one branch: -3
+PASS if / else-if / else chooses one branch: 0
+PASS if / else-if / else chooses one branch: 3
+PASS the user's complete marks request is generated
+PASS report produces a separate runnable project and plan
+PASS unsupported report requirements remain explicit
+PASS multiple supported report examples all compile
+PASS attachment size and unsupported types fail clearly
+PASS text reports retain their readable content
+PASS voice results, stop and denied microphone recover
+PASS unsupported voice has a useful fallback
+PASS theme persists and follows changes from another window
+24/24 marks, report, voice and theme checks passed.
+✔ tests/features-v4.test.mjs (158.16512ms)
+PASS all 1,001 Roman Sindhi words round-trip and compile to numbers
+PASS number converter functions round-trip 0–1000
+PASS aliases, existing variable names and full integer range coexist
+PASS unknown word literal fails at lexical phase
+PASS word conversion rejects wrong types and out-of-range values
+PASS 1 subject marksheet reads exactly that many values
+PASS 7 subject marksheet reads exactly that many values
+PASS 12 subject marksheet reads exactly that many values
+PASS 1000 subject marksheet reads exactly that many values
+PASS 1001 subject marksheet reads exactly that many values
+PASS runtime count validates count and marks, then calculates average
+PASS decimal maxima, named subjects, custom prompts and per-subject percentages
+PASS inclusive and quoted custom grade rules are honored
+PASS 1,000 grading conditions use data rather than nested branches
+PASS subject counts parse digits, Roman Sindhi, English and follow-up overrides
+PASS general statistics uses requested and runtime input counts
+PASS requested 1–1000 range prints all Sindhi words
+PASS language help covers arrays, functions, phases, types, input and words
+PASS contextual language questions and unknown topics are honest
+PASS all language-help code examples pass the real compiler
+PASS all number words have a downloadable CSV entry
+PASS agent generates seven-subject code and adapts follow-up counts
+PASS agent answers questions without generating a file
+PASS agent reports inconsistent requests before writing source
+24/24 flexible agent and Sindhi-number checks passed.
+✔ tests/features-v5.test.mjs (552.185271ms)
+PASS valid relative Unicode and nested paths
+PASS unsafe paths and Windows-reserved names are rejected
+PASS explorer infers folders and sorts folders before files
+PASS create files and empty folders without changing existing source
+PASS a folder ending in .jimsabz is never a program entry
+PASS duplicate paths and file/folder collisions are atomic
+PASS folder rename preserves children, binary assets, active file and entry
+PASS renamed module imports still compile and execute
+PASS moving an importing file recalculates its relative imports
+PASS imports inside a moved folder keep working together
+PASS rename does not rewrite normal strings, comments or built-in imports
+PASS rename reports lexical errors without losing that file's contents
+PASS rename refuses existing destinations and moving a folder into itself
+PASS case-only rename works and source extensions are convenient
+PASS renaming the last source to a text file clears its program entry
+PASS moving the last file out of a folder preserves its empty parent
+PASS delete file selects another source and keeps parent folders
+PASS delete folder uses a path boundary and keeps unrelated folders
+PASS deleting the last source leaves an empty editable workspace
+PASS restore folder recovers Unicode source, empty folders and binary bytes
+PASS restore refuses to overwrite a newly created path
+PASS invalid delete and restore targets do not change data
+PASS ZIP export preserves empty folder entries and excludes Trash
+PASS whole folders move out of the workspace list and restore with stable IDs
+PASS a stale tab cannot silently resurrect a deleted folder
+PASS Trash and saved records survive cloning without sharing mutable state
+26/26 file, folder, Trash, import and export checks passed.
+✔ tests/files.test.mjs (100.791008ms)
+PASS budhai output forms never request input
+PASS budh reads all primitive types
+PASS Sindhi script aliases use the same I/O roles
+PASS legacy output spelling still works
+PASS old input spelling gives migration advice
+PASS typed functions recurse and accept dynamic arrays
+PASS field defaults depend on earlier fields and allow overrides
+PASS default expressions execute once per omitted field
+PASS field defaults use declaration globals rather than caller locals
+PASS array and nested-object defaults have separate instance state
+PASS empty classes retain their methods in both compilers
+PASS paan mutates fields and calls another method on the same object
+PASS methods recurse through the current object
+PASS object arrays pass through typed functions and retain identity
+PASS prefix and postfix increments return the correct values
+PASS increment evaluates an indexed target once
+PASS increment overflow is catchable and leaves the value intact
+PASS constant aliases prevent mutation through object methods
+PASS gin accepts omitted initialization, condition and update
+PASS nested loop break and continue affect the correct loop
+PASS arithmetic precedence, remainder and compound assignments
+PASS nested arrays remain typed and independently addressable
+PASS division faults are recoverable inside ordinary functions
+PASS missing required constructor field
+PASS too many constructor arguments
+PASS wrong field default type
+PASS field default cannot read a later field
+PASS constant class fields remain explicit errors
+PASS receiver binding cannot be reassigned
+PASS receiver name cannot be a field
+PASS receiver name cannot be a method parameter
+PASS string increment is rejected
+PASS literal increment is rejected
+PASS constant increment is rejected
+PASS array length is read-only
+PASS typed array arguments reject mismatches
+PASS object builder accepts 1 inputs
+PASS object builder accepts 7 inputs
+PASS object builder accepts 1000 inputs
+PASS object builder supports a runtime count
+PASS completion uses canonical input/output and valid class snippets
+PASS Jimsa generates and explains classes with the current syntax
+42/42 language v2.6 checks passed (browser only).
+✔ tests/language-v7.test.mjs (385.048498ms)
+PASS native launcher serves the built-in local agent interface
+PASS the trained classifier is served from the local package
+PASS the local versioned knowledge index is available without an inference service
+PASS the removed model-list route is unavailable
+PASS the removed inference route cannot accept chat requests
+PASS heartbeat and startup remain usable after rejected requests
+PASS native host rejects a different Host and duplicate Host headers
+PASS encoded traversal cannot read files outside the studio directory
+
+8 native local-only host checks passed.
+✔ tests/local-host.test.mjs (120.751294ms)
+✔ local capabilities stay disabled until a workspace is explicitly configured (4.938304ms)
+✔ local project API requires a session token and rejects cross-origin requests (17.861613ms)
+✔ path validation blocks traversal, Git internals, executables and Windows drives (0.962952ms)
+✔ disk import returns exact text, binary contents and checksums (20.053167ms)
+✔ disk save refuses external changes and preserves the existing file (12.656798ms)
+✔ reviewed disk save creates nested files without deleting unrelated work (11.975772ms)
+✔ linked directories cannot redirect source writes outside the selected root (11.513004ms)
+✔ Git state, staging, reviewed commit and history work in a real repository (245.54982ms)
+✔ commit refuses a staged snapshot that changed after review (175.687398ms)
+✔ first-time users can supply a per-commit identity without changing Git configuration (181.277523ms)
+✔ Git commits do not execute repository hooks or signing programs (169.03731ms)
+✔ staging disables executable clean and process filters from repository configuration (66.217533ms)
+✔ branch creation and switching preserve working changes (287.168842ms)
+✔ unstage works before the first commit and leaves source files in place (121.794674ms)
+✔ HTTP local endpoints enforce origin, content type, token and workspace scope (62.019289ms)
+PASS real worker compiles and executes a typed function through the public runner
+PASS real worker returns exact compiler diagnostics without executing invalid source
+PASS real worker executes independent expected-output fixtures
+PASS real worker is terminated when its outer timeout expires
+PASS cancel terminates a real worker and the next request still succeeds
+PASS bundled file-backed knowledge excerpts match their declared source lines exactly
+
+6 real worker and source-evidence checks passed. Browser layout and model quality were not tested here.
+✔ tests/madadgar-worker.test.mjs (383.150868ms)
+PASS staged multi-file edits compile and execute while live files remain untouched
+PASS existing files must be read before replacement or deletion
+PASS absolute/traversal/executable paths and case collisions are rejected
+PASS stale drafts cannot overwrite subsequent user source edits
+PASS a draft from another workspace is rejected even with identical files
+PASS rename updates entry and imported module paths using the actual file adapter
+PASS deletion goes to Trash only after Apply and undo restores exact source
+PASS undo refuses later file edits and preserves unrelated newer project notes
+PASS staged memory refuses to overwrite later manual notes
+PASS applying a new program entry selects it so Run uses the verified entry
+PASS private paths and secret-bearing draft/memory text are blocked
+PASS tool registry rejects unknown actions, unknown arguments and invalid types
+PASS retrieval returns exact versioned source lines, with current profile above old brief
+PASS English array/function queries retrieve real Jimsabz example code
+PASS retrieval treats constructor and prototype-like words as ordinary untrusted text
+PASS compile-only evidence leaves runtime Not Run and includes seven real stages
+PASS compiler failures expose real diagnostics and block later phases
+PASS VM consumes supplied input, compares output and reports failed expectations
+PASS missing inputs and runtime faults are reported, never fabricated as successful output
+PASS test and compiler evidence becomes stale after another edit
+PASS agent run file writes are confined to cloned runtime state
+PASS agent runtime rejects networking and marks game initialization as headless
+PASS local greeting and language answers require no model service configuration
+PASS the included trained classifier generates compiler-verified source locally
+PASS generation never contacts an external service when the local model is supplied
+PASS local programs use reusable arrays/functions for 1000 numeric inputs
+PASS follow-up counts reuse the previous generator request without overwriting source
+PASS check current source reports actual phases and leaves runtime Not Run
+PASS run and test requests consume explicit fixtures through the real VM
+PASS a test without expectations is Not Run and requests a concrete fixture
+PASS input parsing rejects malformed arrays and never invents missing inputs
+PASS fixture input strings preserve brackets, quotes, backslashes and Unicode
+PASS the local agent repairs a missing library import and verifies the complete draft
+PASS lexer-based block repair ignores braces in strings and comments
+PASS legacy input repair changes only the diagnosed input spelling
+PASS a module diagnostic repairs its own file while preserving its importer
+PASS unsupported repairs explain the actual error without changing files
+PASS analyze and explain requests report real source structure without edits
+PASS project notes are retrievable as unverified context and stay separate by project
+PASS supplied Jimsabz code can use language features beyond the built-in generator intents
+PASS invalid provided source remains an unapplied draft with Apply disabled
+PASS an explicitly requested current-file replacement still needs review
+PASS reports are read locally and prepare an isolated folder with explicit remaining work
+PASS repeated report generation chooses a new folder and preserves all old report files
+PASS unsupported game generation is honest about the available local builders
+PASS cancellation before local generation leaves the source untouched
+PASS agent source and native launcher contain no external model connection code
+
+47 built-in local agent checks passed with the real included classifier and compiler/VM.
+✔ tests/madadgar.test.mjs (676.635911ms)
+PASS Variables and types matches the published sample
+PASS Input and conditions matches the published sample
+PASS For, while and foreach matches the published sample
+PASS Functions and recursion matches the published sample
+PASS Dynamic and nested arrays matches the published sample
+PASS Classes and independent objects matches the published sample
+PASS Complete marksheet matches the published sample
+PASS the combined program contains every requested language construct
+PASS combined marksheet accepts 1 runtime subjects
+PASS combined marksheet accepts 7 runtime subjects
+PASS combined marksheet accepts 1000 runtime subjects
+PASS strict grading boundary 50 gives F
+PASS strict grading boundary 50.5 gives C
+PASS strict grading boundary 70 gives C
+PASS strict grading boundary 70.5 gives B
+PASS strict grading boundary 90 gives B
+PASS strict grading boundary 90.5 gives A
+PASS mark inputs recover from text, zero counts and out-of-range values
+PASS changing a constructor field supports a different marks maximum
+PASS the check reports a wrong expected output instead of a green result
+PASS semantic failures retain the actual compiler phase
+PASS unexpected input requests are reported rather than left waiting
+PASS runtime faults fail the actual example check
+PASS every demo has a portable source file name and independent sample data
+PASS the downloadable source and Windows check fixtures match the shown examples
+25/25 presentation checks passed (browser VM only).
+✔ tests/presentation.test.mjs (197.687196ms)
+PASS exact reported marks request reads exactly two values and computes 85 percent
+PASS natural request produces verified code: Could you please write a program that reads two subjects and their percentage?
+PASS natural request produces verified code: write a simple program for two inputs marks percentge
+PASS natural request produces verified code: Create a 7 subjects percentage program using an array and a function
+PASS natural request produces verified code: Give me code for 4 subject marks and percentage
+PASS obtained and total marks are distinct from two subject inputs
+PASS invalid obtained/total values cannot produce a misleading percentage: 80,0
+PASS invalid obtained/total values cannot produce a misleading percentage: -1,100
+PASS invalid obtained/total values cannot produce a misleading percentage: 101,100
+PASS out-of-range subject marks are rejected
+PASS text entered for numeric marks is caught and explained
+PASS per-subject maximum and decimals affect the actual calculation
+PASS non-binary decimal maxima retain truthful verification
+PASS runtime-selected subject count is used and checked
+PASS 1000 subject percentage inputs remain general and use the real VM
+PASS array/function follow-up preserves count and old live source
+PASS obtained/total follow-up can actually add a function and array
+PASS grade requests still accept a count stated as inputs
+PASS quoted output is preserved while request prose is normalized
+PASS polite compile requests compile current source without generating a file
+PASS exact gaming hub request stages the whole project and tests login
+PASS failed login cannot start the 3D hub
+PASS wrong account name is rejected even when passphrase matches
+PASS empty account values are rejected before login and world initialization
+PASS requested attempt limit controls runtime behavior
+PASS successful console-only login does not invent a game window
+PASS scene navigation works and logout prevents reentry
+PASS conceptual account question answers without new source: Explain the gaming hub architecture
+PASS conceptual account question answers without new source: How do login attempts work?
+PASS repeated hub generation chooses a separate folder and preserves the old one
+PASS report login creates the working local component and lists production gaps
+PASS report percentages use the same minimal count-aware generator
+PASS failed generated example tests disable Apply and mark verification failed
+PASS local generation works with every network fetch denied
+PASS unknown requests receive a targeted clarification and do not create unrelated code
+Compilation successful.
+Compilation successful.
+PASS new programs compile and run using the existing native compiler
+36 professional request, program behavior, account boundary and native checks passed.
+✔ tests/professional-agent.test.mjs (439.797721ms)
+✔ live diagnostics report the actual compiler code, phase and location (9.349778ms)
+✔ analysis never executes source or asks for interactive input (2.262127ms)
+✔ definition follows an imported function and reports its real signature (2.106924ms)
+✔ safe rename preserves shadowed variables, comments and strings (1.813632ms)
+✔ safe function rename updates imported call sites (1.465888ms)
+✔ rename refuses collisions and invalid identifiers (0.815318ms)
+✔ rename refuses stale source, unsupported members and invalid programs (0.512452ms)
+✔ completion returns visible local symbols with parameter signatures (4.06927ms)
+✔ class member completion uses checked receiver types (1.382703ms)
+✔ formatter preserves compiler output, newline boundaries, braces in strings and comments (3.711029ms)
+✔ Unicode variable definitions and renaming preserve Unicode source (1.761753ms)
+✔ rename keeps exception variables separate from outer variables (1.770191ms)
+✔ write-ahead journal finds unsaved edits and clears already-saved source (0.295365ms)
+✔ recovery snapshots are cloned, deduplicated and isolated by workspace (1.179166ms)
+✔ history retains no more than 40 checkpoints (1.172376ms)
+✔ file comparison checks binary assets and source paths (0.111618ms)
+✔ folder synchronization writes a new project and keeps unrelated disk files (0.965133ms)
+✔ folder synchronization refuses pre-existing differences and later external edits (0.468185ms)
+✔ folder writes reject traversal, Git internals and absolute Windows paths (0.18624ms)
+✔ test discovery validates suites and reports malformed JSON (0.313102ms)
+✔ test explorer executes selected cases and reports the actual mismatch (1.166096ms)
+✔ test explorer reports compiler failures with navigable locations (0.354014ms)
+✔ test cancellation leaves unexecuted cases unreported instead of passing (0.250838ms)
+✔ output differences include final newlines (0.076656ms)
+✔ new agent plans compile into multiple source files for unseen combinations (12.14913ms)
+✔ compositional numeric planner executes total, average, min, max, median, sorting and search (4.245014ms)
+✔ numeric follow-up preserves previous operations and changes count (0.475275ms)
+✔ runtime count is validated before array access (1.638298ms)
+✔ calculator fixtures execute and division by zero is handled (0.9094ms)
+✔ agent integration stages compiler-verified numeric modules for review (9.667011ms)
+✔ follow-up edits update both known generated source files without duplicating the project (12.087797ms)
+✔ follow-up generation preserves user-modified modules by making a separate draft (8.737291ms)
+✔ existing marks and percentage routing remains outside the new numeric planner (0.0992ms)
+✔ find their median does not add an unrequested search prompt (96.950477ms)
+✔ scene reader uses actual parser positions and primitive properties (1.432618ms)
+✔ scene edits preserve gameplay logic and compile (1.306508ms)
+✔ 3D placement and scale edits compile without changing camera controls (0.673024ms)
+✔ visual object creation inserts into the correct game block (0.686674ms)
+✔ scene editor rejects expression rewrites and unsafe properties (0.297328ms)
+✔ asset inventory separates existing, missing and unreferenced resources (0.369697ms)
+✔ UI exposes all eight additions and retains separate Run window (14.561585ms)
+PASS Run opens a popup synchronously with the requested size
+PASS blocked popup is reported before execution starts
+PASS output and pending input survive a late console handshake
+PASS other origins, windows and sessions cannot control the program
+PASS rerun reuses its window and resets output with a new run id
+PASS closing the output window reports one cancellation
+PASS finished execution keeps its result readable and ends input
+PASS errors retain source locations and output buffers are bounded
+PASS debug commands cross the authenticated run-window bridge
+9/9 separate-window lifecycle checks passed.
+✔ tests/run-window.test.mjs (67.973148ms)
+✔ standalone file I/O executes from the exact payload with isolated user data (35.377479ms)
+PASS defaults and named browser + native JBC
+PASS variadic and spread browser + native JBC
+PASS overload browser + native JBC
+PASS escaping mutable closure browser + native JBC
+PASS lambda callback map filter reduce browser + native JBC
+PASS generic function and class browser + native JBC
+PASS interface inheritance polymorphism browser + native JBC
+PASS dictionary set nullable iteration browser + native JBC
+PASS async scheduling browser + native JBC
+PASS async error propagation browser + native JBC
+PASS expanded libraries browser + native JBC
+PASS async file IO browser + native JBC
+PASS overload slots through base reference browser + native JBC
+PASS bound method references browser + native JBC
+PASS nullable null checks browser + native JBC
+PASS closure survives collection and recursion browser + native JBC
+PASS default evaluation and named order browser + native JBC
+PASS collection structural mutation detected browser + native JBC
+PASS task cancellation is catchable browser + native JBC
+PASS custom constructor browser + native JBC
+PASS empty parts preserved by join browser + native JBC
+PASS base constructor chaining and field default scope browser + native JBC
+PASS missing interface method
+PASS inheritance cycle
+PASS bad generic constraint
+PASS await outside async
+PASS wrong dictionary value
+PASS unknown named argument
+PASS duplicate signatures different parameter names
+PASS generic class constraint
+PASS private field rejected
+PASS nonvirtual override rejected
+PASS async default rejected
+PASS uninitialized function rejected
+PASS inherited private field rejected
+PASS base constructor must be initialized
+{ passed: 36, failed: 0 }
+✔ tests/v3-browser.test.mjs (274.214148ms)
+ℹ tests 73
+ℹ suites 0
+ℹ pass 73
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3445.468169

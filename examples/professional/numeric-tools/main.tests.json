@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "entry": "main.jimsabz",
+  "cases": [
+    {
+      "name": "Requested operations with sample data",
+      "inputs": [
+        "-15",
+        "-2",
+        "11",
+        "-7",
+        "6",
+        "-12",
+        "1"
+      ],
+      "expectedOutput": "Number: Number: Number: Number: Number: Number: Number: Total: -18\nAverage: -2.57142857143\nMinimum: -15\nMaximum: 11\nMedian: -2\n\n"
+    }
+  ]
+}

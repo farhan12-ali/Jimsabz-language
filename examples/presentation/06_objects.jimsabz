@@ -1,0 +1,22 @@
+qism Talib {
+    lafz naalo = "Farhan"
+    adad nishan = 0
+
+    kam joryo(adad ang) -> Talib {
+        paan.nishan += ang
+        wapas paan
+    }
+    kam paas() -> isharo {
+        wapas paan.nishan >= 50
+    }
+}
+
+Talib pheru = naon Talib("Farhan", 86)
+Talib biyo = naon Talib("Ali")
+pheru.joryo(4)
+
+qatar Talib talib_a = [pheru, biyo]
+gin hik andar talib_a {
+    budhai hik.naalo + ": " + hik.nishan
+    budhai "Paas: " + hik.paas()
+}

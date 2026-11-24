@@ -1,0 +1,15 @@
+// 2 subject inputs; each is out of 100.
+azmai {
+    dec nishan_1 = budh("Subject 1 marks (0-100): ")
+    dec nishan_2 = budh("Subject 2 marks (0-100): ")
+    jey (nishan_1 >= 0 && nishan_1 <= 100.0 && nishan_2 >= 0 && nishan_2 <= 100.0) {
+        dec kul = nishan_1 + nishan_2
+        dec feesad = kul * 100.0 / 200
+        budhai "Total marks: " + kul
+        budhai "Percentage: " + feesad + "%"
+    } na_ta {
+        budhai "Each mark must be between 0 and 100."
+    }
+} pakar (maslo) {
+    budhai "Enter numeric marks. " + maslo
+}

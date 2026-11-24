@@ -1,0 +1,447 @@
+{
+  "studio": "0.19.0",
+  "agent": "Built-in local Jimsabz Code Madadgar",
+  "native_compiler": "0.8.0",
+  "language": "3.0-preview with retained v2.6 baseline",
+  "agent_engine": "Trained local classifier + requirements/compositional numeric planners + Jimsabz project builders + local compiler/VM tools",
+  "external_inference_service": false,
+  "api_key_required": false,
+  "model_installation_required": false,
+  "training": {
+    "reused_existing_model": true,
+    "new_training_run": false,
+    "training_requests": 380,
+    "held_out_requests": 117,
+    "corpus_targets": 497,
+    "generator_intents": 15,
+    "raw_classifier_correct": 100,
+    "raw_classifier_accuracy": 0.8547008547008547,
+    "scope": "Curated raw classifier evaluation; not a measure of unrestricted code generation or combined routing quality",
+    "executed_for_studio": "0.14.0"
+  },
+  "local_tools": 26,
+  "knowledge_chunks": 73,
+  "browser_observations": [
+    "Live diagnostics displayed the actual undeclared-name code SEM-02 and file:line:column.",
+    "Formatting and a reviewed variable rename preserved behavior; the separate Run window printed 42.",
+    "A saved test case passed, and all seven bundled language examples passed through the test explorer.",
+    "IndexedDB recovery history displayed manual and before-formatting checkpoints.",
+    "A primitive was added to a 3D scene draft, changed to a sphere at X=2, rendered from actual VM initialization, and compiled/applied to source.",
+    "A 12-number request generated a checked main/module project; its fixture passed in the real VM.",
+    "A follow-up staged Edit operations for the existing main/module pair, passed compilation and one example test, and preserved unrelated files.",
+    "Keyboard resizing changed the agent width to 340; reset restored defaults. Large-text, contrast and reduced-motion settings updated rendered state.",
+    "The release tab displayed real export evidence and Not Run labels for Windows execution, installer installation and signing.",
+    "Studio 0.19.0: Run opened the factory in a second window and the real VM printed 30 after the journey.",
+    "Semantic failure stopped in Room 4; later phases were Not Executed and execution remained Not Run.",
+    "Two console input requests accepted 80 and 100 and produced 80; clearing visible output preserved report output.",
+    "Actual parser/AST nodes, selection, expansion and zoom were inspected. IDE light/dark settings synchronized with the second window.",
+    "Debugger Step Over reached source line 2 and showed local a=10. A real 2D game initialized in the preserved canvas.",
+    "JSON report, compiler SVG and actual game-frame SVG downloads completed. Stop changed actual runtime status to Stopped."
+  ],
+  "limitations": [
+    "Constrained local classifier, planners and code builders; no unrestricted code LLM, model service or new training run.",
+    "Advanced refactoring remains limited to unambiguous supported symbols; generic/overloaded/member renaming is refused.",
+    "Native Windows execution, Inno Setup compilation/installation and publisher signing were not performed in this Linux development session.",
+    "Git and disk repository integration require Node 20+, Git and an explicitly configured local workspace root; unavailable on the hosted preview.",
+    "Scene editing handles literal object properties and top-down placement; not full mesh/animation/tilemap authoring or gameplay verification.",
+    "Browser recovery is local browser storage with bounded retention; browser data removal removes that history.",
+    "Folder picker access depends on browser support; Windows graphical/file picker operation was not tested.",
+    "No current FPS/audio/memory benchmarks or narrow-screen execution measurement was performed.",
+    "Console login/hub demo retains its existing memory-only, visible-passphrase limitations."
+  ],
+  "historical_validation": {
+    "0.12.0": {
+      "passed": 402,
+      "suites": [
+        {
+          "name": "Built-in local classifier, generation, repairs, drafts, tools and fixtures",
+          "status": "Passed",
+          "passed": 47,
+          "log": "validation/local-agent-core.txt"
+        },
+        {
+          "name": "Real isolated worker execution and exact reference evidence",
+          "status": "Passed",
+          "passed": 6,
+          "log": "validation/local-agent-workers.txt"
+        },
+        {
+          "name": "Native local-only host and removed inference endpoints",
+          "status": "Passed",
+          "passed": 8,
+          "log": "validation/local-agent-host.txt"
+        },
+        {
+          "name": "Native compiler/VM CLI regressions",
+          "status": "Passed",
+          "passed": 72,
+          "log": "validation/local-agent-native.txt"
+        },
+        {
+          "name": "Studio compiler/VM, local generators and exports (Node)",
+          "status": "Passed",
+          "passed": 87,
+          "log": "validation/local-agent-browser.txt"
+        },
+        {
+          "name": "Files, folders, Trash, imports and export",
+          "status": "Passed",
+          "passed": 26,
+          "log": "validation/local-agent-files.txt"
+        },
+        {
+          "name": "Marks, report, voice and theme adapters",
+          "status": "Passed",
+          "passed": 24,
+          "log": "validation/local-agent-v4.txt"
+        },
+        {
+          "name": "Flexible generators and Sindhi numbers",
+          "status": "Passed",
+          "passed": 24,
+          "log": "validation/local-agent-v5.txt"
+        },
+        {
+          "name": "Language baseline",
+          "status": "Passed",
+          "passed": 42,
+          "log": "validation/local-agent-language.txt"
+        },
+        {
+          "name": "v3 preview and native bytecode interoperability",
+          "status": "Passed",
+          "passed": 36,
+          "log": "validation/local-agent-v3.txt"
+        },
+        {
+          "name": "Compiler journey and evidence",
+          "status": "Passed",
+          "passed": 17,
+          "log": "validation/local-agent-journey.txt"
+        },
+        {
+          "name": "Separate Run-window lifecycle and bridge",
+          "status": "Passed",
+          "passed": 9,
+          "log": "validation/local-agent-run.txt"
+        },
+        {
+          "name": "Debugger VM modes",
+          "status": "Passed",
+          "passed": 4,
+          "log": "validation/local-agent-debugger.txt"
+        }
+      ],
+      "executed_for_studio": "0.12.0"
+    },
+    "0.13.0": {
+      "scope": "Agent interface only; separate Run window retained",
+      "base_studio": "0.12.0",
+      "protected_files_checked": 57,
+      "protected_files_changed": 0,
+      "targeted_checks": {
+        "passed": 62,
+        "suites": [
+          {
+            "name": "Separate Run-window lifecycle and bridge",
+            "passed": 9
+          },
+          {
+            "name": "Built-in local agent",
+            "passed": 47
+          },
+          {
+            "name": "Real workers and reference evidence",
+            "passed": 6
+          }
+        ]
+      },
+      "browser_observations": [
+        "Chat / Tools / Projects / Learning tabs work",
+        "ArrowRight selects Projects and exposes current project summary",
+        "Create project opens the existing project dialog",
+        "Language guide and documentation search open existing references",
+        "Local sum draft compiled, reviewed and applied in an isolated workspace",
+        "Tools Run program opens the separate Run window",
+        "Run window accepted 12 and 8 and printed 20, then Finished",
+        "Dark and light themes inspected; no desktop horizontal overflow observed"
+      ],
+      "native_rebuild": false,
+      "windows_execution": "Not Run; unchanged binaries"
+    },
+    "0.14.0": {
+      "passed": 252,
+      "executed_for_studio": "0.14.0",
+      "suites": [
+        {
+          "name": "Request parsing, percentage behavior, login boundaries and native interoperability",
+          "status": "Passed",
+          "passed": 36,
+          "log": "validation/professional-professional.txt"
+        },
+        {
+          "name": "Local agent, drafts, repairs, tools and fixtures",
+          "status": "Passed",
+          "passed": 47,
+          "log": "validation/professional-core.txt"
+        },
+        {
+          "name": "Compiler/VM, builders and exports",
+          "status": "Passed",
+          "passed": 89,
+          "log": "validation/professional-browser.txt"
+        },
+        {
+          "name": "Flexible generators and Sindhi numbers",
+          "status": "Passed",
+          "passed": 24,
+          "log": "validation/professional-v5.txt"
+        },
+        {
+          "name": "Marks, reports, voice and themes",
+          "status": "Passed",
+          "passed": 24,
+          "log": "validation/professional-v4.txt"
+        },
+        {
+          "name": "Actual workers and exact source evidence",
+          "status": "Passed",
+          "passed": 6,
+          "log": "validation/professional-worker.txt"
+        },
+        {
+          "name": "Separate Run-window lifecycle and bridge",
+          "status": "Passed",
+          "passed": 9,
+          "log": "validation/professional-run.txt"
+        },
+        {
+          "name": "Compiler journey and evidence",
+          "status": "Passed",
+          "passed": 17,
+          "log": "validation/professional-journey.txt"
+        }
+      ]
+    },
+    "0.15.0": {
+      "checks": {
+        "passed": 75,
+        "executed_for_studio": "0.15.0",
+        "suites": [
+          {
+            "name": "Existing local request, program and native behavior",
+            "status": "Passed",
+            "passed": 36,
+            "log": "validation/neon-behavior.txt"
+          },
+          {
+            "name": "Separate Run-window lifecycle and bridge",
+            "status": "Passed",
+            "passed": 9,
+            "log": "validation/neon-run.txt"
+          },
+          {
+            "name": "Worker execution and exact source evidence",
+            "status": "Passed",
+            "passed": 6,
+            "log": "validation/neon-workers.txt"
+          },
+          {
+            "name": "Existing marks, reports, voice adapters and themes",
+            "status": "Passed",
+            "passed": 24,
+            "log": "validation/neon-voice.txt"
+          }
+        ]
+      },
+      "browser_observations": [
+        "New reference-style profile, six quick actions and Code/Search/Attach/Voice composer are displayed",
+        "Write program and General question focus the composer and preserve typed text",
+        "Build a game exposes supported game starters; Explain concepts opens Learning",
+        "Settings retains keyboard tab navigation, project information and voice language options",
+        "Search opens the real bundled documentation search",
+        "History icon opens conversation history with a separate clearing control",
+        "Create a project opens the existing project dialog",
+        "Existing percentage program accepted 80 and 90 in a second window and printed 170 and 85%",
+        "Generation through the redesigned composer returned actual source and Passed compiler/runtime/example-test evidence"
+      ]
+    },
+    "0.15.1": {
+      "checks": {
+        "passed": 45,
+        "executed_for_studio": "0.15.1",
+        "suites": [
+          {
+            "name": "Existing local requests, program behavior, account boundaries and native compiler",
+            "status": "Passed",
+            "passed": 36,
+            "log": "validation/no-progress-behavior.txt"
+          },
+          {
+            "name": "Separate Run-window lifecycle and bridge",
+            "status": "Passed",
+            "passed": 9,
+            "log": "validation/no-progress-run.txt"
+          }
+        ]
+      },
+      "browser_observations": [
+        "Submitted a two-subject percentage request with no task checklist element before or after the response",
+        "Complete Jimsabz source, Copy code, compiler/runtime Passed evidence and one passed example test remained visible",
+        "Run code opened a second window; inputs 80 and 90 produced total 170 and percentage 85%, then Finished"
+      ]
+    },
+    "0.16.0": {
+      "checks": {
+        "passed": 88,
+        "executed_for_studio": "0.16.0",
+        "suites": [
+          {
+            "name": "Local requests, program behavior, account boundaries and native compiler",
+            "status": "Passed",
+            "passed": 36,
+            "log": "validation/workspace-behavior.txt"
+          },
+          {
+            "name": "Separate Run-window lifecycle and bridge",
+            "status": "Passed",
+            "passed": 9,
+            "log": "validation/workspace-run.txt"
+          },
+          {
+            "name": "Compiler journey evidence, diagnostics, replay and 3D",
+            "status": "Passed",
+            "passed": 17,
+            "log": "validation/workspace-journey.txt"
+          },
+          {
+            "name": "File/folder, Trash, import and export",
+            "status": "Passed",
+            "passed": 26,
+            "log": "validation/workspace-files.txt"
+          }
+        ]
+      },
+      "browser_observations": [
+        "Dark and light workspace themes inspected at 1363 by 936; no document horizontal overflow observed",
+        "Build called the original compiler check; actual compiler phases reported passed",
+        "Run Code opened a separate window, accepted 12 and 8, and printed Sum: 20; the IDE Output view mirrored that real output",
+        "An undeclared variable produced SEM-02 in Semantic analysis and appeared in Problems",
+        "Project search found the matching source line and moved the cursor to line 4",
+        "Settings changed the persisted theme; editor maximize/restore and agent Tools worked",
+        "The local agent returned full percentage source with compiler/runtime Passed evidence; review/apply created the draft in the test project",
+        "3D Lab displayed the existing compiler visualization with actual phase results",
+        "Keyboard Home returned the compiler dock from Logs to Journey",
+        "The previously removed agent task checklist remained absent",
+        "After the final UI edits, a separate window accepted 80 and 90 and printed total 170 and percentage 85%; the IDE preview showed the same output"
+      ]
+    },
+    "0.17.0": {
+      "passed": 137,
+      "executed_for_studio": "0.17.0",
+      "suites": [
+        {
+          "name": "Executable API/native payload/frontend/HTTP integration",
+          "status": "Passed",
+          "passed": 26,
+          "log": "validation/exe-api.txt"
+        },
+        {
+          "name": "Compiler/VM/agent/export and native interoperability",
+          "status": "Passed",
+          "passed": 94,
+          "log": "validation/exe-api-browser-regression.txt"
+        },
+        {
+          "name": "Separate Run-window lifecycle and bridge",
+          "status": "Passed",
+          "passed": 9,
+          "log": "validation/exe-api-run-regression.txt"
+        },
+        {
+          "name": "Actual packaged Worker frontend/API",
+          "status": "Passed",
+          "passed": 8,
+          "log": "validation/exe-api-worker.txt"
+        }
+      ]
+    }
+  },
+  "checks": {
+    "passed": 501,
+    "failed": 0,
+    "executed_for_studio": "0.19.0",
+    "scope": "425 named legacy checks plus 57 professional feature cases and 19 Compiler Factory cases; Node runner: 92 passed, including 16 legacy script wrappers.",
+    "log": "validation/factory-all-tests.log"
+  },
+  "protected_unchanged": {
+    "files": 56,
+    "expected_integration_changes": [
+      "studio/core/worker.mjs",
+      "studio/core/run-window.mjs",
+      "studio/core/compiler-trace.mjs"
+    ],
+    "scope": "All src/include, studio/core, training sources, browser model, native Windows runtime and development compiler binaries in the baseline. Grammar, semantic analyzer, generator, VM and game engine hashes matched.",
+    "log": "validation/factory-preservation.json"
+  },
+  "agent_engine_release": "0.14.0",
+  "ui_patch": "Integrated six-room 3D Compiler Factory in the existing second Run window with real compiler evidence, authenticated one-shot VM handoff, interactive trees, logs, reports and preserved console/game/debug runtime.",
+  "windows_executable_api": {
+    "endpoint": "POST /api/build/exe",
+    "health": "GET /api/build/health",
+    "target": "Windows 10/11 x64",
+    "packaging": "Native C++ PE64 runtime + JBC2/JBC3 bytecode + referenced assets",
+    "runtime_sha256": "956dece489b53d78e7a4208f8448478fbc6247e37aa867d5cbaa1ec199921bf7",
+    "local_server": "node api/server.mjs (Node 20+)",
+    "windows_execution": "Not Run"
+  },
+  "professional_features": {
+    "editor": "Added",
+    "local_agent_planning": "Added; checked sample fixtures and safe follow-up edits",
+    "windows_release_tools": "Added; Windows execution, installer installation and signing Not Run",
+    "recovery": "Added",
+    "test_explorer": "Added",
+    "local_git": "Added; 15 real temporary-repository/API checks passed",
+    "scene_assets": "Added; draft compile/apply and actual initialization rendering observed",
+    "accessibility_layout": "Added; keyboard resizing and display modes observed"
+  },
+  "previous_release_checks": {
+    "passed": 482,
+    "failed": 0,
+    "executed_for_studio": "0.18.0",
+    "scope": "425 named legacy checks plus 57 new Node feature cases; the runner reports 73 cases including 16 legacy script files.",
+    "suites": [
+      {
+        "name": "Existing compiler/VM/agent/export/native/Run-window checks",
+        "status": "Passed",
+        "passed": 425
+      },
+      {
+        "name": "Professional editor, recovery, test explorer, planners, scene services, local API/Git and native file I/O",
+        "status": "Passed",
+        "passed": 57
+      }
+    ],
+    "log": "validation/professional-all-tests.log"
+  },
+  "previous_release_preservation": {
+    "files": 60,
+    "scope": "All native/compiler/runtime source and headers, studio/core modules, training files, native binaries and classifier model; SHA-256 comparison with Studio 0.17.0"
+  },
+  "compiler_factory": {
+    "guide": "COMPILER-FACTORY-0.19.0.md",
+    "rooms": 6,
+    "entrance_robots": 2,
+    "room_officers": 6,
+    "navigation_sections": 9,
+    "implementation": "Existing compiler and VM, procedural local renderer, WebGL with projected Canvas fallback",
+    "parse_tree": "Actual parsed structure; no separate concrete grammar/CST",
+    "tree_capture_limit": 6000,
+    "visible_tree_limit": 900,
+    "api_keys_required": false,
+    "webgl_hardware_browser_validation": "Not Run; Canvas fallback observed in current browser",
+    "windows_desktop_validation": "Not Run",
+    "browser_acceptance": "validation/factory-acceptance.json",
+    "packaged_worker_checks": 9
+  }
+}

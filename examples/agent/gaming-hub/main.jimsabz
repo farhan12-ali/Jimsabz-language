@@ -1,0 +1,105 @@
+kharna "modules/auth.jimsabz"
+kharna "modules/hub.jimsabz"
+
+budhai "Local demo: create a temporary account, then sign in. Use invented credentials."
+hub_session = sign_in_demo()
+jey (hub_session) {
+    khed3d "Gaming Central Hub" {
+        khirki 1100, 700
+        pichaan #0b1028
+        dekhar(hub_user, hub_section, hub_controls)
+        camera3d {
+            jagah3d: (0.0, 4.5, 11.0)
+            fov: 62
+        }
+        roshni {
+            simt: (0.4, -1.0, -0.6)
+            ambient: 0.45
+        }
+        manzar Home {
+            mujassamo HomeFloor {
+                shakal3d: plane
+                jagah3d: (0.0, -1.1, 0.0)
+                paimano: (11.0, 1.0, 7.0)
+                rang: #202544
+            }
+            mujassamo ArenaPortal {
+                shakal3d: cube
+                jagah3d: (-3.0, 0.0, 0.0)
+                paimano: (1.6, 2.3, 0.7)
+                ghumao: (0.0, 16.0, 0.0)
+                rang: #8756e8
+            }
+            mujassamo LibraryPortal {
+                shakal3d: cube
+                jagah3d: (0.0, 0.0, 0.0)
+                paimano: (1.6, 2.3, 0.7)
+                rang: #35bed1
+            }
+            mujassamo ProfilePortal {
+                shakal3d: cube
+                jagah3d: (3.0, 0.0, 0.0)
+                paimano: (1.6, 2.3, 0.7)
+                ghumao: (0.0, -16.0, 0.0)
+                rang: #e3ad4f
+            }
+        }
+        manzar Arena {
+            mujassamo ArenaPreview {
+                shakal3d: pyramid
+                jagah3d: (0.0, 0.0, 0.0)
+                paimano: (3.0, 2.5, 3.0)
+                rang: #8756e8
+            }
+        }
+        manzar Library {
+            mujassamo LibraryPreview {
+                shakal3d: cube
+                jagah3d: (0.0, 0.0, 0.0)
+                paimano: (2.5, 2.5, 2.5)
+                ghumao: (15.0, 35.0, 0.0)
+                rang: #35bed1
+            }
+        }
+        manzar Profile {
+            mujassamo ProfilePreview {
+                shakal3d: sphere
+                jagah3d: (0.0, 0.0, 0.0)
+                paimano: (2.0, 2.0, 2.0)
+                rang: #e3ad4f
+            }
+        }
+        manzar Locked {
+            mujassamo LockedSession {
+                shakal3d: cube
+                jagah3d: (0.0, 0.0, 0.0)
+                rang: #e35c83
+            }
+        }
+        on_key("1") {
+            jey (hub_session) { hub_section = "Arena preview"
+                tabdeel_manzar("Arena") }
+        }
+        on_key("2") {
+            jey (hub_session) { hub_section = "Game library preview"
+                tabdeel_manzar("Library") }
+        }
+        on_key("3") {
+            jey (hub_session) { hub_section = "Profile: " + hub_user
+                tabdeel_manzar("Profile") }
+        }
+        on_key("H") {
+            jey (hub_session) { hub_section = "Home"
+                tabdeel_manzar("Home") }
+        }
+        on_key("L") {
+            hub_session = na
+            hub_user = ""
+            hub_section = "Signed out"
+            hub_controls = "Session locked. Use Run again to sign in."
+            tabdeel_manzar("Locked")
+        }
+    }
+} na_ta {
+    budhai "Access denied."
+}

@@ -1,0 +1,7 @@
+Naalo: Ketira mazmoon? Mazmoon 1 (0-100): Mazmoon 2 (0-100): Mazmoon 3 (0-100):
+Naalo: Farhan
+Mazmoon: 3
+Kul: 240
+Feesad: 80%
+Ausat: 80
+Darjo: B
