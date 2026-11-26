@@ -1,0 +1,207 @@
+﻿import { app, BrowserWindow, dialog, Menu, shell } from 'electron';
+import { createStudioServer } from '../api/server.mjs';
+
+let mainWindow = null;
+let server = null;
+let serverUrl = null;
+let quitting = false;
+
+async function stopServer() {
+  if (!server?.listening) return;
+
+  const current = server;
+  server = null;
+
+  await new Promise(resolve => current.close(resolve));
+}
+
+async function startServer(workspaceRoot) {
+  await stopServer();
+
+  const nextServer = createStudioServer({ workspaceRoot });
+
+  await new Promise((resolve, reject) => {
+    const onError = error => reject(error);
+
+    nextServer.once('error', onError);
+
+    nextServer.listen(0, '127.0.0.1', () => {
+      nextServer.off('error', onError);
+      resolve();
+    });
+  });
+
+  server = nextServer;
+  serverUrl = `http://127.0.0.1:${server.address().port}/`;
+
+  console.log(`Jimsabz Studio server: ${serverUrl}`);
+}
+
+async function chooseProjectFolder() {
+  const result = await dialog.showOpenDialog(mainWindow, {
+    title: 'Select your Jimsabz project folder',
+    properties: ['openDirectory']
+  });
+
+  if (result.canceled || !result.filePaths.length) return;
+
+  const selectedFolder = result.filePaths[0];
+
+  await startServer(selectedFolder);
+
+  if (mainWindow) {
+    await mainWindow.loadURL(serverUrl);
+  }
+}
+
+function createApplicationMenu() {
+  const menu = Menu.buildFromTemplate([
+    {
+      label: 'File',
+      submenu: [
+        {
+          label: 'Choose Local Project Folder',
+          click: () => {
+            chooseProjectFolder().catch(error => {
+              dialog.showErrorBox(
+                'Project Folder Error',
+                error.message
+              );
+            });
+          }
+        },
+        { type: 'separator' },
+        {
+          label: 'Reload Studio',
+          accelerator: 'Ctrl+R',
+          click: () => mainWindow?.reload()
+        },
+        { type: 'separator' },
+        { role: 'quit' }
+      ]
+    },
+    {
+      label: 'View',
+      submenu: [
+        { role: 'reload' },
+        { role: 'toggledevtools' },
+        { type: 'separator' },
+        { role: 'resetzoom' },
+        { role: 'zoomin' },
+        { role: 'zoomout' },
+        { role: 'togglefullscreen' }
+      ]
+    }
+  ]);
+
+  Menu.setApplicationMenu(menu);
+}
+
+async function createWindow() {
+  mainWindow = new BrowserWindow({
+    width: 1440,
+    height: 900,
+    minWidth: 1000,
+    minHeight: 650,
+    show: false,
+    backgroundColor: '#10131a',
+
+    webPreferences: {
+      contextIsolation: true,
+      nodeIntegration: false,
+      sandbox: true
+    }
+  });
+
+  mainWindow.once('ready-to-show', () => {
+    mainWindow?.show();
+  });
+
+  mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+    let target;
+
+    try {
+      target = new URL(url);
+    } catch {
+      return { action: 'deny' };
+    }
+
+    const studio = new URL(serverUrl);
+
+    // Allow only the Jimsabz Compiler Factory run window.
+    if (
+      target.origin === studio.origin &&
+      target.pathname === '/run.html'
+    ) {
+      return {
+        action: 'allow',
+        overrideBrowserWindowOptions: {
+          width: 1360,
+          height: 900,
+          minWidth: 850,
+          minHeight: 600,
+          show: true,
+          backgroundColor: '#10131a',
+          autoHideMenuBar: true,
+          webPreferences: {
+            contextIsolation: true,
+            nodeIntegration: false,
+            sandbox: true
+          }
+        }
+      };
+    }
+
+    // Open external websites in the user's default browser.
+    if (target.protocol === 'http:' || target.protocol === 'https:') {
+      shell.openExternal(url).catch(console.error);
+    }
+
+    return { action: 'deny' };
+  });
+
+  mainWindow.webContents.on('will-navigate', (event, url) => {
+    if (new URL(url).origin !== new URL(serverUrl).origin) {
+      event.preventDefault();
+    }
+  });
+
+  mainWindow.on('closed', () => {
+    mainWindow = null;
+  });
+
+  await mainWindow.loadURL(serverUrl);
+}
+
+app.whenReady().then(async () => {
+  try {
+    await startServer();
+    createApplicationMenu();
+    await createWindow();
+
+    app.on('activate', async () => {
+      if (BrowserWindow.getAllWindows().length === 0) {
+        await createWindow();
+      }
+    });
+  } catch (error) {
+    dialog.showErrorBox(
+      'Jimsabz Studio Startup Error',
+      error.stack || error.message
+    );
+
+    app.quit();
+  }
+});
+
+app.on('before-quit', () => {
+  quitting = true;
+  void stopServer();
+});
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
+});
+
